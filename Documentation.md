@@ -8,7 +8,8 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Installed ProBuilder.
 * Added "Player" Tag to Player.
 * FlashlightToggle Script created.
-* 
+* Created Flashlight.
+* Fixed Camera Sensitivity.
 
 ### 2024-03-19: 
 * Github created.
