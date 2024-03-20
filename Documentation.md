@@ -13,6 +13,8 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * PlayerMovement Script created.
 * Created Player Object.
 * Added Box Collider to Player.
+* PlayerView Script created.
+  
 
 
 
