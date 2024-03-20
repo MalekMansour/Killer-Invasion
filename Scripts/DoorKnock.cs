@@ -18,7 +18,7 @@ public class DoorKnock : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(1) && IsMouseOverDoor())
+        if (Input.GetMouseButtonDown(0) && IsMouseOverDoor())
         {
             audioSource.Play();
         }
