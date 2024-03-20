@@ -11,6 +11,9 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Created Flashlight.
 * Fixed Camera Sensitivity.
 * DoorKnock Script created.
+* Door Model created.
+* Crosshair created.
+* GameManager Script created.
 
 ### 2024-03-19: 
 * Github created.
