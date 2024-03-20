@@ -10,6 +10,7 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * FlashlightToggle Script created.
 * Created Flashlight.
 * Fixed Camera Sensitivity.
+* DoorKnock Script created.
 
 ### 2024-03-19: 
 * Github created.
