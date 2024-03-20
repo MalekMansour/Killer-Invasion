@@ -14,6 +14,7 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Created Player Object.
 * Added Box Collider to Player.
 * PlayerView Script created.
+* Buildings Model created.
   
 
 
