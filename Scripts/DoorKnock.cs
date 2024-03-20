@@ -3,7 +3,7 @@ using UnityEngine;
 public class DoorKnock : MonoBehaviour
 {
     public AudioClip knockSound; 
-    private AudioSource audioSource; 
+    private AudioSource audioSource;
 
     void Start()
     {
@@ -12,14 +12,31 @@ public class DoorKnock : MonoBehaviour
         {
             audioSource = gameObject.AddComponent<AudioSource>();
         }
+
         audioSource.clip = knockSound;
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(1) && IsMouseOverDoor())
         {
             audioSource.Play();
         }
+    }
+
+    bool IsMouseOverDoor()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hitInfo;
+
+        if (Physics.Raycast(ray, out hitInfo))
+        {
+            if (hitInfo.collider != null && hitInfo.collider.gameObject == gameObject)
+            {
+                return true; 
+            }
+        }
+
+        return false; 
     }
 }
