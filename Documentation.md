@@ -4,7 +4,12 @@ The game will be made using Unity & C#
 The game will be published on Itch.io & Gamejolt & possibly Steam
 
 ### 2024-03-19: 
-Github created. Unity 3D Project created.
-Gamejolt Page created.
+* Github created.
+* Gamejolt Page created.
+* Unity 3D Project created.
+* Material Folder created.
+* Textures Folder created.
+* Scripts Folder created.
+
 
 
