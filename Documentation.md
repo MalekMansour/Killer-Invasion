@@ -3,6 +3,9 @@ This is a complete documentation of the making of the horror game "Killers Invas
 The game will be made using Unity & C#
 The game will be published on Itch.io & Gamejolt & possibly Steam
 
+### 2024-03-20: 
+* Created model for killer_10.
+
 ### 2024-03-19: 
 * Github created.
 * Gamejolt Page created.
@@ -14,8 +17,3 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Created Player Object.
 * Added Box Collider to Player.
 * PlayerView Script created.
-
-  
-
-
-
