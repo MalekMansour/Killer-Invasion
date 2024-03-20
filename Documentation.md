@@ -5,6 +5,10 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 
 ### 2024-03-20: 
 * Created model for killer_10.
+* Installed ProBuilder.
+* Added "Player" Tag to Player.
+* FlashlightToggle Script created.
+* 
 
 ### 2024-03-19: 
 * Github created.
