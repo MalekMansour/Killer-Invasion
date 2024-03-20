@@ -10,6 +10,9 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Material Folder created.
 * Textures Folder created.
 * Scripts Folder created.
+* PlayerMovement Script created.
+* Created Player Object.
+* Added Box Collider to Player.
 
 
 
