@@ -6,7 +6,7 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 ### 2024-03-21:
 * New appartment model created.
 * Flashlight position changed.
-* 
+* Updated FlashlightToggle Scipt to hold.
 
 
 
