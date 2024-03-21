@@ -8,6 +8,8 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Flashlight position changed.
 * Updated FlashlightToggle Scipt to hold.
 * Fixed Player Speed.
+* Color Space changed to Linear.
+* 
 
 
 
