@@ -12,9 +12,9 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Installed Post Processing.
 * Added Ambient Occlusion.
 * Added Auto Exposure.
-* Added bloom.
-
-
+* Added Bloom.
+* Added Colour Grading.
+* Added Depth Of Field.
 
 ### 2024-03-20: 
 * Installed ProBuilder.
