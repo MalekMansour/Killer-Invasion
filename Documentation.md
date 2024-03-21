@@ -7,6 +7,7 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * New appartment model created.
 * Flashlight position changed.
 * Updated FlashlightToggle Scipt to hold.
+* Fixed Player Speed.
 
 
 
