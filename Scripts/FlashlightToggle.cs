@@ -1,5 +1,4 @@
 using UnityEngine;
-
 public class FlashlightToggle : MonoBehaviour
 {
     public Light flashlight; 
@@ -12,12 +11,15 @@ public class FlashlightToggle : MonoBehaviour
 
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetMouseButton(1)) 
         {
-            isFlashlightOn = !isFlashlightOn; 
-            flashlight.enabled = isFlashlightOn;
+            ToggleFlashlight();
         }
     }
-}
 
+    void ToggleFlashlight()
+    {
+        isFlashlightOn = !isFlashlightOn; 
+        flashlight.enabled = isFlashlightOn;
+    }
+}
