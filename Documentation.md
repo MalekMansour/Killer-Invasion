@@ -17,6 +17,8 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Added Depth Of Field.
 * Added Vignette.
 * Added Grain.
+* Created Lightswitch Model.
+* Created Animation folder.
 
 ### 2024-03-20: 
 * Installed ProBuilder.
