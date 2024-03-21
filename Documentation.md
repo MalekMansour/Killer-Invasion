@@ -16,8 +16,8 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Added Colour Grading.
 * Added Depth Of Field.
 * Added Vignette.
-* Added Lens Distortion.
 * Added Grain.
+* Added Screen Space Relections.
 
 ### 2024-03-20: 
 * Installed ProBuilder.
