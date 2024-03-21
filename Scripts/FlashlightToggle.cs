@@ -1,25 +1,21 @@
 using UnityEngine;
 public class FlashlightToggle : MonoBehaviour
 {
-    public Light flashlight; 
-    private bool isFlashlightOn = false; 
-
-    void Start()
-    {
-        flashlight.enabled = false;
-    }
+    public Light flashlight;
+    private bool isRightClicking = false;
 
     void Update()
     {
-        if (Input.GetMouseButton(1)) 
+        if (Input.GetMouseButtonDown(1)) 
         {
-            ToggleFlashlight();
+            isRightClicking = true; 
+            flashlight.enabled = true; 
         }
-    }
 
-    void ToggleFlashlight()
-    {
-        isFlashlightOn = !isFlashlightOn; 
-        flashlight.enabled = isFlashlightOn;
+        if (Input.GetMouseButtonUp(1)) 
+        {
+            isRightClicking = false; 
+            flashlight.enabled = false; 
+        }
     }
 }
