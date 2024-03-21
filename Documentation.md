@@ -10,6 +10,9 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Fixed Player Speed.
 * Color Space changed to Linear.
 * Installed Post Processing.
+* Added Ambient Occlusion.
+* Added Auto Exposure.
+* Added bloom.
 
 
 
