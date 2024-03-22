@@ -1,10 +1,9 @@
 using UnityEngine;
 public class DoorKnock : MonoBehaviour
 {
-    public AudioClip knockSound;
+    public AudioClip knockSound; 
     private AudioSource audioSource;
-    public float knockRange = 2f;
-    private GameObject player;
+    public float knockRange = 5f; 
 
     void Start()
     {
@@ -15,8 +14,6 @@ public class DoorKnock : MonoBehaviour
         }
 
         audioSource.clip = knockSound;
-
-        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()
@@ -36,7 +33,7 @@ public class DoorKnock : MonoBehaviour
         {
             if (hitInfo.collider != null && hitInfo.collider.gameObject == gameObject)
             {
-                return true; 
+                return true;
             }
         }
 
@@ -45,10 +42,11 @@ public class DoorKnock : MonoBehaviour
 
     bool IsWithinKnockRange()
     {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
             float distance = Vector3.Distance(transform.position, player.transform.position);
-            return distance <= knockRange;
+            return distance <= knockRange; 
         }
 
         return false; 
