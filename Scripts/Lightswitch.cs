@@ -1,7 +1,7 @@
 using UnityEngine;
 public class Lightswitch : MonoBehaviour
 {
-    public Light lights; 
+    public Light[] lights; 
     public float activationRange = 3f; 
     public AudioClip switchSound; 
     private bool isLightsOn = false; 
@@ -9,7 +9,10 @@ public class Lightswitch : MonoBehaviour
 
     void Start()
     {
-        lights.enabled = false;
+        foreach (Light light in lights)
+        {
+            light.enabled = false;
+        }
 
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.clip = switchSound;
@@ -37,7 +40,10 @@ public class Lightswitch : MonoBehaviour
     {
         isLightsOn = !isLightsOn; 
 
-        lights.enabled = isLightsOn;
+        foreach (Light light in lights)
+        {
+            light.enabled = isLightsOn;
+        }
 
         audioSource.Play();
 
