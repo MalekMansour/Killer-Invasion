@@ -1,4 +1,5 @@
 using UnityEngine;
+
 public class Lightswitch : MonoBehaviour
 {
     public Light[] lights; 
@@ -28,7 +29,7 @@ public class Lightswitch : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit) && hit.collider.gameObject == gameObject)
             {
-                if (Vector3.Distance(transform.position, hit.point) <= activationRange)
+                if (Vector3.Distance(transform.position, Camera.main.transform.position) <= activationRange)
                 {
                     ToggleLights();
                 }
