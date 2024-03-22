@@ -3,6 +3,9 @@ This is a complete documentation of the making of the horror game "Killers Invas
 The game will be made using Unity & C#
 The game will be published on Itch.io & Gamejolt & possibly Steam
 
+### 2024-03-22:
+* Lightswitch Script created.
+
 ### 2024-03-21:
 * New appartment model created.
 * Flashlight position changed.
