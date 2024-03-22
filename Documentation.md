@@ -1,5 +1,5 @@
 # Base
-This is a complete documentation of the making of the horror game "Killers Invasion" by Domingo.
+This is a complete documentation of the making of the horror game "Killer Invasion".
 The game will be made using Unity & C#
 The game will be published on Itch.io & Gamejolt & possibly Steam
 
@@ -9,6 +9,7 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Installed TMP Essentials.
 * InteractableObject Script created.
 * New Lightswitches added.
+* Door added.
 
 ### 2024-03-21:
 * New appartment model created.
