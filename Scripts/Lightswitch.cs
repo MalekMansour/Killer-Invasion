@@ -3,11 +3,17 @@ public class Lightswitch : MonoBehaviour
 {
     public Light lights; 
     public float activationRange = 3f; 
+    public AudioClip switchSound; 
     private bool isLightsOn = false; 
+    private AudioSource audioSource; 
 
     void Start()
     {
         lights.enabled = false;
+
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.clip = switchSound;
+        audioSource.playOnAwake = false;
     }
 
     void Update()
@@ -32,6 +38,8 @@ public class Lightswitch : MonoBehaviour
         isLightsOn = !isLightsOn; 
 
         lights.enabled = isLightsOn;
+
+        audioSource.Play();
 
         if (isLightsOn)
         {
