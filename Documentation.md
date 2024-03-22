@@ -9,7 +9,8 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Installed TMP Essentials.
 * InteractableObject Script created.
 * New Lightswitches added.
-* Door added.
+* InteractableObject Script added to door.
+* DoorKnock Script updated.
 
 ### 2024-03-21:
 * New appartment model created.
