@@ -6,6 +6,7 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 ### 2024-03-22:
 * Lightswitch Script created.
 * FlashlightToggle Script updated to start off.
+* Installed TMP Essentials.
 
 ### 2024-03-21:
 * New appartment model created.
