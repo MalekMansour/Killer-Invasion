@@ -1,8 +1,14 @@
 using UnityEngine;
+
 public class FlashlightToggle : MonoBehaviour
 {
     public Light flashlight;
     private bool isRightClicking = false;
+
+    void Start()
+    {
+        flashlight.enabled = false;
+    }
 
     void Update()
     {
