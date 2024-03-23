@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class TorButton : MonoBehaviour
 {
-    public GameObject browserCanvas; // Reference to the Browser canvas GameObject
+    public GameObject browserCanvas; 
 
     private bool isBrowserOpen;
 
