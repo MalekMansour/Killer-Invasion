@@ -27,6 +27,8 @@ public class InteractableObject : MonoBehaviour
 
     private void UpdateInteractText()
     {
+        Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+
         float closestDistance = float.MaxValue;
         InteractableObject closestObject = null;
 
@@ -34,10 +36,11 @@ public class InteractableObject : MonoBehaviour
         {
             float distanceToPlayer = Vector3.Distance(obj.transform.position, Camera.main.transform.position);
 
-            if (distanceToPlayer <= interactionRadius && distanceToPlayer < closestDistance)
+            if (Physics.Raycast(mouseRay, out RaycastHit hit) && hit.collider.gameObject == obj.gameObject && distanceToPlayer <= interactionRadius)
             {
                 closestDistance = distanceToPlayer;
                 closestObject = obj;
+                break; 
             }
         }
 
