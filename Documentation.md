@@ -8,6 +8,8 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Desktop UI created.
 * LaptopController Script created.
 * InteractableObject Script updated.
+* LaptopUI Script created.
+* BrowserWindow Script created.
 
 ### 2024-03-22:
 * Lightswitch Script created.
