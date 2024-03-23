@@ -10,6 +10,7 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * InteractableObject Script updated.
 * TorButton Script created.
 * BrowserWindow Script created.
+* CloseBrowserButton Script created.
 
 ### 2024-03-22:
 * Lightswitch Script created.
