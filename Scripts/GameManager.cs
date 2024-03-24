@@ -1,9 +1,13 @@
 using UnityEngine;
+
 public class GameManager : MonoBehaviour
 {
-    public GameObject crosshair; 
-    public LayerMask interactableLayer; 
-    private bool isCursorLocked = true; 
+    public GameObject crosshair;
+    public LayerMask interactableLayer;
+    private bool isCursorLocked = true;
+    private float lastEscapeTime;
+    private float escapeWindow = 0.5f; 
+
     private void Start()
     {
         LockCursor();
@@ -15,19 +19,32 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && isCursorLocked)
         {
+            LockCursor(); 
             InteractWithObject();
+        }
+
+        if (Input.GetMouseButtonDown(1) && isCursorLocked)
+        {
+            LockCursor(); // Lock cursor on right-click
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            ToggleCursorLock();
+            float currentTime = Time.time;
+
+            if (currentTime - lastEscapeTime < escapeWindow)
+            {
+                ToggleCursorLock(); // Double press Esc to toggle cursor lock
+            }
+
+            lastEscapeTime = currentTime;
         }
     }
 
     void UpdateCrosshairPosition()
     {
         Vector3 mousePosition = Input.mousePosition;
-        mousePosition.z = 10f; 
+        mousePosition.z = 10f;
         Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
         crosshair.transform.position = worldPosition;
@@ -71,4 +88,3 @@ public class GameManager : MonoBehaviour
         }
     }
 }
-
