@@ -10,6 +10,7 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Screen Camera added to monitor object.
 * Updated GameManager Script.
 * Adjusted screen size for Laptop UI.
+* Created Wifi Icon.
 
 ### 2024-03-23:
 * Computer Monitor model created.
