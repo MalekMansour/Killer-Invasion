@@ -2,11 +2,10 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject crosshair;
-    public LayerMask interactableLayer;
-    private bool isCursorLocked = true;
-    private float lastEscapeTime;
-    private float escapeWindow = 0.5f; 
+    public GameObject crosshair; 
+    public LayerMask interactableLayer; 
+    public Canvas laptopCanvas; 
+    private bool isCursorLocked = true; 
 
     private void Start()
     {
@@ -19,32 +18,24 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && isCursorLocked)
         {
-            LockCursor(); 
-            InteractWithObject();
-        }
+            bool isLaptopUIActive = laptopCanvas.gameObject.activeSelf;
 
-        if (Input.GetMouseButtonDown(1) && isCursorLocked)
-        {
-            LockCursor(); // Lock cursor on right-click
+            if (!isLaptopUIActive)
+            {
+                InteractWithObject();
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            float currentTime = Time.time;
-
-            if (currentTime - lastEscapeTime < escapeWindow)
-            {
-                ToggleCursorLock(); // Double press Esc to toggle cursor lock
-            }
-
-            lastEscapeTime = currentTime;
+            ToggleCursorLock();
         }
     }
 
     void UpdateCrosshairPosition()
     {
         Vector3 mousePosition = Input.mousePosition;
-        mousePosition.z = 10f;
+        mousePosition.z = 10f; 
         Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
         crosshair.transform.position = worldPosition;
@@ -80,7 +71,12 @@ public class GameManager : MonoBehaviour
     {
         if (isCursorLocked)
         {
-            UnlockCursor();
+            bool isLaptopUIActive = laptopCanvas.gameObject.activeSelf;
+
+            if (!isLaptopUIActive)
+            {
+                UnlockCursor();
+            }
         }
         else
         {
