@@ -6,6 +6,8 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 ### 2024-03-24:
 * Added 2 new fonts.
 * Added screen for the laptop.
+* DualCameraController Script created.
+* Screen Camera added to monitor object.
 
 ### 2024-03-23:
 * Computer Monitor model created.
