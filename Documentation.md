@@ -8,6 +8,7 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Added screen for the laptop.
 * Fixed camera bug.
 * Screen Camera added to monitor object.
+* Updated GameManager Script.
 
 ### 2024-03-23:
 * Computer Monitor model created.
