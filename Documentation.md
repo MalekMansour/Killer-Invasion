@@ -12,6 +12,7 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Adjusted screen size for Laptop UI.
 * Created Wifi Icon.
 * Created AntiVirus Icon.
+* Created Danger Level Icon.
 
 ### 2024-03-23:
 * Computer Monitor model created.
