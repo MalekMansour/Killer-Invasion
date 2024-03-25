@@ -3,6 +3,9 @@ This is a complete documentation of the making of the horror game "Killer Invasi
 The game will be made using Unity & C#
 The game will be published on Itch.io & Gamejolt & possibly Steam
 
+### 2024-03-25:
+* Meeting Summary added in the ideas.md file.
+
 ### 2024-03-24:
 * Added 2 new fonts.
 * Added screen for the laptop.
