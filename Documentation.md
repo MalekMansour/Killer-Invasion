@@ -14,6 +14,7 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Created AntiVirus Icon.
 * Created Danger Level Icon.
 * Added Power Button Icon.
+* Added Time template.
 
 ### 2024-03-23:
 * Computer Monitor model created.
