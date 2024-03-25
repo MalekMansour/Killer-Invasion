@@ -11,6 +11,7 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Renamed TorButton to IconOpener.
 * MaximizeButton Script created.
 * Updated MaximizeButton Script.
+* Created Shadow Market App.
 
 ### 2024-03-24:
 * Added 2 new fonts.
