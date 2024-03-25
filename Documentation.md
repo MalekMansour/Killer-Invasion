@@ -9,6 +9,7 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Volume Icons created.
 * Changed the Onion Browser Icon.
 * Renamed TorButton to IconOpener.
+* Updated MaximizeButton Script.
 
 ### 2024-03-24:
 * Added 2 new fonts.
