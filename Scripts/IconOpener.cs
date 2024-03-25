@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class TorButton : MonoBehaviour
+public class IconOpener : MonoBehaviour
 {
     public GameObject browserCanvas; 
 
