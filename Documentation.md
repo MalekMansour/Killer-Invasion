@@ -6,6 +6,7 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 ### 2024-03-25:
 * Meeting Summary added in the ideas.md file.
 * New Icons for Onion Browser created.
+* Volume Icons created.
 
 ### 2024-03-24:
 * Added 2 new fonts.
