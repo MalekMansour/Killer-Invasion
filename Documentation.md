@@ -12,6 +12,10 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * MaximizeButton Script created.
 * Updated MaximizeButton Script.
 * Created Shadow Market App.
+* Created notes app.
+* Made Input section for the notes app.
+* Added minimize button to notes app.
+* Added minimize button to the Shadow Market app.
 
 ### 2024-03-24:
 * Added 2 new fonts.
