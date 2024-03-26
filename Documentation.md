@@ -10,7 +10,7 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Added Refresh icon.
 * Added Hamburger Menu icon.
 * Changed placeholder for search bar.
-* Added new screenshot.
+* New "Aldrich-Regular" font added.
 
 ### 2024-03-25:
 * Meeting Summary added in the ideas.md file.
