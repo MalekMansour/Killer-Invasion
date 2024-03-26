@@ -3,77 +3,41 @@ using TMPro;
 
 public class TimeManager : MonoBehaviour
 {
-    public TextMeshProUGUI timeText; // Reference to the TextMeshPro UI component
+    public TextMeshProUGUI timeText;
+    private float gameTimeInSeconds = 0f;
 
-    private const int StartHour = 8; // 8:00 PM
-    private const int EndHour = 6; // 6:00 AM
-    private const float TimeSpeed = 20f; // Update time every 20 seconds
-
-    private int currentHour;
-    private int currentMinute;
-    private float timer;
-    private bool isAM;
-
-    private void Start()
+    void Start()
     {
-        // Initialize time to start hour and minute
-        currentHour = StartHour;
-        currentMinute = 0;
-        timer = 0f;
-        isAM = false; // Initially PM
-
-        // Update time display initially
-        UpdateTimeDisplay();
+        InvokeRepeating("UpdateTime", 0f, 0.5f); // Update time every 0.5 seconds
     }
 
-    private void Update()
+    void UpdateTime()
     {
-        // Increment timer
-        timer += Time.deltaTime;
+        // Update game time based on real-time
+        gameTimeInSeconds += Time.deltaTime;
 
-        // Check if it's time to update the time
-        if (timer >= TimeSpeed)
-        {
-            // Reset timer
-            timer = 0f;
+        // Convert game time to minutes and seconds
+        int minutes = Mathf.FloorToInt(gameTimeInSeconds / 30f); // 30 seconds per in-game minute
+        int seconds = Mathf.FloorToInt(gameTimeInSeconds % 30f); // 30 seconds per in-game minute
 
-            // Increment minute
-            currentMinute++;
-
-            // Check if hour needs to be incremented
-            if (currentMinute >= 60)
-            {
-                currentMinute = 0;
-                currentHour++;
-
-                // Check if hour exceeds 12, change PM to AM
-                if (currentHour == 12)
-                {
-                    isAM = !isAM; // Toggle AM/PM
-                }
-
-                // Check if hour exceeds 12-hour format
-                if (currentHour > 12)
-                {
-                    currentHour = 1; // Reset hour to 1 in 12-hour format
-                }
-            }
-
-            // Update time display
-            UpdateTimeDisplay();
-        }
-    }
-
-    private void UpdateTimeDisplay()
-    {
-        // Determine AM/PM suffix
-        string amPm = isAM ? "PM" : "AM";
+        // Convert minutes to hours and minutes for display
+        int hours = minutes / 60;
+        minutes = minutes % 60;
 
         // Convert 24-hour format to 12-hour format
-        int displayHour = currentHour > 12 ? currentHour - 12 : currentHour;
-        if (displayHour == 0) displayHour = 12; // Handle midnight (12 AM)
+        int displayHours = hours % 12;
+        if (displayHours == 0) displayHours = 12; // Handle midnight (12 AM)
 
-        // Update TextMeshPro UI component with the current time in 12-hour format
-        timeText.text = $"{displayHour:D2}:{currentMinute:D2} {amPm}";
+        // Determine whether it's AM or PM
+        string amPm = hours < 12 ? "AM" : "PM";
+
+        // Display the time in TextMeshPro
+        timeText.text = string.Format("{0:D2}:{1:D2} {2}", displayHours, minutes, amPm);
+
+        // Reset game time after 6:00 AM
+        if (hours >= 6)
+        {
+            gameTimeInSeconds = 0f; // Reset game time
+        }
     }
 }
