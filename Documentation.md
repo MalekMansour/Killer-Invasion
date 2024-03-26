@@ -8,6 +8,7 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Added home page icon.
 * Added back/forward icon.
 * Added Refresh icon.
+* Added Hamburger Menu icon.
 
 ### 2024-03-25:
 * Meeting Summary added in the ideas.md file.
