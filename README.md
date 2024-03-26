@@ -4,5 +4,6 @@ Your son has been kidnapped and they are asking for 300 crypto coins in return. 
 2) Try to find the location of the kidnapper on the dark web and get to "kill" the guy.
 You would also have to defend yourself against various killers that might find your ip and your address and you have to hide/close the lights etc. The police can also find you if you are doing a lot of dangerous things on the dark web. You might also become more insane the more you visit websites. So maybe you have to sleep (which skips time but decreases sanity) or maybe other things can also help decrease it.
 
-![Screenshot](screenshots/KI1.png)
+![Screenshot](screenshots/KI3.png)
 ![Screenshot](screenshots/KI2.png)
+![Screenshot](screenshots/KI1.png)
