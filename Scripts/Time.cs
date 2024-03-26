@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using TMPro;
 
@@ -6,7 +5,7 @@ public class TimeManager : MonoBehaviour
 {
     public TextMeshProUGUI timeText; // Reference to the TextMeshPro UI component
 
-    private const int StartHour = 20; // 8:00 PM
+    private const int StartHour = 8; // 8:00 PM
     private const int EndHour = 6; // 6:00 AM
     private const float TimeSpeed = 20f; // Update time every 20 seconds
 
@@ -68,9 +67,13 @@ public class TimeManager : MonoBehaviour
     private void UpdateTimeDisplay()
     {
         // Determine AM/PM suffix
-        string amPm = isAM ? "AM" : "PM";
+        string amPm = isAM ? "PM" : "AM";
 
-        // Update TextMeshPro UI component with the current time in PM/AM format
-        timeText.text = $"{currentHour:D2}:{currentMinute:D2} {amPm}";
+        // Convert 24-hour format to 12-hour format
+        int displayHour = currentHour > 12 ? currentHour - 12 : currentHour;
+        if (displayHour == 0) displayHour = 12; // Handle midnight (12 AM)
+
+        // Update TextMeshPro UI component with the current time in 12-hour format
+        timeText.text = $"{displayHour:D2}:{currentMinute:D2} {amPm}";
     }
 }
