@@ -16,6 +16,7 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Made Input section for the notes app.
 * Added minimize button to notes app.
 * Added minimize button to the Shadow Market app.
+* Updated BrowserWindow Script to bring browser to the front.
 
 ### 2024-03-24:
 * Added 2 new fonts.
