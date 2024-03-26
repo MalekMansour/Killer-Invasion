@@ -14,6 +14,8 @@ public class BrowserWindow : MonoBehaviour, IPointerDownHandler, IDragHandler, I
     public void OnPointerDown(PointerEventData eventData)
     {
         offset = eventData.position - (Vector2)windowTransform.position;
+
+        transform.SetAsLastSibling();
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -26,4 +28,3 @@ public class BrowserWindow : MonoBehaviour, IPointerDownHandler, IDragHandler, I
     {
     }
 }
-
