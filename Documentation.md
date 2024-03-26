@@ -7,6 +7,7 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Added Search bar for browser.
 * Added home page icon.
 * Added back/forward icon.
+* Added Refresh icon.
 
 ### 2024-03-25:
 * Meeting Summary added in the ideas.md file.
