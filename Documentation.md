@@ -11,6 +11,10 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Added Hamburger Menu icon.
 * Changed placeholder for search bar.
 * New "Aldrich-Regular" font added.
+* Shadow Market app: CryptoDrive V3.
+* Shadow Market app: AirCrack Wifi Cracker.
+* Shadow Market app: HomeSensor Alert.
+* Shadow Market app: Anonymous Tracker.
 
 ### 2024-03-25:
 * Meeting Summary added in the ideas.md file.
