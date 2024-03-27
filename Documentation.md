@@ -4,7 +4,8 @@ The game will be made using Unity & C#
 The game will be published on Itch.io & Gamejolt & possibly Steam
 
 ### 2024-03-27:
-* Added Scroll effect for Shadow Market.
+* Added Scrollbar for Shadow Market.
+* Balance Added.
 
 ### 2024-03-26:
 * Added Search bar for browser.
