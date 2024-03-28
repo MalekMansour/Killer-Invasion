@@ -8,7 +8,12 @@ Your son has been kidnapped and the kidnappers are asking for 300 crypto coins i
 You would also have to defend yourself against various killers that might find your IP and your address and you have to hide/close the lights etc. The police can also find you if you are doing a lot of dangerous things on the dark web. 
 There will be multiple endings to the game. (father saves son/father ditches son/etc)
 Players should get good instructions at the beginning. The game should be challenging but not to the point where it is unbeatable.
-The game will start by providing a 3 step guide (Kinda mocking how "easy" the game is.) The 3 step guide will explain some basic mechanics but not all.
+The game will start by providing a 3 step guide (Kinda mocking how "easy" the game is.) The 3 step guide will explain some basic mechanics but not all. The 3 step guide will also provide some basic images.
+
+3 Step Guide:
+1. Turn on all the lights to keep your sanity.
+2. Browse the Dark Web & find ways to make money.
+3. Look out the windows. Hide if you feel in danger.
 
 II. Mechanics
 1. Sanity Level
