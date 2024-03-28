@@ -5,8 +5,8 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 
 ### 2024-03-27:
 * Added Scrollbar for Shadow Market.
-* Balance Added.
-* New Crosshair added.
+* Balance (Money) Added.
+* Crosshair Replaced.
 * Reduced Grain Effect.
 
 ### 2024-03-26:
