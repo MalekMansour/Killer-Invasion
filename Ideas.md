@@ -25,7 +25,15 @@ II. Mechanics
 - Level 0 - Level 1: 20%. Level 1 - Level 2: 40%. Level 2 - Level 3: 60%. Level 3 - Level 4: 80%. Level 4 - Level 5: 100% = Death.
 - Hallucination: where the insanity is too high. The player will constantly see random stuff (lost items/shadows lurking behind/knocking/slamming/whistle/screaming/police siren/weird noises/laughing sounds/lights flickering/etc)
 
-2. Exposure Level: Will be shown on the laptop screen. It is the signal that illustrates how exposed the player is to the internet. Each website has an exposure value. 
+2. Exposure Level: Will be shown on the laptop screen. It is the signal that illustrates how exposed the player is to the internet. Each website has an exposure value.
+- The Skull Icon will go from white, to yellow, to red. Only red indicates that the exposure level is increasing.
+- The Exposure Level calculated in percentages % will be hidden from the player. Once the Exposure level hits 100%, the police will come to the player's house and start their attack.
+- Value 0 = no exposure increase.
+- Value 1 = Slow Exposure Increase. (The longer you stay on the website, the more the exposure level increases.) 
+- Value 2 = Fast Exposure Increase. (Faster Increase.)
+- Value 3 = Semi-Instant Exposure Increase. (Will start from Yellow Skull and slowly go up.)
+- Value 4 = Instant Exposure Increase. (Will start from the Red Skull.)
+  
 3. Black market:
 4. Killer
 - The killers might appear in front of the door/outside the window/etc.
