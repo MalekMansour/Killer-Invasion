@@ -25,7 +25,8 @@ II. Mechanics
 - If you hear police sirens but there is nothing outside the window --> Hallucination. If you hear police sirens and there are police cars outside the window --> The police are coming --> Log out of the dark web, turn off all the lights, and hide.
 6. Ambience:
 7. Gamble:
-- If you are really desperate to get money, you can gamble online. You might get money or lose everything. Your choice.
+- If you are really desperate to get money, you can gamble online. You can either do blackjack or roulette.
+- The gambling website will be rigged. 
 - Cars/motorbikes driving by, owl, dog barking, etc.
 8. Lights:
 - The player has to keep the light open (most of the time) because if the house is too dark, the insanity level will go up much faster.
