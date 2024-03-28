@@ -7,6 +7,7 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Added a website bar.
 * Duplicated website bar 100X.
 * Added Scroll Bar.
+* Adjusted Scroll Speed.
 
 ### 2024-03-27:
 * Added Scrollbar for Shadow Market.
