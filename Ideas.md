@@ -8,7 +8,7 @@ Your son has been kidnapped and the kidnappers are asking for 300 crypto coins i
 You would also have to defend yourself against various killers that might find your IP and your address and you have to hide/close the lights etc. The police can also find you if you are doing a lot of dangerous things on the dark web. 
 There will be multiple endings to the game. (father saves son/father ditches son/etc)
 Players should get good instructions at the beginning. The game should be challenging but not to the point where it is unbeatable.
-The game will start by providing a 3 step guide (Kinda mocking how "easy" the game is.) The 3 step guide will explain some basic mechanics but not all. The 3 step guide will also provide some basic images.
+The game will start by providing a 3 step guide (Kinda mocking how "easy" the game is.) The 3 step guide will explain some basic mechanics but not all. The 3 step guide will also provide some basic images. 
 
 3 Step Guide:
 1. Turn on all the lights to keep your sanity.
@@ -17,10 +17,14 @@ The game will start by providing a 3 step guide (Kinda mocking how "easy" the ga
 
 II. Mechanics
 1. Sanity Level
-- You might also become more insane the more you visit websites. So you have to smoke cigarettes (maybe 8 max) or take pills (infinite but the insanity level will be much harder to control if the player takes too much) to help decrease it.
-- Hallucination: where the insanity is too high. The player will constantly see random stuff (lost items/shadows lurking behind/knocking/slamming/whistle/screaming/police siren/weird noises/laughing sounds/lights flickering/etc)
-- Keeping 4 lights on will decreased Insanity. 3 lights on will not change anything. 2 lights on will increase insanity. 1 light on will increase insanity. 0 lights on will rapidly increase the insanity. Each website will have a specific sanity value. The higher the value is, the more % the insanity will increase.
+- There is an Insanity Level (hidden from the player)
+- Keeping 4 lights on will decreased Insanity. 3 lights on will not change anything. 2 lights on will increase insanity. 1 light on will increase insanity. 0 lights on will rapidly increase the insanity.
+- Each website will have a specific sanity value. The higher the value is, the more % the insanity will increase.
+- There is 8 cigarettes in the kitchen. Each cigarette smoked will decrease the insanity by 20%.
 - Level 0 - Level 1: 20%. Level 1 - Level 2: 40%. Level 2 - Level 3: 60%. Level 3 - Level 4: 80%. Level 4 - Level 5: 100% = Death.
+- Hallucination: where the insanity is too high. The player will constantly see random stuff (lost items/shadows lurking behind/knocking/slamming/whistle/screaming/police siren/weird noises/laughing sounds/lights flickering/etc)
+
+  
 2. Danger level: will be shown on the laptop screen. It is the signal that illustrates how exposed the player is to the internet. The higher it is, the higher the chance the player will be found by killers/police.
 3. Black market:
 4. Killer
