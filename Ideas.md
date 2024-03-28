@@ -1,11 +1,11 @@
 MEETING SUMMARY (03/24/2024)
 
 I. Story
-The game is set in a dangerous neighborhood. The main characther lives inside a house. The environment is grainy, gloomy, and somewhat terrifying. 
+- The game is set in a dangerous neighborhood. The main characther lives inside a house. The environment is grainy, gloomy, and somewhat terrifying. 
 Your son has been kidnapped and the kidnappers are asking for 300 crypto coins in return. You decide to go back to the old ways that you used to make money, which is on the dark web. There are two ways you can win.
   1) Trying to get the money from crypto mining / doing favors for other people / gambling. 
   2) Try to find the location of the kidnapper on the dark web and get to "kill" the guy, and save your son.
-You would also have to defend yourself against various killers that might find your IP and your address and you have to hide/close the lights etc. The police can also find you if you are doing a lot of dangerous things on the dark web. 
+- You would also have to defend yourself against various killers that might find your IP and your address and you have to hide/close the lights etc. The police can also find you if you are doing a lot of dangerous things on the dark web. 
 There will be multiple endings to the game. (father saves son/father ditches son/etc)
 Players should get good instructions at the beginning. The game should be challenging but not to the point where it is unbeatable.
 The game will start by providing a 3 step guide (Kinda mocking how "easy" the game is.) The 3 step guide will explain some basic mechanics but not all. The 3 step guide will also provide some basic images. 
