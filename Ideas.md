@@ -24,10 +24,11 @@ II. Mechanics
 - Sound cues: police siren
 - If you hear police sirens but there is nothing outside the window --> Hallucination. If you hear police sirens and there are police cars outside the window --> The police are coming --> Log out of the dark web, turn off all the lights, and hide.
 6. Ambience:
+  - Cars/motorbikes driving by, owl, dog barking, etc.
 7. Gamble:
 - If you are really desperate to get money, you can gamble online. You can either do blackjack or roulette.
-- The gambling website will be rigged. 
-- Cars/motorbikes driving by, owl, dog barking, etc.
+- The blackjack will be rigged to always make the player loser.
+- The roulette game has a 20% of making the player win.
 8. Lights:
 - The player has to keep the light open (most of the time) because if the house is too dark, the insanity level will go up much faster.
 - There are 4 light switches in the house. When you hide from the killer/police, you have to turn off all the lights. The more lights are turned on, the higher the chance you will get caught in your hiding place.
