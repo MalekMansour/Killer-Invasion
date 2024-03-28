@@ -25,8 +25,7 @@ II. Mechanics
 - Level 0 - Level 1: 20%. Level 1 - Level 2: 40%. Level 2 - Level 3: 60%. Level 3 - Level 4: 80%. Level 4 - Level 5: 100% = Death.
 - Hallucination: where the insanity is too high. The player will constantly see random stuff (lost items/shadows lurking behind/knocking/slamming/whistle/screaming/police siren/weird noises/laughing sounds/lights flickering/etc)
 
-  
-2. Danger level: will be shown on the laptop screen. It is the signal that illustrates how exposed the player is to the internet. The higher it is, the higher the chance the player will be found by killers/police.
+2. Exposure Level: Will be shown on the laptop screen. It is the signal that illustrates how exposed the player is to the internet. Each website has an exposure value. 
 3. Black market:
 4. Killer
 - The killers might appear in front of the door/outside the window/etc.
