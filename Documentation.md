@@ -8,7 +8,8 @@ The game will be published on Itch.io & Gamejolt & possibly Steam
 * Balance (Money) Added.
 * Crosshair Replaced.
 * Reduced Grain Effect.
-* Reduced Light.
+* Reduced Light Environment.
+* Increased light range for lamps.
 
 ### 2024-03-26:
 * Added Search bar for browser.
