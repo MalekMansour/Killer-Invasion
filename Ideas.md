@@ -21,6 +21,7 @@ II. Mechanics
 - Keeping 4 lights on will decreased Insanity. 3 lights on will not change anything. 2 lights on will increase insanity. 1 light on will increase insanity. 0 lights on will rapidly increase the insanity.
 - Each website will have a specific sanity value. The higher the value is, the more % the insanity will increase.
 - There is 8 cigarettes in the kitchen. Each cigarette smoked will decrease the insanity by 20%.
+- There is an infinite amount of pills to take. Each pill decrease the insanity by 5%. If too many pills are taken at the same time, some side effects might start happening and the insanity might start increasing instead. 
 - Level 0 - Level 1: 20%. Level 1 - Level 2: 40%. Level 2 - Level 3: 60%. Level 3 - Level 4: 80%. Level 4 - Level 5: 100% = Death.
 - Hallucination: where the insanity is too high. The player will constantly see random stuff (lost items/shadows lurking behind/knocking/slamming/whistle/screaming/police siren/weird noises/laughing sounds/lights flickering/etc)
 
