@@ -3,6 +3,10 @@ This is a complete documentation of the making of the horror game "Killer Invasi
 The game will be made using Unity & C#
 The game will be published on Itch.io & Gamejolt & possibly Steam
 
+### 2024-03-28:
+* Added a website bar.
+* Duplicated website bar 100X.
+
 ### 2024-03-27:
 * Added Scrollbar for Shadow Market.
 * Balance (Money) Added.
