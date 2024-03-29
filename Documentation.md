@@ -5,6 +5,7 @@
 
 ### 2024-03-29:
 * Changed Notes Icon.
+* Added Sound Ambiance.
 
 ### 2024-03-28:
 * Added a website bar.
