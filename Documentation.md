@@ -1,4 +1,4 @@
-# Base
+# Documentation
 * This is a complete documentation of the making of the horror game "Killer Invasion".
 * The game will be made using Unity & C#
 * The game will hopefully be published on Steam & Itch.io.
@@ -8,6 +8,7 @@
 * Added Sound Ambiance.
 * Updated Time Script.
 * Renamed Time Script to GameTimeUpdater.
+* Fixed Notes Visuals.
 
 ### 2024-03-28:
 * Added a website bar.
