@@ -7,6 +7,7 @@
 * Changed Notes Icon.
 * Added Sound Ambiance.
 * Updated Time Script.
+* Renamed Time Script to GameTimeUpdater.
 
 ### 2024-03-28:
 * Added a website bar.
