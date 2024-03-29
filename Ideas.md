@@ -37,11 +37,14 @@ II. Mechanics
 3. Black market:
 
 4. Killer
--  
+-  The more the player stays on the dark web, different individuals might start sending text messages to the player asking for favors or sending threats.
+-  Various outcomes will lead to the killer coming to the player's house to attack.
+-  Each killer will have a different model and a different voice. But they all will have the same attack mechanic.
 - The killers might appear in front of the door/outside the window/etc.
 - The player can use sound cues (e.g. footsteps in the garden) or visual cues (e.g. door peephole, window blinds) to detect nearby killers.
-- Players can hide in the closet, washroom, or under the bed.
-- Turn off all the lights before hiding.
+- Players can hide in the closet or under the bed.
+- Keeping all lights on = 100% Player Dies. 3 Lights on = 60% Player Dies. 2 Lights on = 10% Player Dies. 1 Light on = 0% Player Dies, Killer takes a long time to leave (5-10 minutes). 0 Lights on = 0% Player Dies, the killer will leave the house pretty quickly (around 2-3 minutes).
+  
 5. Police:
 - Sound cues: police siren
 - If you hear police sirens but there is nothing outside the window --> Hallucination. If you hear police sirens and there are police cars outside the window --> The police are coming --> Log out of the dark web, turn off all the lights, and hide.
@@ -50,7 +53,7 @@ II. Mechanics
 7. Gamble:
 - If you are really desperate to get money, you can gamble online. You can either do blackjack or roulette.
 - The blackjack will be rigged to always make the player loser.
-- The roulette game has a 20% of making the player win.
+- The roulette game has a 25% of making the player win.
 8. Lights:
 - The player has to keep the light open (most of the time) because if the house is too dark, the insanity level will go up much faster.
 - There are 4 light switches in the house. When you hide from the killer/police, you have to turn off all the lights. The more lights are turned on, the higher the chance you will get caught in your hiding place.
@@ -64,6 +67,3 @@ III. Roles
 6. Menu and Setting Design (We will work on this later)
    
 IV. Stages (have to work on)
-
-V. Unsolved questions:
-- What should we do to make hiding from cops and killers different?
