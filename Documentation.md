@@ -6,6 +6,7 @@
 ### 2024-03-29:
 * Changed Notes Icon.
 * Added Sound Ambiance.
+* Updated Time Script.
 
 ### 2024-03-28:
 * Added a website bar.
