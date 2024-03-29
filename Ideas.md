@@ -35,8 +35,9 @@ II. Mechanics
 - Value 4 = Instant Exposure Increase. (Will start from the Red Skull.)
   
 3. Black market:
-- 
-5. Killer
+
+4. Killer
+-  
 - The killers might appear in front of the door/outside the window/etc.
 - The player can use sound cues (e.g. footsteps in the garden) or visual cues (e.g. door peephole, window blinds) to detect nearby killers.
 - Players can hide in the closet, washroom, or under the bed.
