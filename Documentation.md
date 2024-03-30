@@ -3,6 +3,9 @@
 * The game will be made using Unity & C#
 * The game will hopefully be published on Steam & Itch.io.
 
+### 2024-03-30:
+* Added Messages Window.
+
 ### 2024-03-29:
 * Changed Notes Icon.
 * Added Sound Ambiance.
