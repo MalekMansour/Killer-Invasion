@@ -10,6 +10,9 @@
 * Updated MaximizeButton Script.
 * Updated Values for Maxmimize Button.
 * Updated IconOpener Script.
+* Icons now bring Windows to the front.
+* Updated InteractableObject Script.
+* Changed Crosshair size Script.
 
 ### 2024-03-29:
 * Changed Notes Icon.
