@@ -8,6 +8,7 @@
 * Added Contact Container.
 * Added Maxime Button for Messages.
 * Updated MaximizeButton Script.
+* Updated Values for Maxmimize Button.
 
 ### 2024-03-29:
 * Changed Notes Icon.
