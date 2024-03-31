@@ -7,12 +7,14 @@ public class InteractableObject : MonoBehaviour
     public string interactText = "Interact";
     public TextMeshProUGUI interactTextUI;
     public float interactionRadius = 5f;
-
+    public GameObject crosshair; 
     private static List<InteractableObject> interactableObjects = new List<InteractableObject>();
+    private Vector3 originalCrosshairScale; 
 
     private void OnEnable()
     {
         interactableObjects.Add(this);
+        originalCrosshairScale = crosshair.transform.localScale; 
     }
 
     private void OnDisable()
@@ -40,7 +42,7 @@ public class InteractableObject : MonoBehaviour
             {
                 closestDistance = distanceToPlayer;
                 closestObject = obj;
-                break; 
+                break;
             }
         }
 
@@ -48,10 +50,12 @@ public class InteractableObject : MonoBehaviour
         {
             interactTextUI.gameObject.SetActive(true);
             interactTextUI.text = closestObject.interactText;
+            crosshair.transform.localScale = new Vector3(1.8f, 1.8f, 1.8f);
         }
         else
         {
             interactTextUI.gameObject.SetActive(false);
+            crosshair.transform.localScale = originalCrosshairScale;
         }
     }
 }
