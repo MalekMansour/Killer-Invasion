@@ -35,8 +35,14 @@ II. Mechanics
 - Value 4 = Instant Exposure Increase. (Will start from the Red Skull.)
   
 3. Black market:
+   - CryptoDrive V3 (5)
+   - VPN (15)
+   - AirCrack Wifi Cracker (15)
+   - HomeSensor Alert (95)
+   - VPN Pro (125)
+   - Anonymous Tracker (160)
 
-4. Killer
+5. Killer
 -  The more the player stays on the dark web, different individuals might start sending text messages to the player asking for favors or sending threats.
 -  Various outcomes will lead to the killer coming to the player's house to attack.
 -  Each killer will have a different model and a different voice. But they all will have the same attack mechanic.
