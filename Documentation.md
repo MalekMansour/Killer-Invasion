@@ -6,6 +6,7 @@
 ### 2024-03-30:
 * Added Messages Window.
 * Added Contact Container.
+* Added Maxime Button for Messages.
 
 ### 2024-03-29:
 * Changed Notes Icon.
