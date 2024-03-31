@@ -13,6 +13,7 @@
 * Icons now bring Windows to the front.
 * Updated InteractableObject Script.
 * Changed Crosshair size Script.
+* Upgraded Notes App to be more smooth.
 
 ### 2024-03-29:
 * Changed Notes Icon.
