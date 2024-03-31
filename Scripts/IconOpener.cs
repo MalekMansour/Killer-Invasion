@@ -8,7 +8,9 @@ public class IconOpener : MonoBehaviour
     {
         if (browserCanvas != null)
         {
-            browserCanvas.SetActive(true); 
+            browserCanvas.SetActive(true);
+
+            browserCanvas.transform.SetAsLastSibling(); 
         }
     }
 }
