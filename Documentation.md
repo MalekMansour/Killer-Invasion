@@ -3,6 +3,9 @@
 * The game will be made using Unity & C#
 * The game will hopefully be published on Steam & Itch.io.
 
+### 2024-03-31:
+* Created Screen Cube Folder.
+
 ### 2024-03-30:
 * Added Messages Window.
 * Added Contact Container.
