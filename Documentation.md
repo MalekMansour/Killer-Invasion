@@ -4,7 +4,7 @@
 * The game will hopefully be published on Steam & Itch.io.
 
 ### 2024-03-31:
-* TV Screen Added.
+* Buy Button Added in the Shadow Market.
 
 ### 2024-03-30:
 * Added Messages Window.
