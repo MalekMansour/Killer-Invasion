@@ -3,7 +3,8 @@ using UnityEngine.UI;
 
 public class MaximizeButton : MonoBehaviour
 {
-    public Canvas targetCanvas; 
+    public Canvas targetCanvas;
+    public Vector3 newScale = new Vector3(5.12f, 5.12f, 1.1f); 
     private bool isMaximized = false;
     private Vector3 originalScale;
     private Vector3 originalPosition;
@@ -22,9 +23,9 @@ public class MaximizeButton : MonoBehaviour
 
         if (isMaximized)
         {
-            targetCanvas.transform.localScale = new Vector3(0.165f, 0.285082f, 0.5334999f);
+            targetCanvas.transform.localScale = newScale;
             browserWindow.enabled = false;
-            targetCanvas.transform.localPosition = new Vector3(originalPosition.x, 11.3f, originalPosition.z);
+            targetCanvas.transform.localPosition = new Vector3(originalPosition.x, originalPosition.y, originalPosition.z);
         }
         else
         {
@@ -34,4 +35,3 @@ public class MaximizeButton : MonoBehaviour
         }
     }
 }
-
