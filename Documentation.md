@@ -7,6 +7,7 @@
 * Added Description for CryptoDrive V3.
 * Added Description for WestVPN Lite.
 * Added Description for AirCrack Wifi Cracker.
+* Added Description for CryptoDrive V4.
 
 ### 2024-03-31:
 * Buy Button Added in the Shadow Market.
