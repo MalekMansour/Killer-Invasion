@@ -5,6 +5,8 @@
 
 ### 2024-03-31:
 * Buy Button Added in the Shadow Market.
+* Shadow Market Prices updated.
+* Video Folder Created.
 
 ### 2024-03-30:
 * Added Messages Window.
