@@ -3,6 +3,9 @@
 * The game will be made using Unity & C#
 * The game will hopefully be published on Steam & Itch.io.
 
+### 2024-04-01:
+* Added Description for CryptoDrive V3
+
 ### 2024-03-31:
 * Buy Button Added in the Shadow Market.
 * Shadow Market Prices updated.
