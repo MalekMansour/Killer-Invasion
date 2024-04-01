@@ -39,10 +39,10 @@ II. Mechanics
    - VPN 
    - AirCrack Wifi Cracker
    - CyrptoDrive V4
-   - HomeSensor Alert 
-   - VPN Pro 
-   - Anonymous Tracker
-   - RedHacker
+   - HomeSensor Alert (55)
+   - VPN Pro (120)
+   - Anonymous Tracker (185)
+   - RedHacker (225)
 
 5. Killer
 -  The more the player stays on the dark web, different individuals might start sending text messages to the player asking for favors or sending threats.
