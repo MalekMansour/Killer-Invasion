@@ -31,18 +31,18 @@ II. Mechanics
 - Value 0 = no exposure increase.
 - Value 1 = Slow Exposure Increase. (The longer you stay on the website, the more the exposure level increases.) 
 - Value 2 = Fast Exposure Increase. (Faster Increase.)
-- Value 3 = Semi-Instant Exposure Increase. (Will start from Yellow Skull and slowly go up.)
+- Value 3 = Semi-Instant Exposure Increase. (Will start from Yellow Skull and slowly go up and turn into red.)
 - Value 4 = Instant Exposure Increase. (Will start from the Red Skull.)
   
 3. Black market:
-   - CryptoDrive V3 
-   - VPN 
-   - AirCrack Wifi Cracker
-   - CyrptoDrive V4
-   - HomeSensor Alert (55)
-   - VPN Pro (120)
-   - Anonymous Tracker (185)
-   - RedHacker (225)
+   - CryptoDrive V3 (10 Ⱡ)
+   - VPN (25 Ⱡ)
+   - AirCrack Wifi Cracker (25 Ⱡ)
+   - CyrptoDrive V4 (55 Ⱡ)
+   - HomeSensor Alert (75 Ⱡ)
+   - VPN Pro (120 Ⱡ)
+   - Anonymous Tracker (185 Ⱡ)
+   - RedHacker (225 Ⱡ)
 
 5. Killer
 -  The more the player stays on the dark web, different individuals might start sending text messages to the player asking for favors or sending threats.
