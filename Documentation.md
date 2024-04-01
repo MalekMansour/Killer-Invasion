@@ -4,7 +4,8 @@
 * The game will hopefully be published on Steam & Itch.io.
 
 ### 2024-04-01:
-* Added Description for CryptoDrive V3
+* Added Description for CryptoDrive V3.
+* Added Description for WestVPN Lite.
 
 ### 2024-03-31:
 * Buy Button Added in the Shadow Market.
