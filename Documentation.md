@@ -11,6 +11,7 @@
 * Added Description for HomeSensor Alert.
 * Added Description for WestVPN Pro.
 * Added Description for Anonymouse.
+* Added Description for RedHacker.
 
 ### 2024-03-31:
 * Buy Button Added in the Shadow Market.
