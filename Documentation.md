@@ -6,6 +6,7 @@
 ### 2024-04-02:
 * Added a stamina wheel.
 * Created Stamina script.
+* Stamina Script attatched to Player Object.
 
 ### 2024-04-01:
 * Added Description for CryptoDrive V3.
