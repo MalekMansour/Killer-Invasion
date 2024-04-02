@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!isMovementLocked)
         {
-            currentSpeed = Input.GetKey(KeyCode.LeftShift) && stamina.currentStamina > 0 ? sprintSpeed : moveSpeed;
+            currentSpeed = Input.GetKey(KeyCode.LeftShift) && stamina.GetCurrentStamina() > 0 ? sprintSpeed : moveSpeed;
 
             float horizontalInput = Input.GetAxis("Horizontal");
             float verticalInput = Input.GetAxis("Vertical");
