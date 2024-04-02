@@ -3,34 +3,56 @@ using UnityEngine.UI;
 
 public class Stamina : MonoBehaviour
 {
-    public Slider staminaSlider;
-    public float maxStamina = 1f;
-    public float currentStamina;
-    public float staminaDecreaseRate = 0.1f;
-    public float staminaIncreaseRate = 0.05f;
+    public float maxStamina = 5f;
+    public float sprintSpeed = 8f;
+    public Slider staminaBar;
+    private float currentStamina; // Private field to store current stamina
 
-    void Start()
+    private bool isSprinting = false;
+
+    private void Start()
     {
         currentStamina = maxStamina;
+        UpdateStaminaBar();
     }
 
-    void Update()
+    public float GetCurrentStamina()
     {
-        if (Input.GetKey(KeyCode.LeftShift) && currentStamina > 0)
+        return currentStamina;
+    }
+
+    private void Update()
+    {
+        if (isSprinting)
         {
-            currentStamina -= staminaDecreaseRate * Time.deltaTime;
+            currentStamina -= Time.deltaTime;
             UpdateStaminaBar();
+
+            if (currentStamina <= 0f)
+            {
+                currentStamina = 0f;
+                isSprinting = false;
+            }
         }
         else if (currentStamina < maxStamina)
         {
-            currentStamina += staminaIncreaseRate * Time.deltaTime;
+            currentStamina += Time.deltaTime * 0.5f; // Stamina regen rate
             UpdateStaminaBar();
+        }
+
+        if (Input.GetKey(KeyCode.LeftShift) && !isSprinting && currentStamina >= 0.1f)
+        {
+            StartSprint();
         }
     }
 
-    void UpdateStaminaBar()
+    private void StartSprint()
     {
-        currentStamina = Mathf.Clamp(currentStamina, 0f, maxStamina);
-        staminaSlider.value = currentStamina;
+        isSprinting = true;
+    }
+
+    private void UpdateStaminaBar()
+    {
+        staminaBar.value = currentStamina / maxStamina;
     }
 }
