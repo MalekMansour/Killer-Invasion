@@ -8,6 +8,7 @@
 * Created Stamina script.
 * Stamina Script attatched to Player Object.
 * Stamina Script updated.
+* PlayerMovement Script updated.
 
 ### 2024-04-01:
 * Added Description for CryptoDrive V3.
