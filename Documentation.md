@@ -3,6 +3,9 @@
 * The game will be made using Unity & C#
 * The game will hopefully be published on Steam & Itch.io.
 
+### 2024-04-02:
+* Added a stamina wheel.
+
 ### 2024-04-01:
 * Added Description for CryptoDrive V3.
 * Added Description for WestVPN Lite.
