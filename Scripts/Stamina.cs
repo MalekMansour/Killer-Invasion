@@ -1,44 +1,58 @@
 using UnityEngine;
+using UnityEngine.UI;
 
-public class PlayerMovement : MonoBehaviour
+public class Stamina : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    public float sprintSpeed = 8f;
-    private float currentSpeed;
-    private bool isMovementLocked = false;
-    private Stamina stamina; // Reference to the Stamina script
+    public Slider staminaBar;
+    public float maxStamina = 1f;
+    public float minStamina = 0.05f; // Minimum stamina value
+    public float staminaDecreaseRate = 0.1f;
+    public float staminaIncreaseRate = 0.2f;
+
+    private float currentStamina;
 
     void Start()
     {
-        stamina = GetComponent<Stamina>(); // Assuming Stamina script is on the same GameObject
+        currentStamina = maxStamina;
+        UpdateStaminaBar();
     }
 
     void Update()
     {
-        if (!isMovementLocked)
+        if (currentStamina > 0)
         {
-            currentSpeed = Input.GetKey(KeyCode.LeftShift) && stamina.currentStamina > 0 ? sprintSpeed : moveSpeed;
-
-            float horizontalInput = Input.GetAxis("Horizontal");
-            float verticalInput = Input.GetAxis("Vertical");
-            Vector3 movementDirection = new Vector3(horizontalInput, 0f, verticalInput).normalized;
-
-            transform.Translate(movementDirection * currentSpeed * Time.deltaTime);
+            currentStamina -= staminaDecreaseRate * Time.deltaTime;
+            currentStamina = Mathf.Clamp(currentStamina, minStamina, maxStamina);
+            UpdateStaminaBar();
         }
     }
 
-    public void SetMovementLocked(bool shouldLock)
+    void UpdateStaminaBar()
     {
-        isMovementLocked = shouldLock;
+        staminaBar.value = currentStamina / maxStamina;
+    }
 
-        if (shouldLock)
-        {
-            Rigidbody rb = GetComponent<Rigidbody>();
-            if (rb != null)
-            {
-                rb.velocity = Vector3.zero;
-                rb.angularVelocity = Vector3.zero;
-            }
-        }
+    public void IncreaseStamina(float amount)
+    {
+        currentStamina += amount;
+        currentStamina = Mathf.Clamp(currentStamina, minStamina, maxStamina);
+        UpdateStaminaBar();
+    }
+
+    public void DecreaseStamina(float amount)
+    {
+        currentStamina -= amount;
+        currentStamina = Mathf.Clamp(currentStamina, minStamina, maxStamina);
+        UpdateStaminaBar();
+    }
+
+    public bool CanSprint()
+    {
+        return currentStamina > minStamina;
+    }
+
+    public void ShowStaminaBar(bool show)
+    {
+        staminaBar.gameObject.SetActive(show);
     }
 }
