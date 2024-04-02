@@ -3,56 +3,53 @@ using UnityEngine.UI;
 
 public class Stamina : MonoBehaviour
 {
-    public float maxStamina = 5f;
-    public float sprintSpeed = 8f;
-    public Slider staminaBar;
-    private float currentStamina; // Private field to store current stamina
+    public Slider staminaSlider;
+    public float maxStamina = 1f;
+    public float sprintStaminaCost = 0.1f;
+    public float staminaRegenRate = 0.2f;
+    public float CurrentStamina { get; private set; } // Make currentStamina accessible
 
     private bool isSprinting = false;
 
-    private void Start()
+    void Start()
     {
-        currentStamina = maxStamina;
-        UpdateStaminaBar();
+        CurrentStamina = maxStamina; // Initialize CurrentStamina
+        UpdateStaminaUI();
     }
 
-    public float GetCurrentStamina()
-    {
-        return currentStamina;
-    }
-
-    private void Update()
+    void Update()
     {
         if (isSprinting)
         {
-            currentStamina -= Time.deltaTime;
-            UpdateStaminaBar();
-
-            if (currentStamina <= 0f)
-            {
-                currentStamina = 0f;
-                isSprinting = false;
-            }
+            CurrentStamina -= sprintStaminaCost * Time.deltaTime;
+            UpdateStaminaUI();
         }
-        else if (currentStamina < maxStamina)
+        else if (CurrentStamina < maxStamina)
         {
-            currentStamina += Time.deltaTime * 0.5f; // Stamina regen rate
-            UpdateStaminaBar();
+            CurrentStamina += staminaRegenRate * Time.deltaTime;
+            CurrentStamina = Mathf.Clamp(CurrentStamina, 0f, maxStamina);
+            UpdateStaminaUI();
         }
 
-        if (Input.GetKey(KeyCode.LeftShift) && !isSprinting && currentStamina >= 0.1f)
+        if (CurrentStamina <= 0f)
         {
-            StartSprint();
+            isSprinting = false;
         }
     }
 
-    private void StartSprint()
+    public void StartSprinting()
     {
         isSprinting = true;
     }
 
-    private void UpdateStaminaBar()
+    public void StopSprinting()
     {
-        staminaBar.value = currentStamina / maxStamina;
+        isSprinting = false;
+    }
+
+    void UpdateStaminaUI()
+    {
+        staminaSlider.value = CurrentStamina / maxStamina;
+        staminaSlider.gameObject.SetActive(isSprinting || CurrentStamina < maxStamina);
     }
 }
