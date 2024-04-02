@@ -1,62 +1,44 @@
 using UnityEngine;
-using UnityEngine.UI;
 
-public class Stamina : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
-    public Slider staminaBar; // Reference to the stamina bar UI slider
-    public float maxStamina = 1f;
+    public float moveSpeed = 5f;
     public float sprintSpeed = 8f;
-    public float staminaConsumptionRate = 0.5f; // Adjust as needed
-
-    private float currentStamina;
+    private float currentSpeed;
+    private bool isMovementLocked = false;
+    private Stamina stamina; // Reference to the Stamina script
 
     void Start()
     {
-        currentStamina = maxStamina;
-        UpdateStaminaBar();
+        stamina = GetComponent<Stamina>(); // Assuming Stamina script is on the same GameObject
     }
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftShift) && currentStamina > 0)
+        if (!isMovementLocked)
         {
-            // Sprinting behavior
-            MovePlayer(sprintSpeed);
-            currentStamina -= staminaConsumptionRate * Time.deltaTime;
-            UpdateStaminaBar();
+            currentSpeed = Input.GetKey(KeyCode.LeftShift) && stamina.currentStamina > 0 ? sprintSpeed : moveSpeed;
+
+            float horizontalInput = Input.GetAxis("Horizontal");
+            float verticalInput = Input.GetAxis("Vertical");
+            Vector3 movementDirection = new Vector3(horizontalInput, 0f, verticalInput).normalized;
+
+            transform.Translate(movementDirection * currentSpeed * Time.deltaTime);
         }
-        else
+    }
+
+    public void SetMovementLocked(bool shouldLock)
+    {
+        isMovementLocked = shouldLock;
+
+        if (shouldLock)
         {
-            // Normal movement
-            MovePlayer(moveSpeed);
-            if (currentStamina < maxStamina)
+            Rigidbody rb = GetComponent<Rigidbody>();
+            if (rb != null)
             {
-                currentStamina += Time.deltaTime; // Stamina regeneration
-                UpdateStaminaBar();
+                rb.velocity = Vector3.zero;
+                rb.angularVelocity = Vector3.zero;
             }
-        }
-
-        // Ensure stamina doesn't go below 0 or above max value
-        currentStamina = Mathf.Clamp(currentStamina, 0f, maxStamina);
-    }
-
-    void MovePlayer(float speed)
-    {
-        // Implement your player movement logic here
-    }
-
-    void UpdateStaminaBar()
-    {
-        if (currentStamina <= 0)
-        {
-            // Hide stamina bar when stamina is depleted
-            staminaBar.gameObject.SetActive(false);
-        }
-        else
-        {
-            // Show stamina bar when sprinting and stamina > 0
-            staminaBar.gameObject.SetActive(Input.GetKey(KeyCode.LeftShift));
-            staminaBar.value = currentStamina / maxStamina;
         }
     }
 }
