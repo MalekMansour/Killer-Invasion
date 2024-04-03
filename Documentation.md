@@ -9,6 +9,8 @@
 * Stamina Script attatched to Player Object.
 * Stamina Script updated.
 * PlayerMovement Script updated.
+* Changed Stamina wheel.
+* Changed size of taskbar 2 icons.
 
 ### 2024-04-01:
 * Added Description for CryptoDrive V3.
