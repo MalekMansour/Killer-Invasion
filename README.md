@@ -6,7 +6,5 @@ You would also have to defend yourself against various killers that might find y
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Q_05seOtb3g" frameborder="0" allowfullscreen></iframe>
 
-
-
 ![Screenshot](screenshots/KI4.png)
 
