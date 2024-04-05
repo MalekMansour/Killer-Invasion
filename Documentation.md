@@ -5,6 +5,7 @@
 
 ### 2024-04-05:
 * Shadow Market Price Change.
+* PauseButton Script Updated.
 
 ### 2024-04-04:
 * Created Pause canva.
