@@ -41,8 +41,8 @@ II. Mechanics
    - CyrptoDrive V4 (55 Ⱡ)
    - HomeSensor Alert (75 Ⱡ)
    - VPN Pro (120 Ⱡ)
-   - Anonymous Tracker (185 Ⱡ)
-   - RedHacker (225 Ⱡ)
+   - Anonymous Tracker (150 Ⱡ)
+   - RedHacker (185 Ⱡ)
 
 5. Killer
 -  The more the player stays on the dark web, different individuals might start sending text messages to the player asking for favors or sending threats.
