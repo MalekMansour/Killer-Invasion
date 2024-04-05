@@ -6,12 +6,26 @@ public class PauseButton : MonoBehaviour
     public GameObject flashlight;
 
     private bool isPaused = false;
+    private bool isMouseLocked = true;
+
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked; // Lock the cursor at the start
+        Cursor.visible = false; // Hide the cursor
+    }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             TogglePause();
+        }
+
+        // Check for Alt key press to toggle mouse lock
+        if (Input.GetKeyDown(KeyCode.LeftAlt))
+        {
+            isMouseLocked = !isMouseLocked;
+            UpdateMouseLock();
         }
     }
 
@@ -30,8 +44,8 @@ public class PauseButton : MonoBehaviour
                 flashlight.SetActive(false);
             }
 
-            // Pause other game systems or functions
-            // For example, you might call a function like PauseGameSystems() here
+            Cursor.lockState = CursorLockMode.None; // Unlock the cursor
+            Cursor.visible = true; // Show the cursor
         }
         else
         {
@@ -44,8 +58,21 @@ public class PauseButton : MonoBehaviour
                 flashlight.SetActive(true);
             }
 
-            // Resume other game systems or functions
-            // For example, you might call a function like ResumeGameSystems() here
+            UpdateMouseLock(); // Update mouse lock based on the current state
+        }
+    }
+
+    void UpdateMouseLock()
+    {
+        if (isMouseLocked)
+        {
+            Cursor.lockState = CursorLockMode.Locked; // Lock the cursor
+            Cursor.visible = false; // Hide the cursor
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None; // Unlock the cursor
+            Cursor.visible = true; // Show the cursor
         }
     }
 }
