@@ -5,6 +5,7 @@
 
 ### 2024-04-04:
 * Created Pause canva.
+* PauseButton Script created.
 
 ### 2024-04-02:
 * Added a stamina wheel.
