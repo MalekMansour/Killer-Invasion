@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class PauseButton : MonoBehaviour
 {
-    public GameObject pauseMenu; // Reference to the pause menu canvas
-
+    public GameObject pauseMenu; // Reference to the pause canvas menu
     private bool isPaused = false;
 
     void Update()
@@ -20,14 +19,13 @@ public class PauseButton : MonoBehaviour
 
         if (isPaused)
         {
-            Time.timeScale = 0f; // Freeze time
-            pauseMenu.SetActive(true); // Show pause menu
+            Time.timeScale = 0f; // Freeze all scenes
+            pauseMenu.SetActive(true); // Activate the pause canvas menu
         }
         else
         {
-            Time.timeScale = 1f; // Unfreeze time
-            pauseMenu.SetActive(false); // Hide pause menu
+            Time.timeScale = 1f; // Unfreeze all scenes
+            pauseMenu.SetActive(false); // Deactivate the pause canvas menu
         }
     }
 }
-
