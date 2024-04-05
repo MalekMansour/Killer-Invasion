@@ -3,6 +3,9 @@
 * The game will be made using Unity & C#
 * The game will hopefully be published on Steam & Itch.io.
 
+### 2024-04-05:
+* Shadow Market Price Change.
+
 ### 2024-04-04:
 * Created Pause canva.
 * PauseButton Script created.
