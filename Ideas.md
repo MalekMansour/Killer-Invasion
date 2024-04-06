@@ -60,8 +60,9 @@ II. Mechanics
   - Cars/motorbikes driving by, owl, dog barking, etc.
 7. Gamble:
 - If you are really desperate to get money, you can gamble online. You can either do blackjack or roulette.
-- The blackjack will be rigged to always make the player loser.
-- The roulette game has a 25% of making the player win.
+- The more the player bets, the less chance he has of winning.
+- The website will only open later on in the game.
+- If he has the player has a winning streak, it will stop him from winning. 
 8. Lights:
 - The player has to keep the light open (most of the time) because if the house is too dark, the insanity level will go up much faster.
 - There are 4 light switches in the house. When you hide from the killer/police, you have to turn off all the lights. The more lights are turned on, the higher the chance you will get caught in your hiding place.
