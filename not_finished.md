@@ -1,1 +1,1 @@
-* Stamina Bar Mechanic.
+* Stamina Bar Mechanic. - Might get removed.
