@@ -57,7 +57,7 @@ II. Mechanics
 - Sound cues: police siren
 - If you hear police sirens but there is nothing outside the window --> Hallucination. If you hear police sirens and there are police cars outside the window --> The police are coming --> Log out of the dark web, turn off all the lights, and hide.
 6. Ambience:
-  - Cars/motorbikes driving by, owl, dog barking, etc.
+  - Cars driving by, owl, dog barking, etc.
 7. Gamble:
 - If you are really desperate to get money, you can gamble online. You can either do blackjack or roulette.
 - The more the player bets, the less chance he has of winning.
