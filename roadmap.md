@@ -1,4 +1,5 @@
 #### Stage 1:
+* Models: Bed, Closet, Washing Machine.
 
 #### Stage 2:
 
