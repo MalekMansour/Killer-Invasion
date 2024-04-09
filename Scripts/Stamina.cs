@@ -21,15 +21,12 @@ public class Stamina : MonoBehaviour
     {
         if (currentStamina <= 0)
         {
-            // Disable sprinting and lock movement
             GetComponent<PlayerMovement>().SetMovementLocked(true);
         }
         else
         {
-            // Enable sprinting and unlock movement
             GetComponent<PlayerMovement>().SetMovementLocked(false);
 
-            // Decrease stamina while sprinting
             if (Input.GetKey(KeyCode.LeftShift))
             {
                 if (currentStamina > 0.01f)
