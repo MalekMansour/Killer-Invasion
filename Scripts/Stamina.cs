@@ -3,13 +3,13 @@ using UnityEngine.UI;
 
 public class Stamina : MonoBehaviour
 {
-    public Slider staminaBar; // Reference to the Stamina Bar UI Slider
+    public Slider staminaBar; 
     public float maxStamina = 1f; // Maximum stamina value
     public float sprintStaminaCost = 0.1f; // Stamina cost while sprinting
     public float staminaRegenRate = 0.2f; // Stamina regeneration rate per second
 
     [HideInInspector]
-    public float currentStamina; // Current stamina value
+    public float currentStamina; 
 
     private void Start()
     {
