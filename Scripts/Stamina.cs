@@ -36,14 +36,13 @@ public class Stamina : MonoBehaviour
 }
 else
 {
-    currentStamina = 0.01f; // Minimum stamina value
+    currentStamina = 0.01f; 
     UpdateStaminaBar();
 }
 
             }
             else
             {
-                // Regenerate stamina over time
                 if (currentStamina < maxStamina)
                 {
                     currentStamina += staminaRegenRate * Time.deltaTime;
