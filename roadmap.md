@@ -1,5 +1,6 @@
 #### Stage 1:
 * Models: Bed, Closet, Washing Machine.
+* Laptop: Website Layout.
 
 #### Stage 2:
 
