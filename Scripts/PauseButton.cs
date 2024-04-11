@@ -47,8 +47,8 @@ public class PauseButton : MonoBehaviour
         }
         else
         {
-            Time.timeScale = 1f; // Resume time
-            pauseCanvas.SetActive(false); // Hide pause canvas
+            Time.timeScale = 1f; 
+            pauseCanvas.SetActive(false); 
 
             if (flashlight != null)
             {
