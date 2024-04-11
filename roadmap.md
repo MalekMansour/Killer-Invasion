@@ -1,4 +1,4 @@
-#### Stage 1: 2 weeks break. 
+#### Stage 1: 2 weeks break. Progress back on April 28.
 * Models: Bed, Closet, Washing Machine.
 * Laptop: Website Layout. Messages Layout
 
