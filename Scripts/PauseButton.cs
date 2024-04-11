@@ -34,7 +34,7 @@ public class PauseButton : MonoBehaviour
 
         if (isPaused)
         {
-            Time.timeScale = 0f; // Pause time
+            Time.timeScale = 0f; 
             pauseCanvas.SetActive(true); // Show pause canvas
 
             // Disable flashlight or other gameplay elements
