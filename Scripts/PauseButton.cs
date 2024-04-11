@@ -35,16 +35,15 @@ public class PauseButton : MonoBehaviour
         if (isPaused)
         {
             Time.timeScale = 0f; 
-            pauseCanvas.SetActive(true); // Show pause canvas
+            pauseCanvas.SetActive(true); 
 
-            // Disable flashlight or other gameplay elements
             if (flashlight != null)
             {
                 flashlight.SetActive(false);
             }
 
-            Cursor.lockState = CursorLockMode.None; // Unlock the cursor
-            Cursor.visible = true; // Show the cursor
+            Cursor.lockState = CursorLockMode.None; 
+            Cursor.visible = true; 
         }
         else
         {
