@@ -70,8 +70,8 @@ public class PauseButton : MonoBehaviour
         }
         else
         {
-            Cursor.lockState = CursorLockMode.None; // Unlock the cursor
-            Cursor.visible = true; // Show the cursor
+            Cursor.lockState = CursorLockMode.None; 
+            Cursor.visible = true; 
         }
     }
 }
