@@ -1,4 +1,4 @@
-#### Stage 1:
+#### Stage 1: 2 weeks break.
 * Models: Bed, Closet, Washing Machine.
 * Laptop: Website Layout.
 
