@@ -10,8 +10,8 @@ public class PauseButton : MonoBehaviour
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked; // Lock the cursor at the start
-        Cursor.visible = false; // Hide the cursor
+        Cursor.lockState = CursorLockMode.Locked; 
+        Cursor.visible = false; 
     }
 
     void Update()
