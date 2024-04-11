@@ -21,7 +21,6 @@ public class PauseButton : MonoBehaviour
             TogglePause();
         }
 
-        // Check for Alt key press to toggle mouse lock
         if (Input.GetKeyDown(KeyCode.LeftAlt))
         {
             isMouseLocked = !isMouseLocked;
