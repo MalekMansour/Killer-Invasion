@@ -57,7 +57,7 @@ public class PauseButton : MonoBehaviour
                 flashlight.SetActive(true);
             }
 
-            UpdateMouseLock(); // Update mouse lock based on the current state
+            UpdateMouseLock(); 
         }
     }
 
@@ -65,8 +65,8 @@ public class PauseButton : MonoBehaviour
     {
         if (isMouseLocked)
         {
-            Cursor.lockState = CursorLockMode.Locked; // Lock the cursor
-            Cursor.visible = false; // Hide the cursor
+            Cursor.lockState = CursorLockMode.Locked; 
+            Cursor.visible = false; 
         }
         else
         {
