@@ -6,7 +6,7 @@ public class GameTimeUpdater : MonoBehaviour
     public TextMeshProUGUI timeText;
     private float gameTimeInSeconds = 0f;
     private float realTimeInSeconds = 0f;
-    private float gameTimeMultiplier = 2f; // 1 minute in the game = 30 seconds in real life
+    private float gameTimeMultiplier = 2f; 
     private int hours = 0;
     private int minutes = 0;
     private bool isAM = true;
