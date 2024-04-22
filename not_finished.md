@@ -4,3 +4,4 @@
 * Website Template
 * Bed Model
 * Door Model
+* Washing Machine Model
