@@ -5,6 +5,9 @@
 
 ### BREAK DONE. DEVELOPEMENT IS BACK IN PROGRESS.
 
+### 2024-05-01:
+* ResumeButton Script created.
+
 ### 2024-04-05:
 * Shadow Market Price Change.
 * PauseButton Script Updated.
