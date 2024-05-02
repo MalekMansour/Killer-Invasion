@@ -7,6 +7,7 @@
 
 ### 2024-05-01:
 * ResumeButton Script created.
+* ResumeButton Script updated.
 
 ### 2024-04-05:
 * Shadow Market Price Change.
