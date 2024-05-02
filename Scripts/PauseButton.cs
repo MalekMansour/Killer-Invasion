@@ -47,8 +47,8 @@ public class PauseButton : MonoBehaviour
         }
         else
         {
-            Time.timeScale = 1f; 
-            pauseCanvas.SetActive(false); 
+            Time.timeScale = 1f;
+            pauseCanvas.SetActive(false);
 
             if (flashlight != null)
             {
@@ -61,15 +61,15 @@ public class PauseButton : MonoBehaviour
 
     void UpdateMouseLock()
     {
-        if (isMouseLocked)
+        if (isPaused || !isMouseLocked)
         {
-            Cursor.lockState = CursorLockMode.Locked; 
-            Cursor.visible = false; 
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true; 
         }
         else
         {
-            Cursor.lockState = CursorLockMode.None; 
-            Cursor.visible = true; 
+            Cursor.lockState = CursorLockMode.Locked; 
+            Cursor.visible = false; 
         }
     }
 }
