@@ -3,7 +3,7 @@
 * The game will be made using Unity & C#
 * The game will hopefully be published on Steam & Itch.io.
 
-### BREAK UNTIL April 28 due to Final COLLEGE Exams.
+### BREAK DONE. DEVELOPEMENT IS BACK IN PROGRESS.
 
 ### 2024-04-05:
 * Shadow Market Price Change.
