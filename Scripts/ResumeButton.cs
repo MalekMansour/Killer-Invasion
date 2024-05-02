@@ -5,11 +5,29 @@ public class ResumeButton : MonoBehaviour
     public GameObject pauseCanvas;
     public GameObject flashlight;
 
+    private bool isPaused = false;
     private bool isMouseLocked = true;
+
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked; 
+        Cursor.visible = false; 
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftAlt))
+        {
+            isMouseLocked = !isMouseLocked;
+            UpdateMouseLock();
+        }
+    }
 
     public void ResumeGame()
     {
-        Time.timeScale = 1f; 
+        isPaused = false;
+
+        Time.timeScale = 1f;
         pauseCanvas.SetActive(false); 
 
         if (flashlight != null)
@@ -29,9 +47,8 @@ public class ResumeButton : MonoBehaviour
         }
         else
         {
-            Cursor.lockState = CursorLockMode.None; 
+            Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true; 
         }
     }
 }
-
