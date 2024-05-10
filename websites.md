@@ -6,4 +6,4 @@ This file will be for websites ideas (in Killer Invasion)
 4. 9 Eyes (9 eyes opened, looking around, if the player clicks in the right order and closes all the eyes, he can access the website.)
 5. Radio Station (songs)
 6. Casino (gambling website w blackjack & roulette)
-7. 
+7. Spider Shop (You can buy different sorts of spiders)
