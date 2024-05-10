@@ -7,3 +7,5 @@ This file will be for websites ideas (in Killer Invasion)
 5. Radio Station (songs)
 6. Casino (gambling website w blackjack & roulette)
 7. Spider Shop (You can buy different sorts of spiders)
+8. The Beast (to enter, you need to find the code that is hidden somewhere random on another website)
+9. 
