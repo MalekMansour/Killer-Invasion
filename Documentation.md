@@ -3,8 +3,6 @@
 * The game will be made using Unity & C#
 * The game will hopefully be published on Steam & Itch.io.
 
-### BREAK DONE. DEVELOPEMENT IS BACK IN PROGRESS.
-
 ### 2024-05-01:
 * ResumeButton Script created.
 * ResumeButton Script updated.
