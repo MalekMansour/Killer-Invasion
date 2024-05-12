@@ -5,6 +5,7 @@
 
 ### 2025-05-12:
 * Task Bar moved.
+* Lighting changed.
 
 ### 2024-05-01:
 * ResumeButton Script created.
