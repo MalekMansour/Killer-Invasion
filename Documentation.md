@@ -3,6 +3,9 @@
 * The game will be made using Unity & C#
 * The game will hopefully be published on Steam & Itch.io.
 
+### 2025-05-12:
+* Task Bar moved.
+
 ### 2024-05-01:
 * ResumeButton Script created.
 * ResumeButton Script updated.
