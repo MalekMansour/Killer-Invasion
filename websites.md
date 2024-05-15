@@ -18,6 +18,6 @@ The ideas might be not be appropriate since it is a game based on the dark web.
 15. I Love Animals (Forum)
 16. Panties Shop (You can buy panties)
 17. Fake ID/Passport Shop 
-18. Special Doll Forum
-19. The Towers (Just a blog talking about towers)
+18. Special Dolls (Forum)
+19. The Towers (A blog talking about towers)
 20. 
