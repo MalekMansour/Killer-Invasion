@@ -22,3 +22,4 @@ The ideas might be not be appropriate since it is a game based on the dark web.
 19. The Towers (A blog talking about towers)
 20. Liver Shop (Buy Livers)
 21. 8-Bit Tulip Game
+22. Gore Supply (A Website where you can watch a bunch of gore videos every 1 hour)
