@@ -3,7 +3,7 @@ The ideas might be not be appropriate since it is a game based on the dark web.
 
 1. Drug Shop (Everything is out of stock)
 2. Gun Shop (You can buy 1 gun that will help the player win the 'true ending" but will lock you out of the 'escape ending')
-3. Doll Shop (You can buy dolls)
+3. SexDollPlayground (You can buy Dolls that ressemble people you know)
 4. 9 Eyes (9 eyes opened, looking around, if the player clicks in the right order and closes all the eyes, he can access the website.)
 5. Radio Station (Songs)
 6. Online Casino (Gambling website w blackjack & roulette)
