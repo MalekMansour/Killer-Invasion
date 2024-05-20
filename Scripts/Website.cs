@@ -1,9 +1,9 @@
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class Website : MonoBehaviour
 {
-    public InputField searchBar; // Reference to the search bar input field
+    public TMP_InputField searchBar; // Reference to the TextMeshPro InputField component
     public string urlPrefix = "https://www.thedarkwiki.com/redirect/main/666/"; // URL prefix
 
     private bool isToggledOn = false;
@@ -30,6 +30,13 @@ public class Website : MonoBehaviour
     public void ToggleWebsite(bool toggle)
     {
         isToggledOn = toggle;
+
+        if (isToggledOn)
+        {
+            // Generate a random URL when toggled on
+            string randomUrl = GenerateRandomUrl();
+            searchBar.text = randomUrl;
+        }
     }
 
     private string GenerateRandomUrl()
@@ -39,4 +46,3 @@ public class Website : MonoBehaviour
         return randomUrl;
     }
 }
-
