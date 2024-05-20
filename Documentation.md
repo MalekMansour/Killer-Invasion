@@ -3,7 +3,10 @@
 * The game will be made using Unity & C#
 * The game will hopefully be published on Steam & Itch.io.
 
-### 2025-05-12:
+### 2024-05-20:
+* Website0 Created
+
+### 2024-05-12:
 * Task Bar moved.
 * Lighting changed.
 
