@@ -16,9 +16,10 @@ The ideas might be not be appropriate since it is a game based on the dark web.
 13. WitchCraft Chat (A public chat room)
 14. Corpses For Sale (Shop)
 15. I Love Animals (Forum)
-16. Panties Shop (You can buy panties)
+16. Used Panties Shop (You can buy panties)
 17. Fake ID/Passport Shop 
 18. Special Dolls (Forum)
 19. Liver Shop (Buy Livers)
 20. 8-Bit Tulip Game
 21. Gore Supply (A Website where you can watch a bunch of gore videos every 1 hour)
+22. BDSM Shop
