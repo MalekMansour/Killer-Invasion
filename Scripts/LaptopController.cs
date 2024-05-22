@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class LaptopController : MonoBehaviour
 {
-    public Canvas laptopCanvas; 
-    public Transform playerTransform; 
-    public float interactionRadius = 3f; 
+    public Canvas laptopCanvas;
+    public Transform playerTransform;
+    public float interactionRadius = 3f;
 
-    private bool isLaptopOn = false; 
+    private bool isLaptopOn = false;
 
     private void Start()
     {
@@ -20,12 +20,12 @@ public class LaptopController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && isLaptopOn)
+        if (isLaptopOn && Input.GetMouseButtonDown(1)) 
         {
             CloseLaptop();
         }
 
-        if (Vector3.Distance(playerTransform.position, transform.position) <= interactionRadius && Input.GetMouseButtonDown(0) && !isLaptopOn)
+        if (Vector3.Distance(playerTransform.position, transform.position) <= interactionRadius && Input.GetMouseButtonDown(0) && !isLaptopOn) // Left-click to open laptop
         {
             OpenLaptop();
         }
@@ -55,4 +55,3 @@ public class LaptopController : MonoBehaviour
         isLaptopOn = false;
     }
 }
-
