@@ -24,3 +24,4 @@ The ideas might be not be appropriate since it is a game based on the dark web.
 21. Gore Supply (A Website where you can watch a bunch of gore videos every 1 hour)
 22. BDSM Shop
 23. I want to die (Depressed People Blog Journal)
+24. Satan Worship Blog
