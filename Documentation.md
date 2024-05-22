@@ -5,6 +5,7 @@
 
 ### 2024-05-21:
 * Website.cs Script Updated.
+* LaptopController.cs Script Updated.
 
 ### 2024-05-20:
 * Website0 Created.
