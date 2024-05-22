@@ -6,6 +6,7 @@
 ### 2024-05-21:
 * Website.cs Script Updated.
 * LaptopController.cs Script Updated.
+* Left Click to exit laptop instead of esc.
 
 ### 2024-05-20:
 * Website0 Created.
