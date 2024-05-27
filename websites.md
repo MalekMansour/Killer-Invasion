@@ -26,3 +26,4 @@ The ideas might be not be appropriate since it is a game based on the dark web.
 23. I want to die (Depressed People Blog Journal)
 24. Satan Worship Blog
 25. Free Money (NOT A SCAM)
+26. How to deal with depression. (Blog)
