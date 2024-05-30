@@ -18,7 +18,7 @@ The ideas might be not be appropriate since it is a game based on the dark web.
 15. 
 16. Used Panties Shop (You can buy panties)
 17. Fake ID/Passport Shop 
-18. 
+18. White Faced Screamer (Jumpscare Website)
 19. Liver Shop (Buy Livers)
 20. 8-Bit Tulip Game
 21. Gore Supply (A Website where you can watch a bunch of gore videos every 1 hour)
