@@ -6,7 +6,7 @@ The ideas might be not be appropriate since it is a game based on the dark web.
 3. SexDollPlayground (You can buy Dolls that ressemble people you know)
 4. 9 Eyes (9 eyes opened, looking around, if the player clicks in the right order and closes all the eyes, he can access the website.)
 5. Radio Station (Songs) 
-6. Online Casino (Gambling website w blackjack & roulette)
+6. Online Casino (Gambling website with blackjack & roulette)
 7. Spider Shop (You can buy different sorts of spiders)
 8. The Beast (To enter, you need to find the code that is hidden somewhere random on another website)
 9. Insym3Cam (A collection of security cameras)
