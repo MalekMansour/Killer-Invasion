@@ -51,7 +51,7 @@ II. Mechanics
 - The killers might appear in front of the door/outside the window/etc.
 - The player can use sound cues (e.g. footsteps in the garden) or visual cues (e.g. door peephole, window blinds) to detect nearby killers.
 - Players can hide in the closet or under the bed.
-- Keeping all lights on = 15 - 18 Minutes to leave. 3 Lights on = 12 - 15 Minutes to leave. 2 Lights on = 8 - 12 Minutes to leave. 1 Light on = 4 - 8 Minutes to leave. 0 Lights on = 0% Player Dies, the killer will leave the house pretty quickly (around 2-3 minutes).
+- 4 lights on = 15 - 18 Minutes to leave. 3 Lights on = 10 - 15 Minutes to leave. 2 Lights on = 7 - 10 Minutes to leave. 1 Light on = 3 - 7 Minutes to leave. 0 Lights on = 2 - 3 Minutes to leave.
   
 5. Police:
 - Sound cues: police siren
