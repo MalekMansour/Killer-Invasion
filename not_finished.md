@@ -1,4 +1,4 @@
-* Stamina Bar Mechanic. - Might get removed.
+* Stamina Bar Mechanic. - Will get removed.
 * Collisions
 * Messages
 * Website Template
