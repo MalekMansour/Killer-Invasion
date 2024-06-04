@@ -9,6 +9,7 @@ This file will be for websites ideas (in Killer Invasion)
 5. Instagroom: Instagram weird copy.
 6. Confession:+ A place for people to confess their sins
 7. I want to die (Depressed People Blog Journal)
+8. A shop that sells sex-strengthening stuff
 
 
 1. Drug Shop (Everything is out of stock)
