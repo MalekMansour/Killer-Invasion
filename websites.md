@@ -14,6 +14,7 @@ This file will be for websites ideas (in Killer Invasion)
 10. A shop that sells different types of boxes for corpse hiding
 11. Gore Supply (A Website where you can watch a bunch of gore videos every 1 hour)
 12. Blue whale challenge:+ Showing a bunch of different disgusting challenge and you can also see the number of people who have participated in a challenge, and  comments from those people)+ You don’t have to do any challenge, just look for codes or send a challenge to someone who asks.
+13. Sex slave forum: + Finding sex slaves+ For these types of websites, you do not have to insert real pictures of someone, just make a hyperlink saying Click to look for sex slaves but the link won’t work
 
 
 1. Drug Shop (Everything is out of stock)
