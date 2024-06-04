@@ -7,7 +7,8 @@ This file will be for websites ideas (in Killer Invasion)
 3. Lovely models:+ Models and celebrities for sales for sexual activities.
 4. Emegle.com:+ This web accesses player’s camera. + They will be in a calling lobby with us+ We can record a video of ourselves doing weird and creepy stuff and giving out hints at the en
 5. Instagroom: Instagram weird copy.
-
+6. Confession:+ A place for people to confess their sins
+7. I want to die (Depressed People Blog Journal)
 
 
 1. Drug Shop (Everything is out of stock)
@@ -32,7 +33,6 @@ This file will be for websites ideas (in Killer Invasion)
 20. 8-Bit Tulip Game
 21. Gore Supply (A Website where you can watch a bunch of gore videos every 1 hour)
 22. BDSM Shop
-23. I want to die (Depressed People Blog Journal)
 24. Satan Worship Blog
 25. Free Money Website (NOT A SCAM)
 26. How to deal with depression. (Blog)
