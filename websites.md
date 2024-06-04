@@ -10,6 +10,9 @@ This file will be for websites ideas (in Killer Invasion)
 6. Confession:+ A place for people to confess their sins
 7. I want to die (Depressed People Blog Journal)
 8. A shop that sells sex-strengthening stuff
+9. A shop that sells BDSM stuff
+10. A shop that sells different types of boxes for corpse hiding
+11. Gore Supply (A Website where you can watch a bunch of gore videos every 1 hour)
 
 
 1. Drug Shop (Everything is out of stock)
@@ -32,8 +35,6 @@ This file will be for websites ideas (in Killer Invasion)
 18. White Faced Screamer (Jumpscare Website)
 19. Liver Shop (Buy Livers)
 20. 8-Bit Tulip Game
-21. Gore Supply (A Website where you can watch a bunch of gore videos every 1 hour)
-22. BDSM Shop
 24. Satan Worship Blog
 25. Free Money Website (NOT A SCAM)
 26. How to deal with depression. (Blog)
