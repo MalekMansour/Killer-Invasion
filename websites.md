@@ -17,6 +17,7 @@ This file will be for websites ideas (in Killer Invasion)
 13. Sex slave forum: + Finding sex slaves+ For these types of websites, you do not have to insert real pictures of someone, just make a hyperlink saying Click to look for sex slaves but the link won’t work
 14. The Cell:+ Background of the website is a dark hallway full of cells. + You have to make ethical choices about who should be killed (e.g. A boy or an old woman, a crippled person or a wealthy person, etc.)
 15. A website that shows tutorials on how to hide a corpse, or to kill someone efficiently
+16. Daily blog of a girl who has been a victim of human trafficking
 
 
 1. Drug Shop (Everything is out of stock)
