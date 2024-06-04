@@ -39,4 +39,5 @@ This file will be for websites ideas (in Killer Invasion)
 35. Satan Worship Blog (very long website with a lot of links in it.)
 36. 8-Bit Tulip Game
 37. How to deal with depression. (Blog)
+38. Hitmen Website (you can send hitmen on others.)
   
