@@ -26,14 +26,15 @@ This file will be for websites ideas (in Killer Invasion)
 22. A page about sex slaves but it is a male version
 23. Radio Station (Songs)
 24. Online Casino (Gambling website with blackjack & roulette)
+25. Spider Shop (You can buy different sorts of spiders)
+26. The Beast (To enter, you need to find the code that is hidden somewhere random on another website)
+27. Insym3Cam (A collection of security cameras)
+28. Milk Shop (Buy 'milk')
+29. LDT Chat (A public chat room)
+30. Child Play (A public chat room)
 
     
-7. Spider Shop (You can buy different sorts of spiders)
-8. The Beast (To enter, you need to find the code that is hidden somewhere random on another website)
-9. Insym3Cam (A collection of security cameras)
-10. Milk Shop (Buy 'milk')
-11. LDT Chat (A public chat room)
-12. Child Play (A public chat room)
+
 13. 
 14. Corpses For Sale (Shop)
 15. 
