@@ -22,6 +22,7 @@ This file will be for websites ideas (in Killer Invasion)
 18. Gun Shop (You can buy 1 gun that will help the player win the 'true ending" but will lock you out of the 'escape ending')
 19. SexDollPlayground (You can buy Dolls that ressemble people you know)
 20. 9 Eyes (9 eyes opened, looking around, if the player clicks in the right order and closes all the eyes, he can access the website.)
+21. Spankers (Page that sells vapes, pods, bongs, etc)
 
 
 5. Radio Station (Songs) 
