@@ -32,17 +32,13 @@ This file will be for websites ideas (in Killer Invasion)
 28. Milk Shop (Buy 'milk')
 29. LDT Chat (A public chat room)
 30. Child Play (A public chat room)
+31. Used Panties Shop (You can buy panties)
+32. Fake ID/Passport Shop
+33. White Faced Screamer (Jumpscare Website)
+34. Organotic (An organ shop where you can buy livers, hearts, brains, etc.)
+35. Satan Worship Blog (very long website with a lot of links in it.)
 
-    
 
-13. 
-14. Corpses For Sale (Shop)
-15. 
-16. Used Panties Shop (You can buy panties)
-17. Fake ID/Passport Shop 
-18. White Faced Screamer (Jumpscare Website)
-19. Liver Shop (Buy Livers)
 20. 8-Bit Tulip Game
-24. Satan Worship Blog
 25. Free Money Website (NOT A SCAM)
 26. How to deal with depression. (Blog)
