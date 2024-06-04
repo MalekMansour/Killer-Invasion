@@ -16,6 +16,7 @@ This file will be for websites ideas (in Killer Invasion)
 12. Blue whale challenge:+ Showing a bunch of different disgusting challenge and you can also see the number of people who have participated in a challenge, and  comments from those people)+ You don’t have to do any challenge, just look for codes or send a challenge to someone who asks.
 13. Sex slave forum: + Finding sex slaves+ For these types of websites, you do not have to insert real pictures of someone, just make a hyperlink saying Click to look for sex slaves but the link won’t work
 14. The Cell:+ Background of the website is a dark hallway full of cells. + You have to make ethical choices about who should be killed (e.g. A boy or an old woman, a crippled person or a wealthy person, etc.)
+15. A website that shows tutorials on how to hide a corpse, or to kill someone efficiently
 
 
 1. Drug Shop (Everything is out of stock)
