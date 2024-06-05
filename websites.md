@@ -43,7 +43,10 @@ This file will be for websites ideas (in Killer Invasion)
 39. YouPorn (WeirdYoutube version of yk what.)
 40. Amputay (Blog where people talk about the amazing work of a surgeon that amputes them and changes the places of their body parts on their bodiess.)
 41. Doctor Kay (The official website of the ampute doctor, talking about all his work.)
-42. InSurAncE: A service that willing to set up a "real" accident for a customer to take money from the insurance. 
+42. InSurAncE: A service that willing to set up a "real" accident for a customer to take money from the insurance.
+43. Dumb Ways to Die For Real: Tutorial for you how to die in whatever ways you want to.
+44. You Are Alright: A service that willing to kill anybody or burn up some bodies or anything to hide up your sins.
+45. 
 
 
     
