@@ -41,5 +41,6 @@ This file will be for websites ideas (in Killer Invasion)
 37. How to deal with depression. (Blog)
 38. Hitmen for Hire Website (you can send hitmen on others.)
 39. YouPorn (WeirdYoutube version of yk what.)
-40. Urban legend:+ Blog about an urban legend
+40. Amputay (Blog where people talk about the amazing work of a surgeon that amputes them and changes the places of their body parts on their bodiess.)
+41. 
   
