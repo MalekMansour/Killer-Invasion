@@ -46,7 +46,7 @@ This file will be for websites ideas (in Killer Invasion)
 42. InSurAncE: A service that willing to set up a "real" accident for a customer to take money from the insurance.
 43. Dumb Ways to Die For Real: Tutorial for you how to die in whatever ways you want to.
 44. You Are Alright: A service that willing to kill anybody or burn up some bodies or anything to hide up your sins.
-45. 
+45. CandyShop: Sells drug (looks like an innocent candy shop website).
 
 
     
