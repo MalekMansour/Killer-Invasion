@@ -49,6 +49,7 @@ This file will be for websites ideas (in Killer Invasion)
 45. CandyShop: Sells drug (looks like an innocent candy shop website).
 46. You Are An Idiot (Parody of the virus).
 47. Money Generator (input email, and how much money you want).
+48. The Deep Sea Secrets (A bunch of weird facts about sea animals).
 
 
     
