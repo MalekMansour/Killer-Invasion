@@ -48,7 +48,7 @@ This file will be for websites ideas (in Killer Invasion)
 44. You Are Alright: A service that willing to kill anybody or burn up some bodies or anything to hide up your sins.
 45. CandyShop: Sells drug (looks like an innocent candy shop website).
 46. You Are An Idiot (Parody of the virus).
-47. 
+47. Money Generator (input email, and how much money you want).
 
 
     
