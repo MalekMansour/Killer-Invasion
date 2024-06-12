@@ -1,6 +1,6 @@
 This file will be for websites ideas (in Killer Invasion)
 
-50 Websites
+50 Websites - 50 Fake Websites (70% chance it will be "Unable to connect" and 30% chance it's "been seized by the FBI").
 
 1. Who to kill?+ User receives a list of names and have to choose one to kill. After clicking, male/female screaming sound effect will be played. + There is a chance that when accessing this page, every options will change to “YOU!” and the killer will come to find you.
 2. Cops’ dirty truth:+ A page full of accusation and proof on cops’ dirty secrets.
