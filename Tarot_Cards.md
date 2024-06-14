@@ -12,5 +12,5 @@ After buying tarot cards from the Tarod Card Shop, you can pick up the package a
 * The Fart (5% Chance) - Plays a fart noise
 * The Dead Man (1% Chance) - Kills the player
 * The Drunk (5% Chance) - Gives drunk effect for 5 minutes in game
-* The Joker
+* The Joker (5% Chance) - Will give a random effect 
 * The Guardian Angel (5% Chance) - Will stop anyone from entering the home for 30 minutes in game
