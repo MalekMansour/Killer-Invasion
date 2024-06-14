@@ -9,3 +9,4 @@ After buying tarot cards from the Tarod Card Shop, you can pick up the package a
 * The Flash (10% Chance) - Makes you 4X Faster for 2 minutes in game
 * The Danger (5% Chance) - Plays loud evil laugh (does nothing)
 * The Fart (5% Chance) - Plays a fart noise
+* The Dead Man (1% Chance) - Kills the player
