@@ -5,7 +5,8 @@
 
 ### 2024-06-13:
 * Website.cs Script Updated.
-* WebsiteOpener.cs Created.
+* WebsiteOpener.cs Script Created.
+* WebsiteOpener.cs Script Updated.
 
 ### 2024-05-21:
 * Website.cs Script Updated.
