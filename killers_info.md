@@ -1,1 +1,5 @@
-Main Enemy: Police
+Police:
+Exposure Meter
+
+Killer:
+
