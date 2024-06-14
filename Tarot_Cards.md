@@ -3,5 +3,5 @@ After buying tarot cards from the Tarod Card Shop, you can pick up the package a
 
 * The Blank (40% Chance) - Does Nothing
 * The Deaf (10% Chance) - Makes you Deaf for 5 minutes in game
-* 
+* The Blind (10% Chance) - Makes the screen blurry for 2 minutes in game
 
