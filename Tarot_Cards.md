@@ -12,3 +12,4 @@ After buying tarot cards from the Tarod Card Shop, you can pick up the package a
 * The Dead Man (1% Chance) - Kills the player
 * The Drunk (5% Chance) - Gives drunk effect for 5 minutes in game
 * The Joker
+* The Guardian Angel
