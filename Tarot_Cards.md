@@ -17,4 +17,5 @@ After buying tarot cards from the Tarod Card Shop, you can pick up the package a
 * The Dead Man (5% Chance) - Kills the player
 * The Joker (5% Chance) - Will give a random effect 
 * The Guardian Angel (5% Chance) - Will stop anyone from entering the home for 30 minutes in game
+* The Cave Man (5% Chance) - Will disable the computer for 5 minutes in game
 
