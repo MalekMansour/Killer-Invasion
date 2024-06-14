@@ -3,7 +3,7 @@ This file will be for websites ideas (in Killer Invasion)
 50 Websites - 50 Fake Websites (70% chance it will be "Unable to connect" and 30% chance it's "been seized by the FBI").
 
 1. Who to kill?+ User receives a list of names and have to choose one to kill. After clicking, male/female screaming sound effect will be played. + There is a chance that when accessing this page, every options will change to “YOU!” and the killer will come to find you.
-2. Cops’ dirty truth:+ A page full of accusation and proof on cops’ dirty secrets.
+2. Cops dirty truth:+ A page full of accusation and proof on cops’ dirty secrets.
 3. Lovely models:+ Models and celebrities for sales for sexual activities.
 4. Emegle.com:+ This web accesses player’s camera. + They will be in a calling lobby with us+ We can record a video of ourselves doing weird and creepy stuff and giving out hints at the end
 5. Instagroom: Instagram weird copy.
@@ -45,7 +45,7 @@ This file will be for websites ideas (in Killer Invasion)
 41. Doctor Kay (The official website of the ampute doctor, talking about all his work.)
 42. InSurAncE: A service that willing to set up a "real" accident for a customer to take money from the insurance.
 43. Dumb Ways to Die For Real: Tutorial for you how to die in whatever ways you want to.
-44. You Are Alright: A service that willing to kill anybody or burn up some bodies or anything to hide up your sins.
+44. Backrooms (Shows a bunch of backrooms images.
 45. CandyShop: Sells drug (looks like an innocent candy shop website).
 46. You Are An Idiot (Parody of the virus).
 47. Money Generator (input email, and how much money you want).
