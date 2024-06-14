@@ -10,4 +10,5 @@ After buying tarot cards from the Tarod Card Shop, you can pick up the package a
 * The Danger (5% Chance) - Plays loud evil laugh (does nothing)
 * The Fart (5% Chance) - Plays a fart noise
 * The Dead Man (1% Chance) - Kills the player
-* The Drunk (5% Ch
+* The Drunk (5% Chance) - Gives drunk effect for 5 minutes in game
+* The Joker
