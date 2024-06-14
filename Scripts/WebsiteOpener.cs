@@ -1,50 +1,75 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class WebsiteOpener : MonoBehaviour
 {
-    public GameObject websitesParent; // The parent object containing all the website GameObjects
-    public GameObject panel; // The parent object containing the 100 clickable website GameObjects
+    public GameObject websitesParent; // Parent object containing all website GameObjects
+    public GameObject panel; // Parent object containing all the buttons
 
-    private GameObject[] websites;
+    private Dictionary<GameObject, GameObject> buttonToWebsiteMap = new Dictionary<GameObject, GameObject>();
+    private List<GameObject> availableWebsites = new List<GameObject>();
 
     void Start()
     {
-        // Get all the website GameObjects under the websitesParent
-        websites = new GameObject[websitesParent.transform.childCount];
+        // Initialize the available websites list with all children of websitesParent
         for (int i = 0; i < websitesParent.transform.childCount; i++)
         {
-            websites[i] = websitesParent.transform.GetChild(i).gameObject;
-            websites[i].SetActive(false); // Make sure all websites are initially inactive
+            availableWebsites.Add(websitesParent.transform.GetChild(i).gameObject);
         }
 
-        // Assign click listeners to each of the 100 website buttons under panel
+        // Assign a click listener to each button under the panel
         for (int i = 0; i < panel.transform.childCount; i++)
         {
-            int index = i; // Capture the index for the lambda expression
-            Button button = panel.transform.GetChild(i).GetComponent<Button>();
-            if (button != null)
+            GameObject button = panel.transform.GetChild(i).gameObject;
+            Button btnComponent = button.GetComponent<Button>();
+
+            if (btnComponent != null)
             {
-                button.onClick.AddListener(OpenRandomWebsite);
+                btnComponent.onClick.AddListener(() => OnButtonClick(button));
             }
             else
             {
-                Debug.LogWarning("No Button component found on: " + panel.transform.GetChild(i).name);
+                Debug.LogWarning("No Button component found on: " + button.name);
             }
         }
     }
 
-    void OpenRandomWebsite()
+    void OnButtonClick(GameObject button)
+    {
+        if (buttonToWebsiteMap.ContainsKey(button))
+        {
+            // Open the already assigned website
+            OpenWebsite(buttonToWebsiteMap[button]);
+        }
+        else
+        {
+            if (availableWebsites.Count > 0)
+            {
+                // Assign a random website to the button
+                int randomIndex = Random.Range(0, availableWebsites.Count);
+                GameObject assignedWebsite = availableWebsites[randomIndex];
+                availableWebsites.RemoveAt(randomIndex);
+
+                buttonToWebsiteMap[button] = assignedWebsite;
+                OpenWebsite(assignedWebsite);
+            }
+            else
+            {
+                Debug.LogWarning("No more websites available to assign.");
+            }
+        }
+    }
+
+    void OpenWebsite(GameObject website)
     {
         // Deactivate all websites first
-        foreach (GameObject website in websites)
+        for (int i = 0; i < websitesParent.transform.childCount; i++)
         {
-            website.SetActive(false);
+            websitesParent.transform.GetChild(i).gameObject.SetActive(false);
         }
 
-        // Activate a random website
-        int randomIndex = Random.Range(0, websites.Length);
-        websites[randomIndex].SetActive(true);
+        // Activate the assigned website
+        website.SetActive(true);
     }
 }
-
