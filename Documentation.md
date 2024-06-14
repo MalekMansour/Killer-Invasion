@@ -9,6 +9,7 @@
 * WebsiteOpener.cs Script Updated.
 * HomeButton.cs Script Created.
 * HomeButton.cs Script Updated.
+* Added Default Image for Websites.
 
 ### 2024-05-21:
 * Website.cs Script Updated.
