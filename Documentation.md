@@ -7,6 +7,7 @@
 * Website.cs Script Updated.
 * WebsiteOpener.cs Script Created.
 * WebsiteOpener.cs Script Updated.
+* HomeButton.cs Script Created.
 
 ### 2024-05-21:
 * Website.cs Script Updated.
