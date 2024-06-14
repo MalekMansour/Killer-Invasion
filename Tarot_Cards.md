@@ -6,5 +6,5 @@ After buying tarot cards from the Tarod Card Shop, you can pick up the package a
 * The Blind (10% Chance) - Makes the screen blurry for 2 minutes in game
 * The Poor (5% Chance) - Loses half your money
 * The Rich (5% Chance) - Doubles your money
-* The Flash (10% Chance) - Makes you 4X Faster
-
+* The Flash (10% Chance) - Makes you 4X Faster for 2 minutes in game
+* The Danger (5% Chance) - Plays loud evil laugh (does nothing)
