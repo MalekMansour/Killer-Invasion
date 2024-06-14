@@ -7,6 +7,8 @@ public class WebsiteOpener : MonoBehaviour
     public GameObject websitesParent; // Parent object containing all website GameObjects
     public GameObject panel; // Parent object containing all the buttons
 
+    public Dictionary<GameObject, Sprite> websiteThumbnails = new Dictionary<GameObject, Sprite>(); // Maps websites to their thumbnails
+
     private Dictionary<GameObject, GameObject> buttonToWebsiteMap = new Dictionary<GameObject, GameObject>();
     private List<GameObject> availableWebsites = new List<GameObject>();
 
@@ -15,7 +17,16 @@ public class WebsiteOpener : MonoBehaviour
         // Initialize the available websites list with all children of websitesParent
         for (int i = 0; i < websitesParent.transform.childCount; i++)
         {
-            availableWebsites.Add(websitesParent.transform.GetChild(i).gameObject);
+            GameObject website = websitesParent.transform.GetChild(i).gameObject;
+            availableWebsites.Add(website);
+
+            // Assume thumbnails are named after websites for simplicity
+            // You can manually assign these in the inspector if needed
+            Sprite thumbnail = Resources.Load<Sprite>("Thumbnails/" + website.name);
+            if (thumbnail != null)
+            {
+                websiteThumbnails[website] = thumbnail;
+            }
         }
 
         // Assign a click listener to each button under the panel
@@ -53,6 +64,7 @@ public class WebsiteOpener : MonoBehaviour
 
                 buttonToWebsiteMap[button] = assignedWebsite;
                 OpenWebsite(assignedWebsite);
+                UpdateButtonThumbnail(button, assignedWebsite);
             }
             else
             {
@@ -71,5 +83,19 @@ public class WebsiteOpener : MonoBehaviour
 
         // Activate the assigned website
         website.SetActive(true);
+    }
+
+    void UpdateButtonThumbnail(GameObject button, GameObject website)
+    {
+        // Find the Image component under the button and update its sprite
+        Image imageComponent = button.GetComponentInChildren<Image>();
+        if (imageComponent != null && websiteThumbnails.ContainsKey(website))
+        {
+            imageComponent.sprite = websiteThumbnails[website];
+        }
+        else
+        {
+            Debug.LogWarning("Thumbnail not found for: " + website.name);
+        }
     }
 }
