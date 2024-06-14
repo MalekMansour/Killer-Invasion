@@ -4,42 +4,29 @@ using UnityEngine.UI;
 public class HomeButton : MonoBehaviour
 {
     public GameObject websitesParent; // The parent object containing all the website GameObjects
-    private GameObject currentActiveWebsite;
 
     void Start()
     {
-        // Add a listener to the button click event
-        Button homeButton = GetComponent<Button>();
-        if (homeButton != null)
+        // Get the button component attached to this GameObject
+        Button button = GetComponent<Button>();
+
+        // Ensure there's a button component and add a listener to its click event
+        if (button != null)
         {
-            homeButton.onClick.AddListener(ToggleOffCurrentWebsite);
+            button.onClick.AddListener(ToggleOffAllWebsites);
         }
-
-        // Initially, no website is active
-        currentActiveWebsite = null;
-    }
-
-    void Update()
-    {
-        // Update the current active website
-        foreach (Transform website in websitesParent.transform)
+        else
         {
-            if (website.gameObject.activeSelf)
-            {
-                currentActiveWebsite = website.gameObject;
-                break;
-            }
+            Debug.LogWarning("No Button component found on: " + gameObject.name);
         }
     }
 
-    void ToggleOffCurrentWebsite()
+    void ToggleOffAllWebsites()
     {
-        // Deactivate the currently active website
-        if (currentActiveWebsite != null)
+        // Loop through each child of the websitesParent and deactivate them
+        for (int i = 0; i < websitesParent.transform.childCount; i++)
         {
-            currentActiveWebsite.SetActive(false);
-            currentActiveWebsite = null;
+            websitesParent.transform.GetChild(i).gameObject.SetActive(false);
         }
     }
 }
-
