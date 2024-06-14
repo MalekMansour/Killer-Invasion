@@ -37,7 +37,7 @@ This file will be for websites ideas (in Killer Invasion)
 33. White Faced Screamer (Jumpscare Website)
 34. Organotic (An organ shop where you can buy livers, hearts, brains, etc.)
 35. Satan Worship Blog (very long website with a lot of links in it.)
-36. 8-Bit Tulip Game
+36. Tarot Cards Shop ($60 for cards.)
 37. How to deal with depression. (Blog)
 38. Hitmen for Hire Website (you can send hitmen on others.)
 39. YouPorn (WeirdYoutube version of yk what.)
