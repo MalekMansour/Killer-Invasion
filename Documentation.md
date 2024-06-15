@@ -3,6 +3,9 @@
 * The game will be made using Unity & C#
 * The game will hopefully be published on Steam & Itch.io.
 
+### 2024-06-15:
+* Milky Way Website Created.
+
 ### 2024-06-13:
 * Website.cs Script Updated.
 * WebsiteOpener.cs Script Created.
