@@ -9,7 +9,8 @@ After buying tarot cards from the Tarod Card Shop, you can pick up the package a
 * The Flash (5% Chance) - Makes you 4X Faster for 2 minutes in game
 * The Turtle (5% Chance) - Makes you half your speed for 2 minutes in game
 
-* The Lunatic (5% Chance) - Makes the sanity go up to 80% 
+* The Lunatic (5% Chance) - Makes the sanity go up to 80%
+* The Wise (5% Chance) - Makes the sanity go back to 0%
 
 * The Poor (5% Chance) - Loses half your money
 * The Rich (5% Chance) - Doubles your money
