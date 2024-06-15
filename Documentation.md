@@ -5,6 +5,7 @@
 
 ### 2024-06-15:
 * Milky Way Website Created.
+* Stock Images Uploaded.
 
 ### 2024-06-13:
 * Website.cs Script Updated.
