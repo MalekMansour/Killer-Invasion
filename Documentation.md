@@ -8,7 +8,8 @@
 * Stock Images Uploaded.
 * Scroll Bar Added to Milky Way.
 * Description Text Added to Milky Way.
-* Scroll Bar Updated.
+* Scroll Bar Updated to Milky Way.
+* Scroll Bar Updated to Dark Web Home Page.
 
 ### 2024-06-13:
 * Website.cs Script Updated.
