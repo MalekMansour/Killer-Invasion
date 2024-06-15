@@ -3,11 +3,11 @@ After buying tarot cards from the Tarod Card Shop, you can pick up the package a
 
 * The Blank (30% Chance) - Does Nothing
 
-* The Deaf (5% Chance) - Mutes the sound for 5 minutes in game
-* The Blind (5% Chance) - Makes the screen blurry for 2 minutes in game
+* The Deaf (5% Chance) - Mutes the sound for 4 minutes in game
+* The Blind (5% Chance) - Makes the screen blurry for 4 minutes in game
   
-* The Flash (5% Chance) - Makes you 4X Faster for 2 minutes in game
-* The Turtle (5% Chance) - Makes you half your speed for 2 minutes in game
+* The Flash (5% Chance) - Makes you 4X Faster for 4 minutes in game
+* The Turtle (5% Chance) - Makes you half your speed for 4 minutes in game
 
 * The Lunatic (5% Chance) - Makes the sanity go up to 80%
 * The Wise (5% Chance) - Makes the sanity go back to 0%
@@ -16,11 +16,11 @@ After buying tarot cards from the Tarod Card Shop, you can pick up the package a
 * The Rich (5% Chance) - Doubles your money
 
 * The Danger (5% Chance) - Plays loud evil laugh (does nothing)
-* The Drunk (5% Chance) - Gives drunk effect for 5 minutes in game
+* The Drunk (5% Chance) - Gives drunk effect for 4 minutes in game
 
-* The Dead Man (5% Chance) - Kills the player
+* The Dead Man (5% Chance) - Kills the player 
 * The Guardian Angel (5% Chance) - Will stop anyone from entering the home for 10 minutes in game
 
 * The Joker (5% Chance) - Will give a random effect 
-* The Cave Man (5% Chance) - Will disable the computer for 5 minutes in game
-
+* The Cave Man (5% Chance) - Will disable the computer for 4 minutes in game and turn off all lights
+  
