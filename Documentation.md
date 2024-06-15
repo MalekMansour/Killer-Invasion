@@ -21,7 +21,7 @@
 * Right Click to exit laptop instead of esc.
 
 ### 2024-05-20:
-* Website0 Created.
+* Website0 (Default) Created.
 * Task Bar moved.
 * Website.cs Script Created.
 
