@@ -19,7 +19,7 @@ After buying tarot cards from the Tarod Card Shop, you can pick up the package a
 * The Drunk (5% Chance) - Gives drunk effect for 4 minutes in game
 
 * The Dead Man (5% Chance) - Kills the player 
-* The Guardian Angel (5% Chance) - Will stop anyone from entering the home for 10 minutes in game
+* The Guardian Angel (5% Chance) - Will freeze every killer in the game for 20 minutes in game
 
 * The Joker (5% Chance) - Will give a random effect 
 * The Cave Man (5% Chance) - Will disable the computer for 4 minutes in game and turn off all lights
