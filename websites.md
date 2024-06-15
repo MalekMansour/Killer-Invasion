@@ -34,7 +34,7 @@ This file will be for websites ideas (in Killer Invasion)
 30. Child Play (A public chat room)
 31. Used Panties Shop (You can buy panties)
 32. Fake ID/Passport Shop
-33. White Faced Screamer (Jumpscare Website)
+33. Cigarette Shop
 34. Organotic (An organ shop where you can buy livers, hearts, brains, etc.)
 35. Satan Worship Blog (very long website with a lot of links in it.)
 36. Tarot Cards Shop ($60 for cards.)
