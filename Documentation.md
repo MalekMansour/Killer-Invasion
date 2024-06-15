@@ -6,6 +6,7 @@
 ### 2024-06-15:
 * Milky Way Website Created.
 * Stock Images Uploaded.
+* Scroll Bar Added to Milky Way.
 
 ### 2024-06-13:
 * Website.cs Script Updated.
