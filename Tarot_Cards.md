@@ -14,12 +14,13 @@ After buying tarot cards from the Tarod Card Shop, you can pick up the package a
 
 * The Poor (5% Chance) - Loses half your money
 * The Rich (5% Chance) - Doubles your money
+
 * The Danger (5% Chance) - Plays loud evil laugh (does nothing)
 * The Drunk (5% Chance) - Gives drunk effect for 5 minutes in game
 
-
 * The Dead Man (5% Chance) - Kills the player
-* The Joker (5% Chance) - Will give a random effect 
 * The Guardian Angel (5% Chance) - Will stop anyone from entering the home for 10 minutes in game
+
+* The Joker (5% Chance) - Will give a random effect 
 * The Cave Man (5% Chance) - Will disable the computer for 5 minutes in game
 
