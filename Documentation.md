@@ -8,6 +8,7 @@
 * Stock Images Uploaded.
 * Scroll Bar Added to Milky Way.
 * Description Text Added to Milky Way.
+* Scroll Bar Updated.
 
 ### 2024-06-13:
 * Website.cs Script Updated.
