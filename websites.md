@@ -23,7 +23,7 @@ This file will be for websites ideas (in Killer Invasion)
 19. SexDollPlayground (You can buy Dolls that ressemble people you know)
 20. 9 Eyes (9 eyes opened, looking around, if the player clicks in the right order and closes all the eyes, he can access the website.)
 21. Spankers (Page that sells vapes, pods, bongs, etc)
-22. A page about sex slaves but it is a male version
+22. 50/50 (when you press play, u will have a 50% of seeing a good image and 50% of seeing a gore image.)
 23. Radio Station (Songs)
 24. Online Casino (Gambling website with blackjack & roulette)
 25. Spider Shop (You can buy different sorts of spiders)
