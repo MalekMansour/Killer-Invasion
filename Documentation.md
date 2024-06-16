@@ -9,10 +9,11 @@
 * Uploaded Times New Roman font.
 * Scroll Bar Updated for Shadow Market.
 * Spankers Website Created.
+* Stock Images for Spankers Uploaded.
 
 ### 2024-06-15:
 * Milky Way Website Created.
-* Stock Images Uploaded.
+* Stock Images for Milky Way Uploaded.
 * Scroll Bar Added to Milky Way.
 * Description Text Added to Milky Way.
 * Scroll Bar Updated to Milky Way.
