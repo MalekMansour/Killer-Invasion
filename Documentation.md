@@ -10,6 +10,7 @@
 * Scroll Bar Updated for Shadow Market.
 * Spankers Website Created.
 * Stock Images for Spankers Uploaded.
+* Buttons Added to Spankers.
 
 ### 2024-06-15:
 * Milky Way Website Created.
