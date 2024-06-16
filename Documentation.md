@@ -6,6 +6,7 @@
 ### 2024-06-16:
 * Uploaded Merriweather font.
 * Uploaded Arial font.
+* Uploaded Times New Roman font.
 
 ### 2024-06-15:
 * Milky Way Website Created.
