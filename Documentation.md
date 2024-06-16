@@ -8,6 +8,7 @@
 * Uploaded Arial font.
 * Uploaded Times New Roman font.
 * Scroll Bar Updated for Shadow Market.
+* Spankers Website Created.
 
 ### 2024-06-15:
 * Milky Way Website Created.
