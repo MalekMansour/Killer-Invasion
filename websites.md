@@ -18,11 +18,11 @@ This file will be for websites ideas (in Killer Invasion)
 14. 
 15. TutoCorpse: (A website that shows tutorials on how to hide a corpse, or to kill someone efficiently)
 16. My Story (Yandegirl): Daily blog of a girl who has been a victim of human trafficking
-17. Drug Shop (Everything is out of stock)
+17. BetaDrug: Drug Shop (Everything is out of stock).
 18. Gun Shop (You can buy 1 gun that will help the player win the 'true ending" but will lock you out of the 'escape ending')
 19. SexDollPlayground (You can buy Dolls that ressemble people you know)
 20. 9 Eyes (9 eyes opened, looking around, if the player clicks in the right order and closes all the eyes, he can access the website.)
-21. Spankers (Page that sells vapes, pods, bongs, etc)
+21. Spankers: (Page that sells vapes, cigarettes, weed, bongs, etc).
 22. 50/50 (when you press play, u will have a 50% of seeing a good image and 50% of seeing a gore image.)
 23. Radio Station (Songs)
 24. Online Casino (Gambling website with blackjack & roulette)
