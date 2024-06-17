@@ -10,7 +10,7 @@ This file will be for websites ideas (in Killer Invasion)
 6. Confession:+ A place for people to confess their sins
 7. Death Wish: (Depressed People Blog Journal)
 8. Strenght Plus: A shop that sells sex-strengthening stuff
-9. A shop that sells BDSM stuff
+9. Sex Dungeon: A shop that sells BDSM stuff
 10. A shop that sells different types of boxes for corpse hiding
 11. Gore Supply (A Website where you can watch a bunch of gore videos every 1 hour)
 12. Blue whale challenge:+ Showing a bunch of different disgusting challenge and you can also see the number of people who have participated in a challenge, and  comments from those people)+ You don’t have to do any challenge, just look for codes or send a challenge to someone who asks.
