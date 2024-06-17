@@ -4,8 +4,8 @@ This file will be for websites ideas (in Killer Invasion)
 
 1. Who To Kill?+ User receives a list of names and have to choose one to kill. After clicking, male/female screaming sound effect will be played. + There is a chance that when accessing this page, every options will change to “YOU!” and the killer will come to find you.
 2. Cops Dirty Truth:+ A page full of accusation and proof on cops’ dirty secrets.
-3. Lovely models:+ Models and celebrities for sales for sexual activities.
-4. Emegle.com:+ This web accesses player’s camera. + They will be in a calling lobby with us+ We can record a video of ourselves doing weird and creepy stuff and giving out hints at the end
+3. Lovely Models:+ Models and celebrities for sales for sexual activities.
+4. Emegle:+ This web accesses player’s camera. + They will be in a calling lobby with us+ We can record a video of ourselves doing weird and creepy stuff and giving out hints at the end
 5. Instagroom: Instagram weird copy.
 6. Confession:+ A place for people to confess their sins
 7. I want to die (Depressed People Blog Journal)
