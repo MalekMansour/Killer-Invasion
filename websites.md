@@ -13,11 +13,11 @@ This file will be for websites ideas (in Killer Invasion)
 9. Sex Dungeon: A shop that sells BDSM stuff.
 10. 
 11. Gore Supply: (A Website where you can watch a bunch of gore videos every 1 hour)
-12. Blue Whale Challenge: Showing a bunch of different disgusting challenge and you can also see the number of people who have participated in a challenge, and  comments from those people)+ You don’t have to do any challenge, just look for codes or send a challenge to someone who asks.
-13. Sex slave forum: + Finding sex slaves+ For these types of websites, you do not have to insert real pictures of someone, just make a hyperlink saying Click to look for sex slaves but the link won’t work
-14. The Cell:+ Background of the website is a dark hallway full of cells. + You have to make ethical choices about who should be killed (e.g. A boy or an old woman, a crippled person or a wealthy person, etc.)
-15. TutoCorpse (A website that shows tutorials on how to hide a corpse, or to kill someone efficiently)
-16. Daily blog of a girl who has been a victim of human trafficking
+12. Blue Whale Challenge: Showing a bunch of different disgusting challenge and you can also see the number of people who have participated in a challenge, and  comments from those people).
+13. My Slave: Sex slave forum. Finding sex slaves+ For these types of websites, you do not have to insert real pictures of someone, just make a hyperlink saying Click to look for sex slaves but the link won’t work
+14. 
+15. TutoCorpse: (A website that shows tutorials on how to hide a corpse, or to kill someone efficiently)
+16. My Story (Yandegirl): Daily blog of a girl who has been a victim of human trafficking
 17. Drug Shop (Everything is out of stock)
 18. Gun Shop (You can buy 1 gun that will help the player win the 'true ending" but will lock you out of the 'escape ending')
 19. SexDollPlayground (You can buy Dolls that ressemble people you know)
