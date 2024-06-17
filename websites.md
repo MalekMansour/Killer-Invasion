@@ -10,10 +10,10 @@ This file will be for websites ideas (in Killer Invasion)
 6. Confession:+ A place for people to confess their sins
 7. Death Wish: (Depressed People Blog Journal)
 8. Strenght Plus: A shop that sells sex-strengthening stuff
-9. Sex Dungeon: A shop that sells BDSM stuff
-10. A shop that sells different types of boxes for corpse hiding
-11. Gore Supply (A Website where you can watch a bunch of gore videos every 1 hour)
-12. Blue whale challenge:+ Showing a bunch of different disgusting challenge and you can also see the number of people who have participated in a challenge, and  comments from those people)+ You don’t have to do any challenge, just look for codes or send a challenge to someone who asks.
+9. Sex Dungeon: A shop that sells BDSM stuff.
+10. 
+11. Gore Supply: (A Website where you can watch a bunch of gore videos every 1 hour)
+12. Blue Whale Challenge: Showing a bunch of different disgusting challenge and you can also see the number of people who have participated in a challenge, and  comments from those people)+ You don’t have to do any challenge, just look for codes or send a challenge to someone who asks.
 13. Sex slave forum: + Finding sex slaves+ For these types of websites, you do not have to insert real pictures of someone, just make a hyperlink saying Click to look for sex slaves but the link won’t work
 14. The Cell:+ Background of the website is a dark hallway full of cells. + You have to make ethical choices about who should be killed (e.g. A boy or an old woman, a crippled person or a wealthy person, etc.)
 15. TutoCorpse (A website that shows tutorials on how to hide a corpse, or to kill someone efficiently)
