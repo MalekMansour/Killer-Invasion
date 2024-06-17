@@ -34,12 +34,12 @@ This file will be for websites ideas (in Killer Invasion)
 30. Child Play (A public chat room)
 31. Used Panties Shop (You can buy panties)
 32. Fake ID/Passport Shop
-33. Cigarette Shop
+33. 
 34. Organotic (An organ shop where you can buy livers, hearts, brains, etc.)
 35. Satan Worship Blog (very long website with a lot of links in it.)
 36. Tarot Cards Shop ($60 for cards.)
 37. How to deal with depression. (Blog)
-38. Hitmen for Hire Website (you can send hitmen on others.)
+38. Hitmen for Hire: (you can send hitmen on others.)
 39. YouPorn (WeirdYoutube version of yk what.)
 40. Amputay (Blog where people talk about the amazing work of a surgeon that amputes them and changes the places of their body parts on their bodiess.)
 41. Doctor Kay (The official website of the ampute doctor, talking about all his work.)
