@@ -1,5 +1,6 @@
 Police:
-Exposure Meter
+Exposure Meter.
 
-Killer:
+Killer: 
+Randomly will come after 1 AM.
 
