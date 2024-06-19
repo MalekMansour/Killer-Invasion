@@ -47,7 +47,6 @@ II. Mechanics
 5. Killer
 -  The more the player stays on the dark web, different individuals might start sending text messages to the player asking for favors or sending threats.
 -  Various outcomes will lead to the killer coming to the player's house to attack.
--  Each killer will have a different model and a different voice. But they all will have the same attack mechanic.
 - The killers might appear in front of the door/outside the window/etc.
 - The player can use sound cues (e.g. footsteps in the garden) or visual cues (e.g. door peephole, window blinds) to detect nearby killers.
 - Players can hide in the closet or under the bed.
