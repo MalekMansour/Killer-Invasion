@@ -71,12 +71,4 @@ II. Mechanics
 
 9. Tarot Cards: There is a website where you can buy a deck of Tarot Cards (12 cards) for $60. The cards will take about an hour to ship to your house. Different cards pulled will give different outcomes. The Blank (30% Chance) - Does Nothing. The Deaf (5% Chance) - Mutes the sound for 4 minutes in game. The Blind (5% Chance) - Makes the screen blurry for 4 minutes in game. The Flash (5% Chance) - Makes you 4X Faster for 4 minutes in game. The Turtle (5% Chance) - Makes you half your speed for 4 minutes in game. The Lunatic (5% Chance) - Makes the sanity go up to 80%. The Wise (5% Chance) - Makes the sanity go back to 0%. The Poor (5% Chance) - Loses half your money. The Rich (5% Chance) - Doubles your money. The Danger (5% Chance) - Plays loud evil laugh (does nothing). The Drunk (5% Chance) - Gives drunk effect for 4 minutes in game. The Dead Man (5% Chance) - Kills the player. The Guardian Angel (5% Chance) - Will freeze every killer in the game for 20 minutes in game. The Joker (5% Chance) - Will give a random effect. The Cave Man (5% Chance) - Will disable the computer for 4 minutes in game and turn off all lights.
   
-III. Roles
-1. Mechanics Design (Malek)
-2. Model and Character Design (Nathan - Mark)
-3. Environment Design (Nathan - Mark)
-4. Sound Design (We will work on this later)
-5. Darkweb Design (Daniel)
-6. Menu and Setting Design (We will work on this later)
-   
-IV. Stages (have to work on)
+
