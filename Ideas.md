@@ -69,7 +69,7 @@ II. Mechanics
 - The player has to keep the light open (most of the time) because if the house is too dark, the insanity level will go up much faster.
 - There are 4 light switches in the house. When you hide from the killer/police, you have to turn off all the lights. The more lights are turned on, the higher the chance you will get caught in your hiding place.
 
-9. Tarot Cards: There is a website where you can buy a deck of Tarot Cards (12 cards) for $60.
+9. Tarot Cards: There is a website where you can buy a deck of Tarot Cards (12 cards) for $60. The cards will take about an hour to ship to your house.
   
 III. Roles
 1. Mechanics Design (Malek)
