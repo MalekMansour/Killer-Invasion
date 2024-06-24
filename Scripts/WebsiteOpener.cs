@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class WebsiteOpener : MonoBehaviour
 {
     public GameObject websitesParent; 
-    public GameObject panel; // Parent object containing all the buttons
+    public GameObject panel;
 
     public Dictionary<GameObject, Sprite> websiteThumbnails = new Dictionary<GameObject, Sprite>(); // Maps websites to their thumbnails
 
