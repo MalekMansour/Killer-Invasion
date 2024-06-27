@@ -11,3 +11,5 @@
 5. Make Laptop Screen
 
 6. Make Websites
+
+7. Add Killers
