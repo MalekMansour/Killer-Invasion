@@ -19,8 +19,6 @@ public class WebsiteOpener : MonoBehaviour
             GameObject website = websitesParent.transform.GetChild(i).gameObject;
             availableWebsites.Add(website);
 
-            // Assume thumbnails are named after websites for simplicity
-            // You can manually assign these in the inspector if needed
             Sprite thumbnail = Resources.Load<Sprite>("Thumbnails/" + website.name);
             if (thumbnail != null)
             {
@@ -28,7 +26,6 @@ public class WebsiteOpener : MonoBehaviour
             }
         }
 
-        // Assign a click listener to each button under the panel
         for (int i = 0; i < panel.transform.childCount; i++)
         {
             GameObject button = panel.transform.GetChild(i).gameObject;
