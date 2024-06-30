@@ -71,13 +71,11 @@ public class WebsiteOpener : MonoBehaviour
 
     void OpenWebsite(GameObject website)
     {
-        // Deactivate all websites first
         for (int i = 0; i < websitesParent.transform.childCount; i++)
         {
             websitesParent.transform.GetChild(i).gameObject.SetActive(false);
         }
 
-        // Activate the assigned website
         website.SetActive(true);
     }
 
