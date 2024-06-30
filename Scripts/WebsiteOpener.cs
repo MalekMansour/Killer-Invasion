@@ -7,7 +7,7 @@ public class WebsiteOpener : MonoBehaviour
     public GameObject websitesParent; 
     public GameObject panel;
 
-    public Dictionary<GameObject, Sprite> websiteThumbnails = new Dictionary<GameObject, Sprite>(); // Maps websites to their thumbnails
+    public Dictionary<GameObject, Sprite> websiteThumbnails = new Dictionary<GameObject, Sprite>(); 
 
     private Dictionary<GameObject, GameObject> buttonToWebsiteMap = new Dictionary<GameObject, GameObject>();
     private List<GameObject> availableWebsites = new List<GameObject>();
