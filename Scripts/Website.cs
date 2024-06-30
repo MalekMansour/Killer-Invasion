@@ -3,7 +3,7 @@ using TMPro;
 
 public class Website : MonoBehaviour
 {
-    public TMP_InputField urlInputField; // The TextMeshPro Input Field to display the URL
+    public TMP_InputField urlInputField; 
 
     private string baseURL = "https://www.thedarkwiki.com/redirect/main/666/";
 
