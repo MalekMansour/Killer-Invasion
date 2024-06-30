@@ -14,7 +14,7 @@ public class Website : MonoBehaviour
 
     void GenerateRandomURL()
     {
-        string randomNumber = Random.Range(100000000, 999999999).ToString(); // Generate a random 9-digit number
+        string randomNumber = Random.Range(100000000, 999999999).ToString();
         string randomURL = baseURL + randomNumber + ".onion";
         urlInputField.text = randomURL;
     }
