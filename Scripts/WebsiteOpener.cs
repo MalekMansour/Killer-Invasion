@@ -46,14 +46,12 @@ public class WebsiteOpener : MonoBehaviour
     {
         if (buttonToWebsiteMap.ContainsKey(button))
         {
-            // Open the already assigned website
             OpenWebsite(buttonToWebsiteMap[button]);
         }
         else
         {
             if (availableWebsites.Count > 0)
             {
-                // Assign a random website to the button
                 int randomIndex = Random.Range(0, availableWebsites.Count);
                 GameObject assignedWebsite = availableWebsites[randomIndex];
                 availableWebsites.RemoveAt(randomIndex);
@@ -81,7 +79,6 @@ public class WebsiteOpener : MonoBehaviour
 
     void UpdateButtonThumbnail(GameObject button, GameObject website)
     {
-        // Find the Image component under the button and update its sprite
         Image imageComponent = button.GetComponentInChildren<Image>();
         if (imageComponent != null && websiteThumbnails.ContainsKey(website))
         {
