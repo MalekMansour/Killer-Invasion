@@ -14,7 +14,6 @@ public class WebsiteOpener : MonoBehaviour
 
     void Start()
     {
-        // Initialize the available websites list with all children of websitesParent
         for (int i = 0; i < websitesParent.transform.childCount; i++)
         {
             GameObject website = websitesParent.transform.GetChild(i).gameObject;
