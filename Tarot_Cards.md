@@ -6,8 +6,8 @@ After buying tarot cards from the Tarod Card Shop, you can pick up the package a
 * The Deaf (5% Chance) - Mutes the sound for 1 minute in game
 * The Blind (5% Chance) - Makes the screen blurry for 1 minute in game
   
-* The Flash (5% Chance) - Makes you 4X Faster for 4 minutes in game
-* The Turtle (5% Chance) - Makes you half your speed for 4 minutes in game
+* The Flash (5% Chance) - Makes you 3X Faster for 1 minute in game
+* The Turtle (5% Chance) - Makes you half your speed for 1 minute in game
 
 * The Lunatic (5% Chance) - Makes the sanity go up to 80%
 * The Wise (5% Chance) - Makes the sanity go back to 0%
