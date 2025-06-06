@@ -3,8 +3,8 @@ After buying tarot cards from the Tarod Card Shop, you can pick up the package a
 
 * The Blank (30% Chance) - Does Nothing
 
-* The Deaf (5% Chance) - Mutes the sound for 4 minutes in game
-* The Blind (5% Chance) - Makes the screen blurry for 4 minutes in game
+* The Deaf (5% Chance) - Mutes the sound for 1 minute in game
+* The Blind (5% Chance) - Makes the screen blurry for 1 minute in game
   
 * The Flash (5% Chance) - Makes you 4X Faster for 4 minutes in game
 * The Turtle (5% Chance) - Makes you half your speed for 4 minutes in game
