@@ -72,3 +72,7 @@ II. Mechanics
 9. Tarot Cards: There is a website where you can buy a deck of Tarot cards for $60.
 
 10. Programs
+Anonymouse:
+
+Redhacker:
+
