@@ -68,4 +68,4 @@ Anonymouse:
 Hacking people's IP addresses and finding out their real address. You can then send hitmen on those people. Or get the second ending to kill the killer.
 
 Redhacker:
-
+You have to insert someone's information and the more information you have on them, the faster it will work. This program is used to find someone's IP address. You can then insert the IP address inside of anonymouse to find a real address.
