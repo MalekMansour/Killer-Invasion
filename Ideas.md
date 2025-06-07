@@ -3,22 +3,22 @@ IDEA SUMMARY UPDATED (2024-06-18)
 I. Story
 - The game is set in a dangerous neighborhood at night. The main characther lives inside a house. The environment is grainy, gloomy, and somewhat terrifying. 
 Your son has been kidnapped and the kidnappers are asking for 300 crypto coins in return. You decide to go back to the old ways that you used to make money, which is on the dark web. There are two ways you can win.
-  1) Trying to get the money from crypto mining / doing favors for other people / gambling. 
+  1) Trying to get the money from hacking / crypto mining / gambling. 
   2) Try to find the location of the kidnapper on the dark web and get to "kill" the guy, and save your son.
-- You would also have to defend yourself against various killers that might find your IP and your address and you have to hide/close the lights etc. The police can also find you if you are doing a lot of dangerous things on the dark web. 
-There will be multiple endings to the game. (father saves son/father ditches son/etc)
+- You would also have to defend yourself against a killer that might find your IP and your address and you have to hide/close the lights etc. The police can also find you if you are doing a lot of dangerous things on the dark web. 
 Players should get good instructions at the beginning. The game should be challenging but not to the point where it is unbeatable.
 The game will start by providing a 3 step guide (Kinda mocking how "easy" the game is.) The 3 step guide will explain some basic mechanics but not all. The 3 step guide will also provide some basic images. 
 
 3 Step Guide:
 1. Turn on all the lights to keep your sanity.
-2. Browse the Dark Web & find ways to make money.
+2. Hack people to make money.
 3. Look out the windows. Hide if you feel in danger.
 
 II. Mechanics
 1. Sanity Level
 - There is an Insanity Level (hidden from the player)
-- Keeping 4 lights on will decrease Insanity. 3 lights on will not change anything. 2 lights on will increase insanity. 1 light on will increase insanity. 0 lights on will rapidly increase the insanity.
+- Keeping 4 lights on will decrease Insanity Fast. 3 lights on will decrease Isanity slow. 2 lights on wont do anything to Insanity. 1 light on will increase insanity fast. 0 lights on will rapidly increase the insanity.
+
 - Each website will have a specific sanity value. The higher the value is, the more % the insanity will increase.
 - There is 8 cigarettes in the kitchen. Each cigarette smoked will decrease the insanity by 20%.
 - There is an infinite amount of pills to take. Each pill decrease the insanity by 5%. If too many pills are taken at the same time, some side effects might start happening and the insanity might start increasing instead. 
