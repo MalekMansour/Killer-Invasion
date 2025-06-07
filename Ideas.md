@@ -15,11 +15,11 @@ The game will start by providing a 3 step guide (Kinda mocking how "easy" the ga
 3. Look out the windows. Hide if you feel in danger.
 
 II. Mechanics
+
 1. Sanity Level
 - There is an Insanity Level (hidden from the player)
 - Keeping 4 lights on will decrease Insanity Fast. 3 lights on will decrease Isanity slow. 2 lights on wont do anything to Insanity. 1 light on will increase insanity fast. 0 lights on will rapidly increase the insanity.
 
-- Each website will have a specific sanity value. The higher the value is, the more % the insanity will increase.
 - There is 8 cigarettes in the kitchen. Each cigarette smoked will decrease the insanity by 20%.
 - There is an infinite amount of pills to take. Each pill decrease the insanity by 5%. If too many pills are taken at the same time, some side effects might start happening and the insanity might start increasing instead. 
 - Level 0 - Level 1: 20%. Level 1 - Level 2: 40%. Level 2 - Level 3: 60%. Level 3 - Level 4: 80%. Level 4 - Level 5: 100% = Death.
@@ -44,34 +44,26 @@ II. Mechanics
    - Anonymous Tracker (150 Ⱡ)
    - RedHacker (185 Ⱡ)
 
-5. Killer
--  The more the player stays on the dark web, different individuals might start sending text messages to the player asking for favors or sending threats.
--  Various outcomes will lead to the killer coming to the player's house to attack.
+4. Killer
 - The killers might appear in front of the door/outside the window/etc.
 - The player can use sound cues (e.g. footsteps in the garden) or visual cues (e.g. door peephole, window blinds) to detect nearby killers.
-- Players can hide in the closet or under the bed.
-- 4 lights on = 15 - 18 Minutes to leave. 3 Lights on = 10 - 15 Minutes to leave. 2 Lights on = 7 - 10 Minutes to leave. 1 Light on = 3 - 7 Minutes to leave. 0 Lights on = 2 - 3 Minutes to leave.
+- Players can hide under the bed.
+- 4 lights on = 12 - 16 Minutes to leave. 3 Lights on = 8 - 12 Minutes to leave. 2 Lights on = 4 - 8 Minutes to leave. 1 Light on = 2 - 4 Minutes to leave. 0 Lights on = 1 - 2 Minutes to leave.
   
 5. Police:
-- Sound cues: police siren
-- If you hear police sirens but there is nothing outside the window --> Not for you. If you hear police sirens and there are police cars outside the window --> The police are coming --> Log out of the dark web, turn off all the lights, and hide.
+- If the insanity level reaches 100%, the police will come for you in the next 5 - 25 minutes. There is no way of surviving the police if they come to your house.
   
 6. Ambience:
   - Cars driving by, owl, dog barking, etc.
     
 7. Gamble:
-- If you are really desperate to get money, you can gamble online. You can either do blackjack or roulette.
+- If you are really desperate to get money, you can gamble online. You can play blackjack.
 - The more the player bets, the less chance he has of winning.
-- The website will only open later on in the game.
-- If he has the player has a winning streak, it will stop him from winning.
-  
-8. Lights:
-- The player has to keep the light open (most of the time) because if the house is too dark, the insanity level will go up much faster.
-- There are 4 light switches in the house. When you hide from the killer/police, you have to turn off all the lights. The more lights are turned on, the higher the chance you will get caught in your hiding place.
+- The website will only open later on in the game (after 2 AM)
 
-9. Tarot Cards: There is a website where you can buy a deck of Tarot cards for $60.
+8. Tarot Cards: There is a website where you can buy a deck of Tarot cards for $60.
 
-10. Programs
+9. Programs
 Anonymouse:
 Hacking people's IP addresses and finding out their real address. You can then send hitmen on those people.
 
