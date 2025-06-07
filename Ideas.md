@@ -73,6 +73,7 @@ II. Mechanics
 
 10. Programs
 Anonymouse:
+Hacking people's IP addresses and finding out their real address. You can then send hitmen on those people.
 
 Redhacker:
 
