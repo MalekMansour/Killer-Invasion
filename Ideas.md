@@ -73,3 +73,6 @@ You have to insert someone's information and the more information you have on th
 AirCrack Wifi Cracker:
 A program used to hack into different wifis that will give you faster wifi networks.
 You pick a network to hack and then the minigame will generate a big block of numbers and you have to choose which number is NOT present in the block of numbers. If done correctly you will be able to hack into the wifi. The proccess will then automatically give you the wifi password
+
+Abyss.rom:
+Your main hacking tool to hack people and get their money. You will be able to go through a bunch of profiles that have money and their security. You will get 10% of the money that you will hack.
