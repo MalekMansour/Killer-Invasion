@@ -65,10 +65,11 @@ II. Mechanics
 
 9. Programs
 Anonymouse:
-Hacking people's IP addresses and finding out their real address. You can then send hitmen on those people. Or get the second ending to kill the killer.
+Hacking people's IP addresses and finding out their real address. You can then send hitmen on those people. Or get the second ending to kill the killer. The proccess will only take 1 minute.
 
 Redhacker:
-You have to insert someone's information and the more information you have on them, the faster it will work. This program is used to find someone's IP address. You can then insert the IP address inside of anonymouse to find a real address.
+You have to insert someone's information and the more information you have on them, the faster it will work. This program is used to find someone's IP address. You can then insert the IP address inside of anonymouse to find a real address. The proccess will depend on how much information you inserted.
 
 AirCrack Wifi Cracker:
 A program used to hack into different wifis that will give you faster wifi networks.
+You pick a network to hack and then the minigame will generate a big block of numbers and you have to choose which number is NOT present in the block of numbers. If done correctly you will be able to hack into the wifi. The proccess will then automatically give you the wifi password
