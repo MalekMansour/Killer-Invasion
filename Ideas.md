@@ -65,7 +65,7 @@ II. Mechanics
 
 9. Programs
 Anonymouse:
-Hacking people's IP addresses and finding out their real address. You can then send hitmen on those people.
+Hacking people's IP addresses and finding out their real address. You can then send hitmen on those people. Or get the second ending to kill the killer.
 
 Redhacker:
 
