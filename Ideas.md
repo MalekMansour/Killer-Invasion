@@ -4,7 +4,7 @@ I. Story
 - The game is set in a dangerous neighborhood at night. The main characther lives inside a house. The environment is grainy, gloomy, and somewhat terrifying. 
 Your son has been kidnapped and the kidnappers are asking for 300 crypto coins in return. You decide to go back to the old ways that you used to make money, which is on the dark web. There are two ways you can win.
   1) Trying to get the money from hacking / crypto mining / gambling. 
-  2) Try to find the location of the kidnapper on the dark web and get to "kill" the guy, and save your son.
+  2) Try to find the location of the kidnapper on the dark web and get to kill the guy, and save your son.
 - You would also have to defend yourself against a killer that might find your IP and your address and you have to hide/close the lights etc. The police can also find you if you are doing a lot of dangerous things on the dark web. 
 Players should get good instructions at the beginning. The game should be challenging but not to the point where it is unbeatable.
 The game will start by providing a 3 step guide (Kinda mocking how "easy" the game is.) The 3 step guide will explain some basic mechanics but not all. The 3 step guide will also provide some basic images. 
@@ -69,3 +69,6 @@ Hacking people's IP addresses and finding out their real address. You can then s
 
 Redhacker:
 You have to insert someone's information and the more information you have on them, the faster it will work. This program is used to find someone's IP address. You can then insert the IP address inside of anonymouse to find a real address.
+
+AirCrack Wifi Cracker:
+A program used to hack into different wifis that will give you faster wifi networks.
