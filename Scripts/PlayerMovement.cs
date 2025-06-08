@@ -2,22 +2,24 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    public float sprintSpeed = 8f;
+    public float moveSpeed = 10f;
+    public float sprintSpeed = 16f;
     private float currentSpeed;
     private bool isMovementLocked = false;
-    private Stamina stamina; 
-
-    void Start()
-    {
-        stamina = GetComponent<Stamina>(); 
-    }
 
     void Update()
     {
         if (!isMovementLocked)
         {
-            currentSpeed = Input.GetKey(KeyCode.LeftShift) && stamina.GetCurrentStamina() > 0 ? sprintSpeed : moveSpeed;
+            // Toggle sprinting with Shift
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                currentSpeed = sprintSpeed;
+            }
+            else
+            {
+                currentSpeed = moveSpeed;
+            }
 
             float horizontalInput = Input.GetAxis("Horizontal");
             float verticalInput = Input.GetAxis("Vertical");
