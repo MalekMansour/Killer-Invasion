@@ -76,3 +76,5 @@ You pick a network to hack and then the minigame will generate a big block of nu
 
 Abyss.rom:
 Your main hacking tool to hack people and get their money. You will be able to go through a bunch of profiles that have money and their security. You will get 10% of the money that you will hack. The minigame: a random number will show up between 1-9. if you think the next number is higher you have to write "Inject" and if you think it will be lower write "remove". the amount of numbers you will see depends on the security of the profile. You need to get at least 70% of it correct to be able to hack them and get 10% of their money. There will be a cooldown of 3 hacks ever 30 minutes thought
+
+The numbers will be between 001 and 999.
