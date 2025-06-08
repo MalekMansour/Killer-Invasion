@@ -1,59 +1,31 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Stamina : MonoBehaviour
 {
-    public Slider staminaBar; 
-    public float maxStamina = 1f; 
-    public float sprintStaminaCost = 0.1f;
-    public float staminaRegenRate = 0.2f; 
+    public float normalMoveSpeed = 10f;  // Speed when not sprinting
+    public float sprintMoveSpeed = 16f;  // Speed when sprinting
 
-    [HideInInspector]
-    public float currentStamina; 
+    private float currentMoveSpeed;
+    private PlayerMovement playerMovement;
 
     private void Start()
     {
-        currentStamina = maxStamina;
-        UpdateStaminaBar();
+        playerMovement = GetComponent<PlayerMovement>();
+        currentMoveSpeed = normalMoveSpeed;
     }
 
-    private void Update()
+    void Update()
     {
-        if (currentStamina <= 0)
+        // If Left Shift is held, use sprint speed
+        if (Input.GetKey(KeyCode.LeftShift))
         {
-            GetComponent<PlayerMovement>().SetMovementLocked(true);
+            currentMoveSpeed = sprintMoveSpeed;
         }
         else
         {
-            GetComponent<PlayerMovement>().SetMovementLocked(false);
-
-            if (Input.GetKey(KeyCode.LeftShift))
-            {
-                if (currentStamina > 0.01f)
-{
-    currentStamina -= sprintStaminaCost * Time.deltaTime;
-    UpdateStaminaBar();
-}
-else
-{
-    currentStamina = 0.01f; 
-    UpdateStaminaBar();
-}
-
-            }
-            else
-            {
-                if (currentStamina < maxStamina)
-                {
-                    currentStamina += staminaRegenRate * Time.deltaTime;
-                    UpdateStaminaBar();
-                }
-            }
+            currentMoveSpeed = normalMoveSpeed;
         }
-    }
 
-    private void UpdateStaminaBar()
-    {
-        staminaBar.value = currentStamina / maxStamina;
+        playerMovement.moveSpeed = currentMoveSpeed;
     }
 }
