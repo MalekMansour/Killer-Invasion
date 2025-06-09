@@ -6,19 +6,20 @@ using System.Collections.Generic;
 
 public class WebsiteOpener : MonoBehaviour
 {
-    public GameObject websitesParent; // Parent object containing all website screens
-    public GameObject panel; // Button container
-    public TMP_InputField urlInputField; // Shared URL bar
-    public Image progressBarImage; // Blue progress fill image in URL bar
+    public GameObject websitesParent;             // Parent containing all website screens
+    public GameObject panel;                      // Parent containing all the website buttons
+    public TMP_InputField urlInputField;          // The fake browser URL bar
+    public RawImage progressBar;                  // The blue RawImage loading bar
 
-    public Dictionary<GameObject, Sprite> websiteThumbnails = new Dictionary<GameObject, Sprite>();
+    private string baseURL = "https://www.thedarkwiki.com/redirect/main/";
+
+    private Dictionary<GameObject, Sprite> websiteThumbnails = new Dictionary<GameObject, Sprite>();
     private Dictionary<GameObject, GameObject> buttonToWebsiteMap = new Dictionary<GameObject, GameObject>();
     private List<GameObject> availableWebsites = new List<GameObject>();
-    private string baseURL = "https://www.thedarkwiki.com/redirect/main/";
 
     void Start()
     {
-        // Gather all available websites
+        // Collect all website screens
         for (int i = 0; i < websitesParent.transform.childCount; i++)
         {
             GameObject website = websitesParent.transform.GetChild(i).gameObject;
@@ -31,7 +32,7 @@ public class WebsiteOpener : MonoBehaviour
             }
         }
 
-        // Set up button click events
+        // Assign buttons
         for (int i = 0; i < panel.transform.childCount; i++)
         {
             GameObject button = panel.transform.GetChild(i).gameObject;
@@ -72,21 +73,35 @@ public class WebsiteOpener : MonoBehaviour
 
     IEnumerator OpenWebsiteWithDelay(GameObject website)
     {
-        // Set a new random URL
+        // Set random URL
         string randomNumber = Random.Range(100000000, 999999999).ToString();
         urlInputField.text = baseURL + randomNumber + ".onion";
 
-        // Reset progress bar
-        progressBarImage.fillAmount = 0f;
+        // Show and reset progress bar
+        if (progressBar != null)
+        {
+            progressBar.gameObject.SetActive(true);
+            progressBar.rectTransform.localScale = new Vector3(0f, 1f, 1f);
+        }
+
         float duration = 7f;
         float timer = 0f;
 
         while (timer < duration)
         {
             timer += Time.deltaTime;
-            progressBarImage.fillAmount = Mathf.Clamp01(timer / duration);
+            float progress = Mathf.Clamp01(timer / duration);
+
+            if (progressBar != null)
+            {
+                progressBar.rectTransform.localScale = new Vector3(progress, 1f, 1f);
+            }
+
             yield return null;
         }
+
+        // Optional: hide progress bar after load
+        // progressBar.gameObject.SetActive(false);
 
         // Hide all websites
         for (int i = 0; i < websitesParent.transform.childCount; i++)
@@ -94,7 +109,7 @@ public class WebsiteOpener : MonoBehaviour
             websitesParent.transform.GetChild(i).gameObject.SetActive(false);
         }
 
-        // Show selected one
+        // Show the selected website
         website.SetActive(true);
     }
 
