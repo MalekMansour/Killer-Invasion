@@ -16,6 +16,7 @@ public class WebsiteOpener : MonoBehaviour
     private Dictionary<GameObject, Sprite> websiteThumbnails = new Dictionary<GameObject, Sprite>();
     private Dictionary<GameObject, GameObject> buttonToWebsiteMap = new Dictionary<GameObject, GameObject>();
     private List<GameObject> availableWebsites = new List<GameObject>();
+    private Coroutine loadingCoroutine = null;
 
     void Start()
     {
@@ -51,87 +52,97 @@ public class WebsiteOpener : MonoBehaviour
 
     void OnButtonClick(GameObject button)
     {
+        GameObject assignedWebsite;
+
         if (buttonToWebsiteMap.ContainsKey(button))
         {
-            StartCoroutine(OpenWebsiteWithDelay(buttonToWebsiteMap[button]));
+            assignedWebsite = buttonToWebsiteMap[button];
         }
         else if (availableWebsites.Count > 0)
         {
             int randomIndex = Random.Range(0, availableWebsites.Count);
-            GameObject assignedWebsite = availableWebsites[randomIndex];
+            assignedWebsite = availableWebsites[randomIndex];
             availableWebsites.RemoveAt(randomIndex);
 
             buttonToWebsiteMap[button] = assignedWebsite;
             UpdateButtonThumbnail(button, assignedWebsite);
-            StartCoroutine(OpenWebsiteWithDelay(assignedWebsite));
         }
         else
         {
             Debug.LogWarning("No more websites available to assign.");
+            return;
         }
+
+        // Cancel any current loading coroutine
+        if (loadingCoroutine != null)
+        {
+            StopCoroutine(loadingCoroutine);
+        }
+
+        // Start loading the selected website
+        loadingCoroutine = StartCoroutine(OpenWebsiteWithDelay(assignedWebsite));
     }
 
-IEnumerator OpenWebsiteWithDelay(GameObject website)
-{
-    // Set random URL
-    string randomNumber = Random.Range(100000000, 999999999).ToString();
-    urlInputField.text = baseURL + randomNumber + ".onion";
-
-    // Show and reset progress bar
-    if (progressBar != null)
+    IEnumerator OpenWebsiteWithDelay(GameObject website)
     {
-        progressBar.gameObject.SetActive(true);
-        progressBar.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 0f);
-    }
+        // Set a random URL
+        string randomNumber = Random.Range(100000000, 999999999).ToString();
+        urlInputField.text = baseURL + randomNumber + ".onion";
 
-    float duration = 7f;
-    float timer = 0f;
-
-    float targetWidth = urlInputField.GetComponent<RectTransform>().rect.width * 2f;
-
-    while (timer < duration)
-    {
-        timer += Time.deltaTime;
-        float progress = Mathf.Clamp01(timer / duration);
-        float currentWidth = targetWidth * progress;
-
+        // Show and reset progress bar
         if (progressBar != null)
         {
-            progressBar.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, currentWidth);
+            progressBar.gameObject.SetActive(true);
+            progressBar.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 0f);
         }
 
-        yield return null;
+        float duration = 12f;
+        float timer = 0f;
+
+        float targetWidth = urlInputField.GetComponent<RectTransform>().rect.width * 2f;
+
+        while (timer < duration)
+        {
+            timer += Time.deltaTime;
+            float progress = Mathf.Clamp01(timer / duration);
+            float currentWidth = targetWidth * progress;
+
+            if (progressBar != null)
+            {
+                progressBar.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, currentWidth);
+            }
+
+            yield return null;
+        }
+
+        // Instantly hide the progress bar
+        if (progressBar != null)
+        {
+            progressBar.gameObject.SetActive(false);
+        }
+
+        // Shrink in background
+        float shrinkSpeed = 5000f;
+        float width = progressBar.rectTransform.rect.width;
+
+        while (width > 1f)
+        {
+            width -= Time.deltaTime * shrinkSpeed;
+            progressBar.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, Mathf.Max(0f, width));
+            yield return null;
+        }
+
+        progressBar.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 0f);
+
+        // Hide all websites
+        for (int i = 0; i < websitesParent.transform.childCount; i++)
+        {
+            websitesParent.transform.GetChild(i).gameObject.SetActive(false);
+        }
+
+        // Show the selected website
+        website.SetActive(true);
     }
-
-    // Instantly hide the progress bar (no shrink visible)
-    if (progressBar != null)
-    {
-        progressBar.gameObject.SetActive(false);
-    }
-
-    // Shrink it quietly in background
-    float shrinkSpeed = 8000f;
-    float width = progressBar.rectTransform.rect.width;
-
-    while (width > 1f)
-    {
-        width -= Time.deltaTime * shrinkSpeed;
-        progressBar.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, Mathf.Max(0f, width));
-        yield return null;
-    }
-
-    // Just to be sure
-    progressBar.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 0f);
-
-    // Hide all websites
-    for (int i = 0; i < websitesParent.transform.childCount; i++)
-    {
-        websitesParent.transform.GetChild(i).gameObject.SetActive(false);
-    }
-
-    // Show the selected website
-    website.SetActive(true);
-}
 
     void UpdateButtonThumbnail(GameObject button, GameObject website)
     {
