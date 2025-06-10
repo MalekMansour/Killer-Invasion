@@ -1,6 +1,5 @@
 # Killer Invasion
-Your son has been kidnapped and they are asking for 300 crypto coins in return. You decide to go back to the old ways that you used to make money, which is on the dark web.
-
+Your daughter has been kidnapped by a secret organization and you owe 500 CryptoCoins to get her back. You use your hacking knowledge to hack various people from the dark web and steal their money.
 [Link to YouTube Video](https://www.youtube.com/watch?v=Q_05seOtb3g)
 
 ![Screenshot](screenshot/KI3.png)
