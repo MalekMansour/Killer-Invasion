@@ -136,20 +136,53 @@ public class Wifi : MonoBehaviour
         }
     }
 
-    void DisplayWifis()
+void DisplayWifis()
+{
+    // 1. Find max length for each column
+    int maxName = 0, maxBSSID = 0, maxPWR = 0, maxBeacons = 0, maxENC = 0, maxAUTH = 0;
+
+    foreach (var net in networks)
     {
-        string header = $"{"Name",-26} {"BSSID",-12} {"PWR",-5} {"Beacons",-8} {"ENC",-5} AUTH\n";
-        string rows = "";
-
-        foreach (var net in networks)
-        {
-            string status = net.isBlocked ? "[BLOCKED]" : net.isCracked ? "[✓]" : "";
-            rows += string.Format("{0,-26} {1,-12} {2,-5} {3,-8} {4,-5} {5} {6}\n",
-                net.name, net.bssid, net.power, net.beacons, net.enc, net.auth, status);
-        }
-
-        wifis.text = header + rows + "\nType /crack <BSSID> to begin hacking.";
+        maxName = Mathf.Max(maxName, net.name.Length);
+        maxBSSID = Mathf.Max(maxBSSID, net.bssid.Length);
+        maxPWR = Mathf.Max(maxPWR, (net.power + "dBm").Length);
+        maxBeacons = Mathf.Max(maxBeacons, net.beacons.ToString().Length);
+        maxENC = Mathf.Max(maxENC, net.enc.Length);
+        maxAUTH = Mathf.Max(maxAUTH, net.auth.Length);
     }
+
+    // 2. Create header using max lengths + 10 spacing
+    string header =
+        "Name".PadRight(maxName + 10) +
+        "BSSID".PadRight(maxBSSID + 10) +
+        "PWR".PadRight(maxPWR + 10) +
+        "Beacons".PadRight(maxBeacons + 10) +
+        "ENC".PadRight(maxENC + 10) +
+        "AUTH".PadRight(maxAUTH + 10) +
+        "STATUS\n";
+
+    string separator = new string('-', header.Length) + "\n";
+
+    string rows = "";
+
+    foreach (var net in networks)
+    {
+        string status = net.isBlocked ? "BLOCKED" : net.isCracked ? "✓" : "";
+
+        string name = net.name.PadRight(maxName) + new string(' ', 10);
+        string bssid = net.bssid.PadRight(maxBSSID) + new string(' ', 10);
+        string pwr = (net.power + "dBm").PadRight(maxPWR) + new string(' ', 10);
+        string beacons = net.beacons.ToString().PadRight(maxBeacons) + new string(' ', 10);
+        string enc = net.enc.PadRight(maxENC) + new string(' ', 10);
+        string auth = net.auth.PadRight(maxAUTH) + new string(' ', 10);
+        string stat = status;
+
+        rows += name + bssid + pwr + beacons + enc + auth + stat + "\n";
+    }
+
+    wifis.text = header + separator + rows + "\nType /crack <BSSID> to begin hacking.";
+}
+
 
     void CrackCommand(string input)
     {
