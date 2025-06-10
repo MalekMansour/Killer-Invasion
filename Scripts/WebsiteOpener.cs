@@ -99,7 +99,7 @@ public class WebsiteOpener : MonoBehaviour
         float duration = 12f;
         float timer = 0f;
 
-        float targetWidth = urlInputField.GetComponent<RectTransform>().rect.width * 2f;
+        float targetWidth = urlInputField.GetComponent<RectTransform>().rect.width * 2.05f;
 
         while (timer < duration)
         {
@@ -122,7 +122,7 @@ public class WebsiteOpener : MonoBehaviour
         }
 
         // Shrink in background
-        float shrinkSpeed = 5000f;
+        float shrinkSpeed = 3000f;
         float width = progressBar.rectTransform.rect.width;
 
         while (width > 1f)
