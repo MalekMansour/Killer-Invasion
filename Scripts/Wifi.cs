@@ -163,31 +163,35 @@ public class Wifi : MonoBehaviour
     }
 
     string GenerateCrackBlock(out string missingChars)
+{
+    List<char> numbers = new List<char>("123456789".ToCharArray());
+    List<char> letters = new List<char>("ABCDEFG".ToCharArray());
+
+    // Select 3 numbers and 3 letters to remove
+    ShuffleList(numbers);
+    ShuffleList(letters);
+
+    List<char> removed = new List<char>();
+    removed.AddRange(numbers.GetRange(0, 3));
+    removed.AddRange(letters.GetRange(0, 3));
+
+    // Create the remaining valid pool
+    List<char> allowedPool = new List<char>();
+    allowedPool.AddRange(numbers.GetRange(3, 6)); // 6 remaining numbers
+    allowedPool.AddRange(letters.GetRange(3, 4)); // 4 remaining letters
+
+    // Fill the block
+    char[] block = new char[100];
+    for (int i = 0; i < block.Length; i++)
     {
-        const string pool = "123456789ABCDEFG";
-        char[] block = new char[100];
-        List<int> indicesToHide = new List<int>();
-        HashSet<char> missing = new HashSet<char>();
-
-        for (int i = 0; i < block.Length; i++)
-        {
-            block[i] = pool[UnityEngine.Random.Range(0, pool.Length)];
-        }
-
-        while (missing.Count < 6)
-        {
-            int index = UnityEngine.Random.Range(0, block.Length);
-            char c = block[index];
-            if (!missing.Contains(c))
-            {
-                missing.Add(c);
-                block[index] = '_';
-            }
-        }
-
-        missingChars = string.Join("", missing);
-        return new string(block);
+        block[i] = allowedPool[UnityEngine.Random.Range(0, allowedPool.Count)];
     }
+
+    // Output the removed (missing) characters for validation
+    missingChars = string.Join("", removed);
+    return new string(block);
+}
+
 
     bool ValidateMissingCharacters(string input)
     {
