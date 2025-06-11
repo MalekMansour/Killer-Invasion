@@ -138,7 +138,6 @@ public class Wifi : MonoBehaviour
 
 void DisplayWifis()
 {
-    // 1. Find max length for each column
     int maxName = 0, maxBSSID = 0, maxPWR = 0, maxBeacons = 0, maxENC = 0, maxAUTH = 0;
 
     foreach (var net in networks)
@@ -151,7 +150,6 @@ void DisplayWifis()
         maxAUTH = Mathf.Max(maxAUTH, net.auth.Length);
     }
 
-    // 2. Create header using max lengths + 10 spacing
     string header =
         "Name".PadRight(maxName + 10) +
         "BSSID".PadRight(maxBSSID + 10) +
