@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -6,109 +6,97 @@ using TMPro;
 public class WifiSelector : MonoBehaviour
 {
     [Header("UI References")]
-    public Button wifiIconButton;       // The Wi-Fi icon button you click
-    public GameObject listPanel;        // Panel containing the list of networks
-    public Transform listContent;       // Content container for list entries
-    public GameObject entryPrefab;      // Prefab with: Icon (Image), Name (TMP_Text), Connect (Button)
-    public GameObject passwordPopup;    // Popup panel for entering password
-    public TMP_Text popupTitleText;     // “Enter password for …”
-    public TMP_InputField popupInput;   // User types password here
-    public Button popupConfirmButton;   // “OK” button
-    public Button popupCancelButton;    // “Cancel” button
+    public Button wifiIconButton;    // Your on-screen Wi-Fi icon
+    public GameObject listPanel;     // Panel containing the scroll-view
+    public Transform listContent;    // Where entries get instantiated
+    public GameObject entryPrefab;   // Prefab: [Icon(Image) | Name(TMP) | Connect(Button)]
+    
+    public GameObject passwordPopup;
+    public TMP_Text popupTitle;
+    public TMP_InputField popupInput;
+    public Button popupOk, popupCancel;
+    public TMP_Text feedbackText;    // Reuse your feedback text for error messages
 
-    [Header("Icons")]
-    public Sprite homeIcon;             // Icon for your own network
-    public Sprite twoBarIcon;
-    public Sprite threeBarIcon;
-    public Sprite fourBarIcon;
+    [Header("Signal Icons")]
+    public Sprite homeIcon, twoBarIcon, threeBarIcon, fourBarIcon;
 
-    [Header("Manager")]
-    public Wifi wifiManager;            // Reference to your existing Wifi script
+    Wifi wifiManager;
+    Wifi.WifiNetwork pendingNetwork;
 
-    private Wifi.WifiNetwork selectedNetwork;
-
-    void Start()
+    void Awake()
     {
-        // Hide UI initially
+        wifiManager = GetComponent<Wifi>();
         listPanel.SetActive(false);
         passwordPopup.SetActive(false);
 
-        // Hook up events
         wifiIconButton.onClick.AddListener(ShowList);
-        popupCancelButton.onClick.AddListener(() => passwordPopup.SetActive(false));
-        popupConfirmButton.onClick.AddListener(OnPasswordConfirmed);
+        popupCancel.onClick.AddListener(() => passwordPopup.SetActive(false));
+        popupOk.onClick.AddListener(OnPasswordSubmitted);
     }
 
     void ShowList()
     {
-        // Clear old entries
+        // clear old entries
         foreach (Transform t in listContent) Destroy(t.gameObject);
 
-        // Add "Weak Home Network" (free)
+        // 1) Home network (free)
         CreateEntry(
-            name: "Weak Home Network",
+            icon: homeIcon,
+            displayName: "Weak Home Network",
             net: null,
-            barIcon: homeIcon,
-            freeToConnect: true
+            freeConnect: true
         );
 
-        // Add each real network
+        // 2) Real networks
         foreach (var net in wifiManager.networks)
         {
             Sprite icon = net.bars == 2 ? twoBarIcon
                         : net.bars == 3 ? threeBarIcon
                         : fourBarIcon;
 
-            CreateEntry(
-                name: net.name,
-                net: net,
-                barIcon: icon,
-                freeToConnect: false
-            );
+            CreateEntry(icon, net.name, net, false);
         }
 
         listPanel.SetActive(true);
     }
 
-    void CreateEntry(string name, Wifi.WifiNetwork net, Sprite barIcon, bool freeToConnect)
+    void CreateEntry(Sprite icon, string displayName, Wifi.WifiNetwork net, bool freeConnect)
     {
-        // Instantiate prefab under the listContent
-        var entry = Instantiate(entryPrefab, listContent);
-        
-        // Set icon
-        entry.transform.Find("Icon").GetComponent<Image>().sprite = barIcon;
-        
-        // Set name
-        entry.transform.Find("Name").GetComponent<TMP_Text>().text = name;
-
-        // Configure Connect button
-        var btn = entry.transform.Find("ConnectButton").GetComponent<Button>();
+        var go = Instantiate(entryPrefab, listContent);
+        go.transform.Find("Icon").GetComponent<Image>().sprite = icon;
+        go.transform.Find("Name").GetComponent<TMP_Text>().text = displayName;
+        var btn = go.transform.Find("ConnectButton").GetComponent<Button>();
         btn.GetComponentInChildren<TMP_Text>().text = "Connect";
-        if (freeToConnect)
+
+        if (freeConnect)
         {
-            btn.onClick.AddListener(() => {
+            btn.onClick.AddListener(() =>
+            {
                 listPanel.SetActive(false);
-                wifiManager.StartConnection(net); // free, so directly connect
+                wifiManager.StartConnection(null);
             });
         }
         else
         {
-            btn.onClick.AddListener(() => {
-                selectedNetwork = net;
-                popupTitleText.text = $"Enter password for {net.name}";
+            btn.onClick.AddListener(() =>
+            {
+                pendingNetwork = net;
+                popupTitle.text = $"Enter password for {net.name}";
                 popupInput.text = "";
                 passwordPopup.SetActive(true);
             });
         }
     }
 
-    void OnPasswordConfirmed()
+    void OnPasswordSubmitted()
     {
-        if (popupInput.text == selectedNetwork.password)
+        if (pendingNetwork == null) return;
+
+        if (popupInput.text == pendingNetwork.password)
         {
             passwordPopup.SetActive(false);
             listPanel.SetActive(false);
-            wifiManager.StartConnection(selectedNetwork);
+            wifiManager.StartConnection(pendingNetwork);
         }
         else
         {
