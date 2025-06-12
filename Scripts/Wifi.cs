@@ -68,7 +68,7 @@ public class Wifi : MonoBehaviour
                 string signal = currentTarget.bars == 2 ? "weak"
                              : currentTarget.bars == 3 ? "moderate"
                              : "strong";
-                feedbackText.text = $"✅ Cracked! Password: {currentTarget.password}\n" +
+                feedbackText.text = $"Network Cracked. Password: {currentTarget.password}\n" +
                                     $"Signal: {signal}\n" +
                                     "Type /home";
                 currentTarget = null;
@@ -79,12 +79,12 @@ public class Wifi : MonoBehaviour
                 if (currentTarget.failedAttempts >= 2)
                 {
                     currentTarget.isBlocked = true;
-                    feedbackText.text = "❌ Failed twice. Network blocked.\nType /home";
+                    feedbackText.text = "Failed twice. Network blocked.\nType /home";
                     currentTarget = null;
                 }
                 else
                 {
-                    feedbackText.text = "❌ Incorrect. Try again.";
+                    feedbackText.text = "Incorrect. Try again.";
                 }
             }
             return;
@@ -186,7 +186,7 @@ public class Wifi : MonoBehaviour
         currentCrackBlock = GenerateCrackBlock(out currentMissing);
 
         // Show mini-game tutorial + block
-        namesText.text   = "🔐 CRACK MODE 🔐\n" +
+        namesText.text   = "Cracking...\n" +
                            "Type the 3 missing LETTERS and 3 missing NUMBERS (any order) and press Enter:\n\n" +
                            currentCrackBlock;
         feedbackText.text = "";
