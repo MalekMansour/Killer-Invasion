@@ -1,71 +1,76 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using UnityEngine;
 using TMPro;
 
 public class Wifi : MonoBehaviour
 {
+    [Header("UI Components")]
     public TMP_InputField inputField;
-    public TMP_Text wifis;
+    public TMP_Text namesText;
+    public TMP_Text bssidText;
+    public TMP_Text pwrText;
+    public TMP_Text beaconsText;
+    public TMP_Text encText;
+    public TMP_Text authText;
+    public TMP_Text statusText;
     public TMP_Text feedbackText;
 
-    public class WifiNetwork
+    class WifiNetwork
     {
-        public string name;
-        public string bssid;
-        public int power;
-        public int beacons;
-        public string enc = "WPA2";
-        public string auth = "PSK";
-        public int bars;
-        public string password;
+        public string name, bssid, enc = "WPA2", auth = "PSK", password;
+        public int power, beacons, bars;
         public int failedAttempts = 0;
-        public bool isBlocked = false;
-        public bool isCracked = false;
+        public bool isBlocked = false, isCracked = false;
     }
 
-    private List<WifiNetwork> networks = new List<WifiNetwork>();
+    List<WifiNetwork> networks = new List<WifiNetwork>();
+    WifiNetwork currentTarget = null;
+    string currentMissing, currentCrackBlock;
 
-    private string[] wifiNames = new string[]
-    {
-        "Adam's Office", "SmartHome8920", "Byte Me", "BeerLover69420", "Scott's Network",
-        "Tell my Wi-Fi love her", "NextHome-5G", "xfinitywifi", "Mom click here for Wi-Fi"
+    string[] wifiNames = {
+        "Gordon's Office","SmartHome","Byte Me","BeerLover69420","Scott's Network",
+        "Tell my Wi-Fi love her","NextHome-5G","infinitywifi","Mom click here for Wi-Fi"
     };
-
-    private string[] passwordWords = new string[]
-    {
-        "coffee", "admin", "dragon", "hunter", "tsunami", "netgear", "sneaky", "shadow", "monkey", "kitty",
-        "letmein", "default", "welcome", "guest", "qwerty", "abc123", "login", "ball9", "iloveyou", "princess",
-        "master", "adam", "superman", "batman", "trustno1", "password1", "admin123", "router", "internet",
-        "wifi4me", "hidden123", "mywifi", "youcantguess", "mypass", "secureme", "private", "dangerzone",
-        "fortress", "n3tw0rk", "rootaccess", "onionnet", "vault", "nowifi4u", "topsecret", "adminpanel",
-        "streamline", "blacknet", "undercover", "quickpass", "wiredin", "420smoker", "2fast4u", "signalbooster"
+    string[] passwordWords = {
+        "coffee","admin","dragon","hunter","tsunami","netgear","sneaky","shadow","monkey","kitty",
+        "letmein","default","welcome","guest","qwerty","abc123","login","ball9","iloveyou","princess",
+        "master","superman","batman","trustno1","password1","admin123","router","internet",
+        "wifi4me","hidden123","mywifi","youcantguess","mypass","secureme","private","dangerzone",
+        "fortress","n3tw0rk","rootaccess","onionnet","vault","nowifi4u","topsecret","blacknet","undercover",
+        "quickpass","wiredin","2fast4u", "insym", "hackmeifyoucan","hiddenpower"
     };
-
-    private WifiNetwork currentTarget = null;
-    private string currentMissing = "";
-    private string currentCrackBlock = "";
 
     void Start()
     {
         GenerateWifis();
         DisplayWifis();
+        feedbackText.text = "Type /crack <BSSID> to begin.";
         inputField.onSubmit.AddListener(HandleUserInput);
     }
 
-    void HandleUserInput(string input)
+    void HandleUserInput(string raw)
     {
-        input = input.Trim();
+        string input = raw.Trim();
+        inputField.text = "";
+        inputField.ActivateInputField();
         feedbackText.text = "";
 
+        // If cracking in progress
         if (currentTarget != null)
         {
-            // Only allow password attempt input during cracking
             if (ValidateMissingCharacters(input))
             {
                 currentTarget.isCracked = true;
-                string signal = currentTarget.bars == 2 ? "weak" : currentTarget.bars == 3 ? "moderate" : "strong";
-                wifis.text = $"✅ Cracked successfully!\nPassword: {currentTarget.password}\nSignal: {signal}\n\nType /home to return.";
+                // signal classification after cracking
+                string signal = currentTarget.bars == 2 ? "weak"
+                             : currentTarget.bars == 3 ? "moderate"
+                             : "strong";
+                feedbackText.text = $"✅ Cracked! Password: {currentTarget.password}\n" +
+                                    $"Signal: {signal}\n" +
+                                    "Type /home";
                 currentTarget = null;
             }
             else
@@ -74,150 +79,127 @@ public class Wifi : MonoBehaviour
                 if (currentTarget.failedAttempts >= 2)
                 {
                     currentTarget.isBlocked = true;
-                    feedbackText.text = "❌ Incorrect again. This network is now blocked.\n\nType /home to return.";
+                    feedbackText.text = "❌ Failed twice. Network blocked.\nType /home";
                     currentTarget = null;
                 }
                 else
                 {
                     feedbackText.text = "❌ Incorrect. Try again.";
-                    wifis.text = currentCrackBlock + "\n\nEnter missing characters (3 letters + 3 numbers, any order):";
                 }
             }
-
-            inputField.text = "";
-            inputField.ActivateInputField();
             return;
         }
 
+        // Global commands
         if (input.Equals("/home", StringComparison.OrdinalIgnoreCase))
         {
-            feedbackText.text = "";
             currentTarget = null;
+            feedbackText.text = "Type /crack <BSSID> to begin.";
             DisplayWifis();
             return;
         }
-
         if (input.Equals("/help", StringComparison.OrdinalIgnoreCase))
         {
-            feedbackText.text = "";
-            wifis.text = "Available commands:\n" +
-                         "/crack <BSSID> - attempt to hack a Wi-Fi\n" +
-                         "/home - return to list\n" +
-                         "/help - show this help";
+            feedbackText.text = "Commands:\n/crack <BSSID>\n/home\n/help";
             return;
         }
-
-        if (input.StartsWith("/crack "))
+        if (input.StartsWith("/crack ", StringComparison.OrdinalIgnoreCase))
         {
             CrackCommand(input);
-            return;
         }
     }
 
     void GenerateWifis()
     {
         networks.Clear();
-        List<string> shuffledNames = new List<string>(wifiNames);
-        ShuffleList(shuffledNames);
-        List<int> barsPool = new List<int> { 2, 2, 2, 3, 3, 3, 4, 4, 4 };
-        ShuffleList(barsPool);
-
+        var names = wifiNames.OrderBy(_ => UnityEngine.Random.value).ToList();
+        var bars  = new List<int> {2,2,2,3,3,3,4,4,4}.OrderBy(_ => UnityEngine.Random.value).ToList();
         for (int i = 0; i < 9; i++)
         {
-            networks.Add(new WifiNetwork
-            {
-                name = shuffledNames[i],
-                bssid = GenerateShortBSSID(),
-                power = UnityEngine.Random.Range(-90, -40),
-                beacons = UnityEngine.Random.Range(1, 100),
-                bars = barsPool[i],
+            networks.Add(new WifiNetwork {
+                name     = names[i],
+                bssid    = GenerateShortBSSID(),
+                power    = UnityEngine.Random.Range(-90,-40),
+                beacons  = UnityEngine.Random.Range(1,100),
+                bars     = bars[i],
                 password = GenerateRandomPassword()
             });
         }
     }
 
-void DisplayWifis()
-{
-    int maxName = 0, maxBSSID = 0, maxPWR = 0, maxBeacons = 0, maxENC = 0, maxAUTH = 0;
-
-    foreach (var net in networks)
+    void DisplayWifis()
     {
-        maxName = Mathf.Max(maxName, net.name.Length);
-        maxBSSID = Mathf.Max(maxBSSID, net.bssid.Length);
-        maxPWR = Mathf.Max(maxPWR, (net.power + "dBm").Length);
-        maxBeacons = Mathf.Max(maxBeacons, net.beacons.ToString().Length);
-        maxENC = Mathf.Max(maxENC, net.enc.Length);
-        maxAUTH = Mathf.Max(maxAUTH, net.auth.Length);
+        var sbName    = new StringBuilder("Name\n");
+        var sbBssid   = new StringBuilder("BSSID\n");
+        var sbPwr     = new StringBuilder("PWR\n");
+        var sbBea     = new StringBuilder("Beacons\n");
+        var sbEnc     = new StringBuilder("ENC\n");
+        var sbAuth    = new StringBuilder("AUTH\n");
+        var sbStatus  = new StringBuilder("STATUS\n");
+
+        foreach (var net in networks)
+        {
+            sbName.AppendLine(net.name);
+            sbBssid.AppendLine(net.bssid);
+            sbPwr.AppendLine($"{net.power}dBm");
+            sbBea.AppendLine(net.beacons.ToString());
+            sbEnc.AppendLine(net.enc);
+            sbAuth.AppendLine(net.auth);
+            string st = net.isBlocked ? "BLOCKED" : net.isCracked ? "CRACKED" : "AVAILABLE";
+            sbStatus.AppendLine(st);
+        }
+
+        namesText.text   = sbName.ToString();
+        bssidText.text   = sbBssid.ToString();
+        pwrText.text     = sbPwr.ToString();
+        beaconsText.text = sbBea.ToString();
+        encText.text     = sbEnc.ToString();
+        authText.text    = sbAuth.ToString();
+        statusText.text  = sbStatus.ToString();
     }
-
-    string header =
-        "Name".PadRight(maxName + 10) +
-        "BSSID".PadRight(maxBSSID + 10) +
-        "PWR".PadRight(maxPWR + 10) +
-        "Beacons".PadRight(maxBeacons + 10) +
-        "ENC".PadRight(maxENC + 10) +
-        "AUTH".PadRight(maxAUTH + 10) +
-        "STATUS\n";
-
-    string separator = new string('-', header.Length) + "\n";
-
-    string rows = "";
-
-    foreach (var net in networks)
-    {
-        string status = net.isBlocked ? "BLOCKED" : net.isCracked ? "✓" : "";
-
-        string name = net.name.PadRight(maxName) + new string(' ', 10);
-        string bssid = net.bssid.PadRight(maxBSSID) + new string(' ', 10);
-        string pwr = (net.power + "dBm").PadRight(maxPWR) + new string(' ', 10);
-        string beacons = net.beacons.ToString().PadRight(maxBeacons) + new string(' ', 10);
-        string enc = net.enc.PadRight(maxENC) + new string(' ', 10);
-        string auth = net.auth.PadRight(maxAUTH) + new string(' ', 10);
-        string stat = status;
-
-        rows += name + bssid + pwr + beacons + enc + auth + stat + "\n";
-    }
-
-    wifis.text = header + separator + rows + "\nType /crack <BSSID> to begin hacking.";
-}
-
 
     void CrackCommand(string input)
     {
-        string bssid = input.Replace("/crack ", "").Trim();
-        WifiNetwork target = networks.Find(n => n.bssid == bssid);
-
+        string b = input.Substring(7).Trim();
+        var target = networks.Find(n => n.bssid.Equals(b, StringComparison.OrdinalIgnoreCase));
         if (target == null)
         {
-            wifis.text = "No Wi-Fi found with that BSSID.";
+            feedbackText.text = "No such BSSID";
             return;
         }
-
-        if (target.isBlocked)
+        if (target.isBlocked || target.isCracked)
         {
-            wifis.text = "🚫 This Wi-Fi is permanently blocked.";
+            feedbackText.text = "Cannot crack this network.";
             return;
         }
 
-        if (target.isCracked)
-        {
-            wifis.text = $"Already cracked! Password: {target.password}\n\nType /home to return.";
-            return;
-        }
+        // Clear columns
+        namesText.text   = "";
+        bssidText.text   = "";
+        pwrText.text     = "";
+        beaconsText.text = "";
+        encText.text     = "";
+        authText.text    = "";
+        statusText.text  = "";
 
-        currentTarget = target;
+        currentTarget     = target;
         currentCrackBlock = GenerateCrackBlock(out currentMissing);
-        wifis.text = $"Cracking {target.name}...\n\n{currentCrackBlock}\n\nEnter missing characters (3 letters + 3 numbers, any order):";
+
+        // Show mini-game tutorial + block
+        namesText.text   = "🔐 CRACK MODE 🔐\n" +
+                           "Type the 3 missing LETTERS and 3 missing NUMBERS (any order) and press Enter:\n\n" +
+                           currentCrackBlock;
+        feedbackText.text = "";
     }
 
     string GenerateShortBSSID()
     {
-        string[] hexDigits = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F" };
-        System.Text.StringBuilder sb = new System.Text.StringBuilder();
+        string[] hex = {"1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"};
+        var sb = new StringBuilder();
         for (int i = 0; i < 4; i++)
         {
-            sb.Append(hexDigits[UnityEngine.Random.Range(0, hexDigits.Length)]);
-            sb.Append(hexDigits[UnityEngine.Random.Range(0, hexDigits.Length)]);
+            sb.Append(hex[UnityEngine.Random.Range(0,hex.Length)]);
+            sb.Append(hex[UnityEngine.Random.Range(0,hex.Length)]);
             if (i < 3) sb.Append(":");
         }
         return sb.ToString();
@@ -225,55 +207,40 @@ void DisplayWifis()
 
     string GenerateRandomPassword()
     {
-        string word = passwordWords[UnityEngine.Random.Range(0, passwordWords.Length)];
-        int number = UnityEngine.Random.Range(100, 999);
-        return word + number;
+        var w = passwordWords[UnityEngine.Random.Range(0,passwordWords.Length)];
+        var n = UnityEngine.Random.Range(100,999);
+        return w + n;
     }
 
-    string GenerateCrackBlock(out string missingChars)
+    string GenerateCrackBlock(out string missing)
     {
-        List<char> numbers = new List<char>("123456789".ToCharArray());
-        List<char> letters = new List<char>("ABCDEFGHIJ".ToCharArray());
+        var nums = new List<char>("123456789".ToCharArray());
+        var lets = new List<char>("ABCDEFGHIJ".ToCharArray());
+        ShuffleList(nums); ShuffleList(lets);
 
-        ShuffleList(numbers);
-        ShuffleList(letters);
-
-        List<char> removed = new List<char>();
-        removed.AddRange(numbers.GetRange(0, 3));
-        removed.AddRange(letters.GetRange(0, 3));
-
-        List<char> allowed = new List<char>();
-        allowed.AddRange(numbers.GetRange(3, numbers.Count - 3));
-        allowed.AddRange(letters.GetRange(3, letters.Count - 3));
+        var rem  = nums.Take(3).Concat(lets.Take(3)).ToList();
+        var pool = nums.Skip(3).Concat(lets.Skip(3)).ToList();
 
         char[] block = new char[160];
         for (int i = 0; i < block.Length; i++)
-        {
-            block[i] = allowed[UnityEngine.Random.Range(0, allowed.Count)];
-        }
+            block[i] = pool[UnityEngine.Random.Range(0,pool.Count)];
 
-        missingChars = string.Join("", removed);
+        missing = new string(rem.ToArray());
         return new string(block);
     }
 
     bool ValidateMissingCharacters(string input)
     {
         input = input.ToUpper();
-        foreach (char c in currentMissing)
-        {
-            if (!input.Contains(c.ToString())) return false;
-        }
-        return true;
+        return currentMissing.All(c => input.Contains(c));
     }
 
     void ShuffleList<T>(List<T> list)
     {
         for (int i = 0; i < list.Count; i++)
         {
-            int rand = UnityEngine.Random.Range(i, list.Count);
-            T temp = list[i];
-            list[i] = list[rand];
-            list[rand] = temp;
+            int r = UnityEngine.Random.Range(i, list.Count);
+            var tmp = list[i]; list[i] = list[r]; list[r] = tmp;
         }
     }
 }
