@@ -13,12 +13,14 @@ I am back from the long awaited break of almost a year and I am back to making t
 * WebsiteSelector.cs Created.
 * WebsiteSelector.cs Updated.
 * AirCracker Program Created.
+* AirCracker Logo Created.
 * Wifi.cs Created.
 * Wifi.cs Updated.
 * Cracking Mini Game Added.
 * WifiSelector.cs Created.
 * New Wifi Icons Created.
-
+* Player Location Changed.
+* Uploaded CoralPixels font.
 
 ### 2024-06-16:
 * Uploaded Merriweather font.
