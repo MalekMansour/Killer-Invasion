@@ -17,6 +17,7 @@ I am back from the long awaited break of almost a year and I am back to making t
 * Wifi.cs Updated.
 * Cracking Mini Game Added.
 * WifiSelector.cs Created.
+* New Wifi Icons Created.
 
 
 ### 2024-06-16:
