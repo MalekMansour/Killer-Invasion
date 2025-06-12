@@ -7,6 +7,8 @@ I am back from the long awaited break of almost a year and I am back to making t
 
 ### 2025-06-12
 * Lovely Models Website Created.
+* Stock  Images for Lovely Models Uploaded.
+* Buttons added to Lovely Models.
 * Error Website Created.
 * FBI Seized Website Created.
 * Website.cs Updated.
