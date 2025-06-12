@@ -12,8 +12,6 @@ I am back from the long awaited break of almost a year and I am back to making t
 * Error Website Created.
 * FBI Seized Website Created.
 * Website.cs Updated.
-* WebsiteSelector.cs Created.
-* WebsiteSelector.cs Updated.
 * WebsiteOpener.cs Updated.
 * AirCracker Program Created.
 * Cracking Mini Game Added.
