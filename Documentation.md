@@ -14,11 +14,12 @@ I am back from the long awaited break of almost a year and I am back to making t
 * Website.cs Updated.
 * WebsiteSelector.cs Created.
 * WebsiteSelector.cs Updated.
+* WebsiteOpener.cs Updated.
 * AirCracker Program Created.
+* Cracking Mini Game Added.
 * AirCracker Logo Created.
 * Wifi.cs Created.
 * Wifi.cs Updated.
-* Cracking Mini Game Added.
 * WifiSelector.cs Created.
 * New Wifi Icons Created.
 * Player Location Changed.
