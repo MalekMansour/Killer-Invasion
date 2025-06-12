@@ -23,6 +23,7 @@ I am back from the long awaited break of almost a year and I am back to making t
 * Player Location Changed.
 * Uploaded CoralPixels font.
 * Uploaded Geist-Variable font.
+* Removed Grain effect.
 
 ### 2024-06-16:
 * Uploaded Merriweather font.
