@@ -13,7 +13,10 @@ I am back from the long awaited break of almost a year and I am back to making t
 * WebsiteSelector.cs Created.
 * WebsiteSelector.cs Updated.
 * AirCracker Program Created.
-* 
+* Wifi.cs Created.
+* Wifi.cs Updated.
+* Cracking Mini Game Added.
+* WifiSelector.cs Created.
 
 
 ### 2024-06-16:
