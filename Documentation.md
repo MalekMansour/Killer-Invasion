@@ -21,6 +21,7 @@ I am back from the long awaited break of almost a year and I am back to making t
 * WifiSelector.cs Created.
 * New Wifi Icons Created.
 * Player Location Changed.
+* Removed Stamina.
 * Uploaded CoralPixels font.
 * Uploaded Geist-Variable font.
 * Removed Grain effect.
