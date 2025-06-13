@@ -18,7 +18,8 @@ public class Wifi : MonoBehaviour
     public TMP_Text statusText;
     public TMP_Text feedbackText;
 
-    class WifiNetwork
+    // Made public so other scripts can reference it
+    public class WifiNetwork
     {
         public string name, bssid, enc = "WPA2", auth = "PSK", password;
         public int power, beacons, bars;
@@ -26,9 +27,11 @@ public class Wifi : MonoBehaviour
         public bool isBlocked = false, isCracked = false;
     }
 
-    List<WifiNetwork> networks = new List<WifiNetwork>();
-    WifiNetwork currentTarget = null;
-    string currentMissing, currentCrackBlock;
+    // Made public so WifiSelector can read it
+    public List<WifiNetwork> networks = new List<WifiNetwork>();
+
+    private WifiNetwork currentTarget = null;
+    private string currentMissing, currentCrackBlock;
 
     string[] wifiNames = {
         "Gordon's Office","SmartHome","Byte Me","BeerLover69420","Scott's Network",
@@ -40,7 +43,7 @@ public class Wifi : MonoBehaviour
         "master","superman","batman","trustno1","password1","admin123","router","internet",
         "wifi4me","hidden123","mywifi","youcantguess","mypass","secureme","private","dangerzone",
         "fortress","n3tw0rk","rootaccess","onionnet","vault","nowifi4u","topsecret","blacknet","undercover",
-        "quickpass","wiredin","2fast4u", "insym", "hackmeifyoucan","hiddenpower"
+        "quickpass","wiredin","2fast4u","insym","hackmeifyoucan","hiddenpower"
     };
 
     void Start()
@@ -64,13 +67,11 @@ public class Wifi : MonoBehaviour
             if (ValidateMissingCharacters(input))
             {
                 currentTarget.isCracked = true;
-                // signal classification after cracking
                 string signal = currentTarget.bars == 2 ? "weak"
                              : currentTarget.bars == 3 ? "moderate"
                              : "strong";
                 feedbackText.text = $"Network Cracked. Password: {currentTarget.password}\n" +
-                                    $"Signal: {signal}\n" +
-                                    "Type /home";
+                                    $"Signal: {signal}\nType /home";
                 currentTarget = null;
             }
             else
@@ -112,15 +113,22 @@ public class Wifi : MonoBehaviour
     void GenerateWifis()
     {
         networks.Clear();
+        // Shuffle name list
         var names = wifiNames.OrderBy(_ => UnityEngine.Random.value).ToList();
-        var bars  = new List<int> {2,2,2,3,3,3,4,4,4}.OrderBy(_ => UnityEngine.Random.value).ToList();
+        // Prepare exactly 9 bars
+        var bars  = new List<int> {2,2,2, 3,3,3, 4,4,4}
+                          .OrderBy(_ => UnityEngine.Random.value)
+                          .ToList();
+
+        // ALWAYS add nine networks
         for (int i = 0; i < 9; i++)
         {
-            networks.Add(new WifiNetwork {
+            networks.Add(new WifiNetwork
+            {
                 name     = names[i],
                 bssid    = GenerateShortBSSID(),
-                power    = UnityEngine.Random.Range(-90,-40),
-                beacons  = UnityEngine.Random.Range(1,100),
+                power    = UnityEngine.Random.Range(-90, -40),
+                beacons  = UnityEngine.Random.Range(1, 100),
                 bars     = bars[i],
                 password = GenerateRandomPassword()
             });
@@ -129,13 +137,13 @@ public class Wifi : MonoBehaviour
 
     void DisplayWifis()
     {
-        var sbName    = new StringBuilder("Name\n");
-        var sbBssid   = new StringBuilder("BSSID\n");
-        var sbPwr     = new StringBuilder("PWR\n");
-        var sbBea     = new StringBuilder("Beacons\n");
-        var sbEnc     = new StringBuilder("ENC\n");
-        var sbAuth    = new StringBuilder("AUTH\n");
-        var sbStatus  = new StringBuilder("STATUS\n");
+        var sbName   = new StringBuilder("Name\n");
+        var sbBssid  = new StringBuilder("BSSID\n");
+        var sbPwr    = new StringBuilder("PWR\n");
+        var sbBea    = new StringBuilder("Beacons\n");
+        var sbEnc    = new StringBuilder("ENC\n");
+        var sbAuth   = new StringBuilder("AUTH\n");
+        var sbStatus = new StringBuilder("STATUS\n");
 
         foreach (var net in networks)
         {
@@ -173,7 +181,7 @@ public class Wifi : MonoBehaviour
             return;
         }
 
-        // Clear columns
+        // Clear text columns
         namesText.text   = "";
         bssidText.text   = "";
         pwrText.text     = "";
@@ -185,11 +193,22 @@ public class Wifi : MonoBehaviour
         currentTarget     = target;
         currentCrackBlock = GenerateCrackBlock(out currentMissing);
 
-        // Show mini-game tutorial + block
-        namesText.text   = "Cracking...\n" +
-                           "Type the 3 missing LETTERS and 3 missing NUMBERS (any order) and press Enter:\n\n" +
+        namesText.text   = "Cracking...\nType the 3 missing LETTERS and 3 missing NUMBERS (any order) and press Enter:\n\n" +
                            currentCrackBlock;
         feedbackText.text = "";
+    }
+
+    // Exposed so WifiSelector can call it
+    public void StartConnection(WifiNetwork net)
+    {
+        float delay = net == null
+            ? 0f
+            : (net.bars == 2 ? 12f : net.bars == 3 ? 6f : 3f);
+
+        feedbackText.text = $"Connecting to {(net == null ? "Weak Home Network" : net.name)}…\n" +
+                            $"This will take {delay} seconds.";
+
+        // TODO: invoke your loading bar / website opener here
     }
 
     string GenerateShortBSSID()
@@ -198,8 +217,8 @@ public class Wifi : MonoBehaviour
         var sb = new StringBuilder();
         for (int i = 0; i < 4; i++)
         {
-            sb.Append(hex[UnityEngine.Random.Range(0,hex.Length)]);
-            sb.Append(hex[UnityEngine.Random.Range(0,hex.Length)]);
+            sb.Append(hex[UnityEngine.Random.Range(0, hex.Length)]);
+            sb.Append(hex[UnityEngine.Random.Range(0, hex.Length)]);
             if (i < 3) sb.Append(":");
         }
         return sb.ToString();
@@ -207,8 +226,8 @@ public class Wifi : MonoBehaviour
 
     string GenerateRandomPassword()
     {
-        var w = passwordWords[UnityEngine.Random.Range(0,passwordWords.Length)];
-        var n = UnityEngine.Random.Range(100,999);
+        var w = passwordWords[UnityEngine.Random.Range(0, passwordWords.Length)];
+        var n = UnityEngine.Random.Range(100, 999);
         return w + n;
     }
 
@@ -216,14 +235,15 @@ public class Wifi : MonoBehaviour
     {
         var nums = new List<char>("123456789".ToCharArray());
         var lets = new List<char>("ABCDEFGHIJ".ToCharArray());
-        ShuffleList(nums); ShuffleList(lets);
+        ShuffleList(nums);
+        ShuffleList(lets);
 
         var rem  = nums.Take(3).Concat(lets.Take(3)).ToList();
         var pool = nums.Skip(3).Concat(lets.Skip(3)).ToList();
 
         char[] block = new char[160];
         for (int i = 0; i < block.Length; i++)
-            block[i] = pool[UnityEngine.Random.Range(0,pool.Count)];
+            block[i] = pool[UnityEngine.Random.Range(0, pool.Count)];
 
         missing = new string(rem.ToArray());
         return new string(block);
@@ -240,7 +260,9 @@ public class Wifi : MonoBehaviour
         for (int i = 0; i < list.Count; i++)
         {
             int r = UnityEngine.Random.Range(i, list.Count);
-            var tmp = list[i]; list[i] = list[r]; list[r] = tmp;
+            var tmp = list[i];
+            list[i] = list[r];
+            list[r] = tmp;
         }
     }
 }
