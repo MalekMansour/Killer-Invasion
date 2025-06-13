@@ -1,92 +1,105 @@
-using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class WifiSelector : MonoBehaviour
+public class WifiListController : MonoBehaviour
 {
-    [Header("UI References")]
-    public Button wifiIconButton;    // Your on-screen Wi-Fi icon
-    public GameObject listPanel;     // Panel containing the scroll-view
-    public Transform listContent;    // Where entries get instantiated
-    public GameObject entryPrefab;   // Prefab: [Icon(Image) | Name(TMP) | Connect(Button)]
-    
-    public GameObject passwordPopup;
-    public TMP_Text popupTitle;
+    [Header("Wi-Fi Button")]
+    public Button wifiButton;           // The icon/button you click to open the list
+    public RawImage wifiButtonImage;    // The RawImage on that button
+
+    [Header("Bar-Icon Textures")]
+    public Texture2D twoBarTexture;
+    public Texture2D threeBarTexture;
+    public Texture2D fourBarTexture;
+
+    [Header("Network List UI (size = 10)")]
+    public GameObject listPanel;        // Parent of your 10 entries
+    public TMP_Text[] titleTexts;       // 0–9
+    public Button[]   connectButtons;   // 0–9
+
+    [Header("Password Popup UI")]
+    public GameObject   passwordPopup;
+    public TMP_Text     popupTitle;
     public TMP_InputField popupInput;
-    public Button popupOk, popupCancel;
-    public TMP_Text feedbackText;    // Reuse your feedback text for error messages
+    public Button       popupOk;
+    public Button       popupCancel;
+    public TMP_Text     feedbackText;
 
-    [Header("Signal Icons")]
-    public Sprite homeIcon, twoBarIcon, threeBarIcon, fourBarIcon;
-
-    Wifi wifiManager;
     Wifi.WifiNetwork pendingNetwork;
+    Wifi             wifiManager;
 
     void Awake()
     {
         wifiManager = GetComponent<Wifi>();
+
+        // Hide at start
         listPanel.SetActive(false);
         passwordPopup.SetActive(false);
 
-        wifiIconButton.onClick.AddListener(ShowList);
-        popupCancel.onClick.AddListener(() => passwordPopup.SetActive(false));
+        // Wi-Fi icon opens the list
+        wifiButton.onClick.AddListener(() =>
+        {
+            PopulateList();
+            listPanel.SetActive(true);
+        });
+
+        // Popup Cancel
+        popupCancel.onClick.AddListener(() =>
+        {
+            passwordPopup.SetActive(false);
+            pendingNetwork = null;
+        });
+        // Popup OK
         popupOk.onClick.AddListener(OnPasswordSubmitted);
     }
 
-    void ShowList()
+    void PopulateList()
+{
+    int realCount = wifiManager.networks.Count; // e.g. 9
+
+    // --- SLOT 0: current network (2-bar, free connect) ---
+    titleTexts[0].text = wifiManager.networks[0].name;
+    connectButtons[0].onClick.RemoveAllListeners();
+    connectButtons[0].onClick.AddListener(() =>
     {
-        // clear old entries
-        foreach (Transform t in listContent) Destroy(t.gameObject);
+        listPanel.SetActive(false);
+        wifiManager.StartConnection(wifiManager.networks[0]);
+        UpdateWifiButtonIcon(wifiManager.networks[0]);
+    });
+    titleTexts[0].gameObject.SetActive(true);
+    connectButtons[0].gameObject.SetActive(true);
 
-        // 1) Home network (free)
-        CreateEntry(
-            icon: homeIcon,
-            displayName: "Weak Home Network",
-            net: null,
-            freeConnect: true
-        );
+    // --- SLOTS 1 .. realCount-1: other networks with passwords ---
+    for (int i = 1; i < realCount; i++)
+    {
+        var net = wifiManager.networks[i];
+        titleTexts[i].text = net.name;
 
-        // 2) Real networks
-        foreach (var net in wifiManager.networks)
+        connectButtons[i].onClick.RemoveAllListeners();
+        connectButtons[i].onClick.AddListener(() =>
         {
-            Sprite icon = net.bars == 2 ? twoBarIcon
-                        : net.bars == 3 ? threeBarIcon
-                        : fourBarIcon;
+            pendingNetwork = net;
+            popupTitle.text   = $"Enter password for {net.name}";
+            popupInput.text   = "";
+            feedbackText.text = "";
+            passwordPopup.SetActive(true);
+            popupInput.ActivateInputField();
+        });
 
-            CreateEntry(icon, net.name, net, false);
-        }
-
-        listPanel.SetActive(true);
+        titleTexts[i].gameObject.SetActive(true);
+        connectButtons[i].gameObject.SetActive(true);
     }
 
-    void CreateEntry(Sprite icon, string displayName, Wifi.WifiNetwork net, bool freeConnect)
+    // --- HIDE any leftover UI slots beyond realCount-1 ---
+    // e.g. if realCount=9, we used slots 0..8; hide slot 9 (index 9)
+    for (int i = realCount; i < titleTexts.Length; i++)
     {
-        var go = Instantiate(entryPrefab, listContent);
-        go.transform.Find("Icon").GetComponent<Image>().sprite = icon;
-        go.transform.Find("Name").GetComponent<TMP_Text>().text = displayName;
-        var btn = go.transform.Find("ConnectButton").GetComponent<Button>();
-        btn.GetComponentInChildren<TMP_Text>().text = "Connect";
-
-        if (freeConnect)
-        {
-            btn.onClick.AddListener(() =>
-            {
-                listPanel.SetActive(false);
-                wifiManager.StartConnection(null);
-            });
-        }
-        else
-        {
-            btn.onClick.AddListener(() =>
-            {
-                pendingNetwork = net;
-                popupTitle.text = $"Enter password for {net.name}";
-                popupInput.text = "";
-                passwordPopup.SetActive(true);
-            });
-        }
+        titleTexts[i].gameObject.SetActive(false);
+        connectButtons[i].gameObject.SetActive(false);
     }
+}
+
 
     void OnPasswordSubmitted()
     {
@@ -97,10 +110,23 @@ public class WifiSelector : MonoBehaviour
             passwordPopup.SetActive(false);
             listPanel.SetActive(false);
             wifiManager.StartConnection(pendingNetwork);
+            UpdateWifiButtonIcon(pendingNetwork);
+            pendingNetwork = null;
         }
         else
         {
             feedbackText.text = "❌ Incorrect password!";
+            popupInput.ActivateInputField();
         }
+    }
+
+    void UpdateWifiButtonIcon(Wifi.WifiNetwork net)
+    {
+        var tex = net.bars == 2
+            ? twoBarTexture
+            : net.bars == 3
+                ? threeBarTexture
+                : fourBarTexture;
+        wifiButtonImage.texture = tex;
     }
 }
