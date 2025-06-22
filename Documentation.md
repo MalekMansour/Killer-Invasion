@@ -2,9 +2,6 @@
 * This is a complete documentation of the making of the horror game "Killer Invasion".
 * The game will be made using Unity & C#
 
-### Status
-I am back from the long awaited break of almost a year and I am back to making this game. I will do my best to work on it as much as possible and to hopefully have it finished in 2026.
-
 ### 2025-06-12
 * Lovely Models Website Created.
 * Stock  Images for Lovely Models Uploaded.
