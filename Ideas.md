@@ -17,7 +17,7 @@ II. Mechanics
 
 1. Sanity Level
 - There is an Insanity Level (hidden from the player)
-- Keeping 4 lights on will decrease Insanity Fast. 3 lights on will decrease Isanity slow. 2 lights on wont do anything to Insanity. 1 light on will increase insanity fast. 0 lights on will rapidly increase the insanity.
+- Keeping 4 lights on will decrease insanity Fast. 3 lights on will decrease isanity slow. 2 lights on wont do anything to insanity. 1 light on will increase insanity fast. 0 lights on will rapidly increase the insanity.
 
 - There is 8 cigarettes in the kitchen. Each cigarette smoked will decrease the insanity by 20%.
 - There is an infinite amount of pills to take. Each pill decrease the insanity by 5%. If too many pills are taken at the same time, some side effects might start happening and the insanity might start increasing instead. 
