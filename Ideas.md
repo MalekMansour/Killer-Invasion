@@ -1,17 +1,16 @@
 IDEA SUMMARY UPDATED (2024-06-18)
 
 I. Story
-- The game is set in a dangerous neighborhood at night. The main characther lives inside a house. The environment is grainy, gloomy, and somewhat terrifying. 
-Your son has been kidnapped and the kidnappers are asking for 300 crypto coins in return. You decide to go back to the old ways that you used to make money, which is on the dark web. There are two ways you can win.
-  1) Trying to get the money from hacking / crypto mining / gambling. 
-  2) Try to find the location of the kidnapper on the dark web and get to kill the guy, and save your son.
+- The game is set in a dangerous neighborhood at night. The main character lives inside a house. The environment is grainy, gloomy, and somewhat terrifying. 
+Your daugther has been kidnapped and the kidnappers are asking for 300 crypto coins in return. You decide to go back to the old ways that you used to make money, which is on the dark web.
+  To win the game, you need to make money to pay the kidnapper.
 - You would also have to defend yourself against a killer that might find your IP and your address and you have to hide/close the lights etc. The police can also find you if you are doing a lot of dangerous things on the dark web. 
 Players should get good instructions at the beginning. The game should be challenging but not to the point where it is unbeatable.
 The game will start by providing a 3 step guide (Kinda mocking how "easy" the game is.) The 3 step guide will explain some basic mechanics but not all. The 3 step guide will also provide some basic images. 
 
 3 Step Guide:
 1. Turn on all the lights to keep your sanity.
-2. Hack people to make money.
+2. Make money online.
 3. Look out the windows. Hide if you feel in danger.
 
 II. Mechanics
