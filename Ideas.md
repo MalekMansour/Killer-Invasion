@@ -1,4 +1,4 @@
-IDEA SUMMARY UPDATED (2024-06-18)
+IDEA SUMMARY UPDATED (2025-12-03)
 
 I. Story
 - The game is set in a dangerous neighborhood at night. The main character lives inside a house. The environment is grainy, gloomy, and somewhat terrifying. 
