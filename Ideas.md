@@ -35,7 +35,7 @@ II. Mechanics
   
 3. Black market:
    - CryptoDrive V3 (10 Ⱡ)
-   - VPN (25 Ⱡ)
+   - VPN Lite (25 Ⱡ)
    - AirCrack Wifi Cracker (25 Ⱡ)
    - CyrptoDrive V4 (55 Ⱡ)
    - HomeSensor Alert (75 Ⱡ)
@@ -56,25 +56,7 @@ II. Mechanics
   - Cars driving by, owl, dog barking, etc.
     
 7. Gamble:
-- If you are really desperate to get money, you can gamble online. You can play blackjack.
-- The more the player bets, the less chance he has of winning.
-- The website will only open later on in the game (after 2 AM)
+- If you are really desperate to get money, you can gamble online. You can play roulette.
 
 8. Tarot Cards: There is a website where you can buy a deck of Tarot cards for $60.
-
-9. Programs
-Anonymouse:
-Hacking people's IP addresses and finding out their real address. You can then send hitmen on those people. Or get the second ending to kill the killer. The proccess will only take 1 minute.
-
-Redhacker:
-You have to insert someone's information and the more information you have on them, the faster it will work. This program is used to find someone's IP address. You can then insert the IP address inside of anonymouse to find a real address. The proccess will depend on how much information you inserted.
-
-AirCrack Wifi Cracker:
-A program used to hack into different wifis that will give you faster wifi networks.
-You pick a network to hack and then the minigame will generate a big block of numbers and you have to choose which number is NOT present in the block of numbers. If done correctly you will be able to hack into the wifi. The proccess will then automatically give you the wifi password. After two failed attempts, the wifi will then be blocked.
-
-
-
-Abyss.rom:
-Your main hacking tool to hack people and get their money. You will be able to go through a bunch of profiles that have money and their security. You will get 10% of the money that you will hack. The minigame: a random number will show up. The numbers will be between 001 and 999. if you think the next number is higher you have to write "Inject" and if you think it will be lower write "remove". the amount of numbers you will see depends on the security of the profile. You need to get at least 70% of it correct to be able to hack them and get 10% of their money. There will be a cooldown of 3 hacks ever 30 minutes thought. To hack someone you need their first name, last name and a website that they potentially visited.
 
