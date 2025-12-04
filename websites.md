@@ -5,7 +5,7 @@ Websites in Killer Invasion
 1. Who To Kill?: User receives a list of names and have to choose one to kill. After clicking, male/female screaming sound effect will be played. + There is a chance that when accessing this page, every options will change to “YOU!”.
 2. Cops Dirty Truth: A page full of accusation and proof on cops’ dirty secrets.
 3. Lovely Models:+ a porn website.
-4. 
+4. Human Trafficking Website.
 5. 
 6. Confession:+ A place for people to confess their sins.
 7. Death Wish: (Depressed People Blog Journal).
