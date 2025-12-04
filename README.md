@@ -1,5 +1,5 @@
 # Killer Invasion
-Your daughter has been kidnapped by a secret organization and you owe 500 CryptoCoins to get her back. You use your hacking knowledge to hack various people from the dark web and steal their money.
+Your daughter has been kidnapped by a secret organization and you owe 300 CryptoCoins to get her back. You use the dark web to make money.
 [Link to YouTube Video](https://www.youtube.com/watch?v=Q_05seOtb3g)
 
 ![Screenshot](screenshot/KI3.png)
