@@ -1,4 +1,4 @@
-IDEA SUMMARY UPDATED (2025-12-03)
+IDEA SUMMARY UPDATED (2025-12-05)
 
 I. Story
 - The game is set in a dangerous neighborhood at night. The main character lives inside a house. The environment is grainy, gloomy, and somewhat terrifying. 
@@ -65,5 +65,5 @@ II. Mechanics
  - Weapons (glocks, 223's, shotguns, revolvers, etc.) (15)
  - Sex Items (milk, lube, condoms, sex dolls, sex toys, vibrators, etc.) (10)
  - Organs (Hearts, Livers, Lungs, Brains, etc.) (10)
- - Electronics (hacking gadgets, phones, crypto-ming rigs, laptops, speakers, etc.) (6)
+ - Electronics (hacking gadgets, phones, crypto-ming rigs, laptops, speakers, etc.) (8)
 
