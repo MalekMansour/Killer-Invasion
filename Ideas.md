@@ -60,8 +60,10 @@ II. Mechanics
 
 8. Tarot Cards: There is a website where you can buy a deck of Tarot cards for $60.
 
-9. Buying and Selling: You will buy stuff online on random websites on the dark web and use an app called "My Shop" to sell the things you buy. This is the main way to make money in this game. There is 5 categories of items:
- - Drugs
- - Weapons
- - Sex Items
- - Other
+9. Buying and Selling: You will buy stuff online on random websites on the dark web and use an app called "My Shop" to sell the things you buy. This is the main way to make money in this game. There is 6 categories of items:
+ - Drugs (cocaine, meth, heroine, weed, cigarettes, bongs, LSD, acid, etc.) (18)
+ - Weapons (glocks, 223's, shotguns, revolvers, etc.) (15)
+ - Sex Items (milk, lube, condoms, sex dolls, sex toys, vibrators, etc.) (10)
+ - Organs (Hearts, Livers, Lungs, Brains, etc.) (10)
+ - Electronics (hacking gadgets, phones, crypto-ming rigs, laptops, speakers, etc.) (6)
+
