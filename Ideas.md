@@ -67,3 +67,8 @@ II. Mechanics
  - Organs (Hearts, Livers, Lungs, Brains, etc.) (10)
  - Electronics (hacking gadgets, phones, crypto-ming rigs, laptops, speakers, etc.) (8)
 
+ There will be an app used to view which items are currently trending. It will show a graph and show in order what the top 10 items currently is. 
+ Things that affect the trend:
+ At the start of the game, a random category will have more trend than the others but it won't be obvious till hour 4. 
+ You can figure out what is the trending category based on how much stock there is in websites. If the organs and electronics are out of stock, that is probably what is the hottest trend in the market.
+ Every hour, the shops in every single website will reset and the items in stock will change. 
