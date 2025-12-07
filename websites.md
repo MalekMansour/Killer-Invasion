@@ -47,7 +47,7 @@ Websites in Killer Invasion
 43. Dumb Ways to Die For Real: Tutorial for you how to die in whatever ways you want to.
 44. 
 45. CandyShop: Sells drug (looks like an innocent candy shop website). --------------------
-46. 
+46. The Beast: Anwser all 10 questions correctly to get 10 free coins. -------------
 47. 
 48. 
 49. 
