@@ -31,10 +31,10 @@ Websites in Killer Invasion
 27. Insym3Cam (A collection of security cameras)
 28. The Milky Way (Milk Shop) ---------------------
 29. LDT Chat (A public chat room)
-30. Child Play (A public chat room)
+30. Child's Play (A public chat room)
 31. Used Panties Shop (You can buy panties) ---------------------
 32. 
-33. 
+33. Mr. Donor: Buy some organs -------------------
 34. Organotic (An organ shop where you can buy livers, hearts, brains, etc.) ----------------------
 35. Satan Worship Blog (very long website with a lot of links in it.)
 36. Tarot Cards Shop 
