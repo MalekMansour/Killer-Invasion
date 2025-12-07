@@ -33,7 +33,7 @@ Websites in Killer Invasion
 29. LDT Chat (A public chat room)
 30. Child's Play (A public chat room)
 31. Used Panties Shop (You can buy panties) ---------------------
-32. 
+32. LSD Seller --------------------
 33. Mr. Donor: Buy organs -------------------
 34. Organotic (An organ shop where you can buy livers, hearts, brains, etc.) ----------------------
 35. Satan Worship Blog (very long website with a lot of links in it.)
