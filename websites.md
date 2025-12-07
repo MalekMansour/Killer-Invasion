@@ -24,7 +24,7 @@ Websites in Killer Invasion
 20. 9 Eyes: 9 eyes opened, looking around.
 21. Spankers: (Page that sells vapes, cigarettes, weed, bongs, etc). -----------------
 22. 50/50: (when you press play, u will have a 50% of seeing a good image and 50% of seeing a gore image.)
-23. 
+23. The Clown (a website where a scary clown is hidden in every picture shown with creepy music playing.
 24. Online Casino (Gambling website with roulette)
 25. Music To My Ears: sells headphones and speakers. ---------------
 26. 
