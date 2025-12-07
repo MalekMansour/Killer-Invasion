@@ -1,4 +1,4 @@
-Websites in Killer Invasion
+Websites in For Ransom
 
 50 Websites - 50 Fake Websites (70% chance it will be "Unable to connect" and 30% chance it's "been seized by the FBI").
 
