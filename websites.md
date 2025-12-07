@@ -63,6 +63,13 @@ For Drugs:
 5. Spankers
 6. CandyShop
 
+For Sex:
+1. Sex Shop
+2. SexDollPlayground
+3. BDSM Dungeon
+4. Used Panties Shop
+5. The Milky Way
+  
 For Weapons:
 1. Bomb Seller
 2. Warfane Gun Shop
@@ -77,11 +84,3 @@ For Electronics:
 For Organs:
 1. Mr. Donor
 2. Organotic
-
-For Sex:
-1. Sex Shop
-2. SexDollPlayground
-3. BDSM Dungeon
-4. Used Panties Shop
-5. The Milky Way
-  
