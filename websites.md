@@ -15,7 +15,7 @@ Websites in Killer Invasion
 11. Electronics: sells laptops and phones. ----------------------
 12. Blue Whale Challenge: Showing a bunch of different disgusting challenge and you can also see the number of people who have participated in a challenge, and  comments from those people).
 13. Cry Bitch: just a photo of a girl crying and screaming sound + some description of a man how much he hates women.
-14. 
+14. Sex Shop (just some normal sex toys to sell and lube and condoms) --------------------
 15. TutoCorpse: A website that shows tutorials on how to hide a corpse, or to kill someone efficiently
 16. AlphaDrug: Drug Shop. ----------------
 17. BetaDrug: Drug Shop. --------------
