@@ -16,12 +16,12 @@ Websites in Killer Invasion
 12. Blue Whale Challenge: Showing a bunch of different disgusting challenge and you can also see the number of people who have participated in a challenge, and  comments from those people).
 13. 
 14. 
-15. TutoCorpse: (A website that shows tutorials on how to hide a corpse, or to kill someone efficiently)
+15. TutoCorpse: A website that shows tutorials on how to hide a corpse, or to kill someone efficiently
 16. 
 17. BetaDrug: Drug Shop. --------------
 18. Gun Shop. -----------------
 19. SexDollPlayground. -----------------
-20. 9 Eyes (9 eyes opened, looking around)
+20. 9 Eyes: 9 eyes opened, looking around.
 21. Spankers: (Page that sells vapes, cigarettes, weed, bongs, etc). -----------------
 22. 50/50: (when you press play, u will have a 50% of seeing a good image and 50% of seeing a gore image.)
 23. 
