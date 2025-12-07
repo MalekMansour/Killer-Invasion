@@ -27,7 +27,7 @@ Websites in Killer Invasion
 23. The Clown (a website where a scary clown is hidden in every picture shown with creepy music playing.
 24. Online Casino (Gambling website with roulette)
 25. Music To My Ears: sells headphones and speakers. ---------------
-26. 
+26. My Little Pony: a blog about a guy really liking children.
 27. Insym3Cam (A collection of security cameras)
 28. The Milky Way (Milk Shop) ---------------------
 29. LDT Chat (A public chat room)
