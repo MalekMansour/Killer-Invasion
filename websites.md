@@ -43,7 +43,7 @@ Websites in Killer Invasion
 39. Mr White Meth Shop --------------------------
 40. Amputay (Blog where people talk about the amazing work of a surgeon that amputes them and changes the places of their body parts on their bodiess.)
 41. Cleaning Services: A blog about a guy offering body cleaning services and getting rid of evidence.
-42. 
+42. Beautiful Face: a creepy guy selling human faces.
 43. Dumb Ways to Die For Real: Tutorial for you how to die in whatever ways you want to.
 44. Dark And Light: A cult website.
 45. CandyShop: Sells drug (looks like an innocent candy shop website). --------------------
