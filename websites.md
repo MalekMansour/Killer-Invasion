@@ -51,7 +51,7 @@ Websites in Killer Invasion
 47. CryptoDrive Official website: will explain exactly how the programs work and where to download it.
 48. AirCracker Official website:  will explain exactly how the program works and where to download it.
 49. The Illuminaty is real: A deep blog explaining all the reasons why the illuminaty is real.
-50. 
+50. For Ransom: Shows all the kids that are being kidnapped and being asked for ransom.
 
 
     
