@@ -17,10 +17,10 @@ Websites in Killer Invasion
 13. 
 14. 
 15. TutoCorpse: A website that shows tutorials on how to hide a corpse, or to kill someone efficiently
-16. 
+16. AlphaDrug: Drug Shop. ----------------
 17. BetaDrug: Drug Shop. --------------
 18. Gun Shop. -----------------
-19. SexDollPlayground. -----------------
+19. SexDollPlayground: Buy sex dolls. -----------------
 20. 9 Eyes: 9 eyes opened, looking around.
 21. Spankers: (Page that sells vapes, cigarettes, weed, bongs, etc). -----------------
 22. 50/50: (when you press play, u will have a 50% of seeing a good image and 50% of seeing a gore image.)
@@ -34,7 +34,7 @@ Websites in Killer Invasion
 30. Child's Play (A public chat room)
 31. Used Panties Shop (You can buy panties) ---------------------
 32. 
-33. Mr. Donor: Buy some organs -------------------
+33. Mr. Donor: Buy organs -------------------
 34. Organotic (An organ shop where you can buy livers, hearts, brains, etc.) ----------------------
 35. Satan Worship Blog (very long website with a lot of links in it.)
 36. Tarot Cards Shop 
