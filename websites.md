@@ -14,7 +14,7 @@ Websites in Killer Invasion
 10. Guess the Streamer: (5 very poorly drawn streamers and if the user correctly guesses all 5, he gets a free 5 Coins).
 11. Electronics: sells laptops and phones. ----------------------
 12. Blue Whale Challenge: Showing a bunch of different disgusting challenge and you can also see the number of people who have participated in a challenge, and  comments from those people).
-13. 
+13. Cry Bitch: just a photo of a girl crying and screaming sound + some description of a man how much he hates women.
 14. 
 15. TutoCorpse: A website that shows tutorials on how to hide a corpse, or to kill someone efficiently
 16. AlphaDrug: Drug Shop. ----------------
