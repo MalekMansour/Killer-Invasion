@@ -42,7 +42,7 @@ Websites in Killer Invasion
 38. Family Owned Cocaine Shop ------------------
 39. Mr White Meth Shop --------------------------
 40. Amputay (Blog where people talk about the amazing work of a surgeon that amputes them and changes the places of their body parts on their bodiess.)
-41. 
+41. Cleaning Services: A blog about a guy offering body cleaning services and getting rid of evidence.
 42. 
 43. Dumb Ways to Die For Real: Tutorial for you how to die in whatever ways you want to.
 44. 
