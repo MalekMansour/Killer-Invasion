@@ -9,17 +9,17 @@ Websites in For Ransom
 5. Armory Weapon Shop. ----------------------
 6. Confession:+ A place for people to confess their sins.
 7. Death Wish: (Depressed People Blog Journal).
-8. Strenght Plus: A shop that sells sex-strengthening stuff. -------------------
+8. Sniper's Club: Sells sniper guns ----------------
 9. Sex Dungeon: A shop that sells BDSM stuff. ------------------
 10. Guess the Streamer: (5 very poorly drawn streamers and if the user correctly guesses all 5, he gets a free 5 Coins).
-11. Electronics: sells laptops and phones. ----------------------
+11. Electrona: sells laptops and phones. ----------------------
 12. Blue Whale Challenge: Showing a bunch of different disgusting challenge and you can also see the number of people who have participated in a challenge, and  comments from those people).
 13. Cry Bitch: just a photo of a girl crying and screaming sound + some description of a man how much he hates women.
 14. Sex Shop (just some normal sex toys to sell and lube and condoms) --------------------
 15. TutoCorpse: A website that shows tutorials on how to hide a corpse, or to kill someone efficiently
 16. AlphaDrug: Drug Shop. ----------------
 17. BetaDrug: Drug Shop. --------------
-18. Gun Shop. -----------------
+18. Warfane Gun Shop. -----------------
 19. SexDollPlayground: Buy sex dolls. -----------------
 20. 9 Eyes: 9 eyes opened, looking around.
 21. Spankers: (Page that sells vapes, cigarettes, weed, bongs, etc). -----------------
@@ -33,12 +33,12 @@ Websites in For Ransom
 29. Toilet Cams (A collection of photos of people in the bathroom being spied on)
 30. Child's Play (A public chat room)
 31. Used Panties Shop (You can buy panties) ---------------------
-32. LSD Seller --------------------
+32. Masks: A creepy website about masks.
 33. Mr. Donor: Buy organs -------------------
 34. Organotic (An organ shop where you can buy livers, hearts, brains, etc.) ----------------------
 35. Satan Worship Blog (very long website with a lot of links in it.)
 36. Tarot Cards Shop 
-37. Bomb Shop: Buy grenades and bombs (like 3 of them) ------------
+37. Bomb Seller: Buy grenades and bombs (like 3 of them) ------------
 38. Family Owned Cocaine Shop ------------------
 39. Mr White Meth Shop --------------------------
 40. Amputay (Blog where people talk about the amazing work of a surgeon that amputes them and changes the places of their body parts on their bodiess.)
@@ -47,12 +47,41 @@ Websites in For Ransom
 43. Dumb Ways to Die For Real: Tutorial for you how to die in whatever ways you want to.
 44. Dark And Light: A cult website.
 45. CandyShop: Sells drug (looks like an innocent candy shop website). --------------------
-46. The Beast: Anwser all 10 questions correctly to get 10 free coins. -------------
+46. The Beast: Anwser all 10 questions correctly to get 10 free coins. 
 47. CryptoDrive Official website: will explain exactly how the programs work and where to download it.
 48. AirCracker Official website:  will explain exactly how the program works and where to download it.
 49. The Illuminaty is real: A deep blog explaining all the reasons why the illuminaty is real.
 50. For Ransom: Shows all the kids that are being kidnapped and being asked for ransom.
 
+Shops:
 
-    
+For Drugs:
+1. BetaDrug
+2. AlphaDrug
+3. Family Owned Cocaine
+4. Mr. White's Meth
+5. Spankers
+6. CandyShop
+
+For Weapons:
+1. Bomb Seller
+2. Warfane Gun Shop
+3. Armory Weapon Shop
+4. Sniper's Club
+
+For Electronics:
+1. Music To My Ears
+2. FLIWWER 0
+3. Electrona
+
+For Organs:
+1. Mr. Donor
+2. Organotic
+
+For Sex:
+1. Sex Shop
+2. SexDollPlayground
+3. BDSM Dungeon
+4. Used Panties Shop
+5. The Milky Way
   
