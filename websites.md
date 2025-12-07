@@ -11,7 +11,7 @@ Websites in Killer Invasion
 7. Death Wish: (Depressed People Blog Journal).
 8. Strenght Plus: A shop that sells sex-strengthening stuff.
 9. Sex Dungeon: A shop that sells BDSM stuff.
-10. 
+10. Guess the Streamer: (5 very poorly drawn streamers and if the user correctly guesses all 5, he gets a free 5 Coins).
 11.
 12. Blue Whale Challenge: Showing a bunch of different disgusting challenge and you can also see the number of people who have participated in a challenge, and  comments from those people).
 13. 
