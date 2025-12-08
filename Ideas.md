@@ -71,5 +71,6 @@ II. Mechanics
  At the start of the game, a random category will have more trend than the others but it won't be obvious till hour 4. 
  Every hour, the shops in every single website will reset and the items in stock will change. 
  The player has to go to different websites on the dark web and find the websites that sells stuff and see what's in stock. 
- 
+
+ The player buys items using their money then sells the items for the price of their choice (there will be a recommended price) and the player wants to make a profit from every item that they buy.
 
