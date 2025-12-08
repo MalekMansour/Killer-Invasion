@@ -38,8 +38,8 @@ public class Wifi : MonoBehaviour
         "Tell my Wi-Fi love her","NextHome-5G","infinitywifi","Mom click here for Wi-Fi"
     };
     string[] passwordWords = {
-        "coffee","admin","dragon","hunter","tsunami","netgear","sneaky","shadow","monkey","kitty",
-        "letmein","default","welcome","guest","qwerty","abc123","login","ball9","iloveyou","princess",
+        "coffee","admin","hunter","tsunami","netgear","sneaky","shadow","monkey","kitty",
+        "letmein","default","welcome","guest","qwerty","abc123","login","iloveyou","princess",
         "master","superman","batman","trustno1","password1","admin123","router","internet",
         "wifi4me","hidden123","mywifi","youcantguess","mypass","secureme","private","dangerzone",
         "fortress","n3tw0rk","rootaccess","onionnet","vault","nowifi4u","topsecret","blacknet","undercover",
@@ -61,7 +61,6 @@ public class Wifi : MonoBehaviour
         inputField.ActivateInputField();
         feedbackText.text = "";
 
-        // If cracking in progress
         if (currentTarget != null)
         {
             if (ValidateMissingCharacters(input))
