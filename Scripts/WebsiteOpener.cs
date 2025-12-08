@@ -6,6 +6,7 @@ using System.Collections.Generic;
 
 public class WebsiteOpener : MonoBehaviour
 {
+    [Header("UI Components")]
     public GameObject websitesParent;             // Parent containing all website screens
     public GameObject panel;                      // Parent containing all the website buttons
     public TMP_InputField urlInputField;          // The fake browser URL bar
@@ -15,7 +16,7 @@ public class WebsiteOpener : MonoBehaviour
 
     private Dictionary<GameObject, Sprite> websiteThumbnails = new Dictionary<GameObject, Sprite>();
     private Dictionary<GameObject, GameObject> buttonToWebsiteMap = new Dictionary<GameObject, GameObject>();
-    private List<GameObject> availableWebsites = new List<GameObject>();
+    public List<GameObject> availableWebsites = new List<GameObject>();
     private Coroutine loadingCoroutine = null;
 
     void Start()
@@ -28,9 +29,7 @@ public class WebsiteOpener : MonoBehaviour
 
             Sprite thumbnail = Resources.Load<Sprite>("Thumbnails/" + website.name);
             if (thumbnail != null)
-            {
                 websiteThumbnails[website] = thumbnail;
-            }
         }
 
         // Assign buttons
@@ -40,13 +39,9 @@ public class WebsiteOpener : MonoBehaviour
             Button btnComponent = button.GetComponent<Button>();
 
             if (btnComponent != null)
-            {
                 btnComponent.onClick.AddListener(() => OnButtonClick(button));
-            }
             else
-            {
                 Debug.LogWarning("No Button component found on: " + button.name);
-            }
         }
     }
 
@@ -75,15 +70,24 @@ public class WebsiteOpener : MonoBehaviour
 
         // Cancel any current loading coroutine
         if (loadingCoroutine != null)
-        {
             StopCoroutine(loadingCoroutine);
-        }
 
-        // Start loading the selected website
-        loadingCoroutine = StartCoroutine(OpenWebsiteWithDelay(assignedWebsite));
+        // Default 12s load for manual button click
+        loadingCoroutine = StartCoroutine(OpenWebsiteWithDelay(assignedWebsite, 12f));
     }
 
-    IEnumerator OpenWebsiteWithDelay(GameObject website)
+    /// <summary>
+    /// Opens a website with a custom loading duration (used by Wifi script)
+    /// </summary>
+    public void OpenWebsiteWithWifiDelay(GameObject website, float duration)
+    {
+        if (loadingCoroutine != null)
+            StopCoroutine(loadingCoroutine);
+
+        loadingCoroutine = StartCoroutine(OpenWebsiteWithDelay(website, duration));
+    }
+
+    IEnumerator OpenWebsiteWithDelay(GameObject website, float duration)
     {
         // Set a random URL
         string randomNumber = Random.Range(100000000, 999999999).ToString();
@@ -96,9 +100,7 @@ public class WebsiteOpener : MonoBehaviour
             progressBar.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 0f);
         }
 
-        float duration = 12f;
         float timer = 0f;
-
         float targetWidth = urlInputField.GetComponent<RectTransform>().rect.width * 2.05f;
 
         while (timer < duration)
@@ -108,37 +110,18 @@ public class WebsiteOpener : MonoBehaviour
             float currentWidth = targetWidth * progress;
 
             if (progressBar != null)
-            {
                 progressBar.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, currentWidth);
-            }
 
             yield return null;
         }
 
-        // Instantly hide the progress bar
+        // Hide progress bar
         if (progressBar != null)
-        {
             progressBar.gameObject.SetActive(false);
-        }
-
-        // Shrink in background
-        float shrinkSpeed = 3000f;
-        float width = progressBar.rectTransform.rect.width;
-
-        while (width > 1f)
-        {
-            width -= Time.deltaTime * shrinkSpeed;
-            progressBar.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, Mathf.Max(0f, width));
-            yield return null;
-        }
-
-        progressBar.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 0f);
 
         // Hide all websites
         for (int i = 0; i < websitesParent.transform.childCount; i++)
-        {
             websitesParent.transform.GetChild(i).gameObject.SetActive(false);
-        }
 
         // Show the selected website
         website.SetActive(true);
@@ -148,12 +131,8 @@ public class WebsiteOpener : MonoBehaviour
     {
         Image imageComponent = button.GetComponentInChildren<Image>();
         if (imageComponent != null && websiteThumbnails.ContainsKey(website))
-        {
             imageComponent.sprite = websiteThumbnails[website];
-        }
         else
-        {
             Debug.LogWarning("Thumbnail not found for: " + website.name);
-        }
     }
 }
