@@ -74,4 +74,3 @@ II. Mechanics
 
  The player buys items using their money then sells the items for the price of their choice (there will be a recommended price) and the player wants to make a profit from every item that they buy.
  Sometimes you want to buy something very early when it's cheap and sell it hours later after hours when it gets more expensive.
-
