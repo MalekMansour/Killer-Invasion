@@ -1,4 +1,4 @@
-IDEA SUMMARY UPDATED (2025-12-05)
+IDEA SUMMARY UPDATED (2025-12-09)
 
 I. Story
 - The game is set in a dangerous neighborhood at night. The main character lives inside a house. The environment is grainy, gloomy, and somewhat terrifying. 
@@ -35,10 +35,10 @@ II. Mechanics
   
 3. Black market:
    - CryptoDrive V3 (10 Ⱡ)
-   - VPN Lite (25 Ⱡ)
-   - AirCrack Wifi Cracker (25 Ⱡ)
-   - CyrptoDrive V4 (55 Ⱡ)
-   - HomeSensor Alert (75 Ⱡ)
+   - VPN Lite (15 Ⱡ)
+   - AirCrack Wifi Cracker (20 Ⱡ)
+   - CyrptoDrive V4 (40 Ⱡ)
+   - HomeSensor Alert (60 Ⱡ)
    - VPN Pro (120 Ⱡ)
    - Anonymous Tracker (150 Ⱡ)
    - RedHacker (185 Ⱡ)
