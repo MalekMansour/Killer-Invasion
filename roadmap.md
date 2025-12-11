@@ -2,4 +2,4 @@
 
 1. Finish fixing the Wifi.
 2. Make the app to deposit the money.
-3. 
+3. Make the cryptodriver v3 and v4.
