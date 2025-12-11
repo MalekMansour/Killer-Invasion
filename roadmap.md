@@ -5,3 +5,4 @@
 3. Make the cryptodriver v3 and v4.
 4. Make the Market App.
 5. Make all the websites where you can buy stuff.
+6. Make The Shop Website to sell.
