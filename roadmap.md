@@ -6,3 +6,4 @@
 4. Make the Market App.
 5. Make all the websites where you can buy stuff.
 6. Make The Shop Website to sell.
+7. Make the market changing code.
