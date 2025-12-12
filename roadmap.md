@@ -8,3 +8,4 @@
 6. Make The Shop Website to sell.
 7. Make the market changing code.
 8. Make the rest of the websites.
+9. Make the animations.
