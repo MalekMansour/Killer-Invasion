@@ -9,4 +9,6 @@
 7. Make the market changing code.
 8. Make the rest of the websites.
 9. Make the animations.
-10. Add the police mechanic.
+10. Add Hiding spot under the bed.
+11. Add the police mechanic.
+12. 
