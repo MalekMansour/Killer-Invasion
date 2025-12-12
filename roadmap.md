@@ -14,3 +14,4 @@
 12. Add the killer mechanic.
 13. Add the sanity mechanic.
 14. Add the pills.
+15. Make the alert program.
