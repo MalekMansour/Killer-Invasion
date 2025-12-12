@@ -11,4 +11,4 @@
 9. Make the animations.
 10. Add Hiding spot under the bed.
 11. Add the police mechanic.
-12. 
+12. Add the killer mechanic.
