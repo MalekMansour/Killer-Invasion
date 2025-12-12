@@ -12,3 +12,4 @@
 10. Add Hiding spot under the bed.
 11. Add the police mechanic.
 12. Add the killer mechanic.
+13. Add the sanity mechanic.
