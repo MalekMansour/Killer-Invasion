@@ -13,3 +13,4 @@
 11. Add the police mechanic.
 12. Add the killer mechanic.
 13. Add the sanity mechanic.
+14. Add the pills.
