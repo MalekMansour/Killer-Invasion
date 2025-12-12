@@ -1,4 +1,4 @@
-IDEA SUMMARY UPDATED (2025-12-09)
+IDEA SUMMARY FOR RANSOM (2025-12-12)
 
 I. Story
 - The game is set in a dangerous neighborhood at night. The main character lives inside a house. The environment is grainy, gloomy, and somewhat terrifying. 
