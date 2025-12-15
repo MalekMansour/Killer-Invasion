@@ -15,7 +15,7 @@ public class WifiListController : MonoBehaviour
     public Texture2D fourBarTexture;
 
     [Header("Network List UI (size = 10)")]
-    public GameObject listPanel;        // Parent of your 10 entries
+    public GameObject listPanel;        
     public TMP_Text[] titleTexts;       // 0–9
     public Button[] connectButtons;     // 0–9
 
