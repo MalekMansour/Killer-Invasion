@@ -47,7 +47,7 @@ II. Mechanics
 - The killers might appear in front of the door/outside the window/etc.
 - The player can use sound cues (e.g. footsteps in the garden) or visual cues (e.g. door peephole, window blinds) to detect nearby killers.
 - Players can hide under the bed.
-- 4 lights on = 12 - 16 Minutes to leave. 3 Lights on = 8 - 12 Minutes to leave. 2 Lights on = 4 - 8 Minutes to leave. 1 Light on = 2 - 4 Minutes to leave. 0 Lights on = 40 - 60 Seconds to leave.
+- 4 lights on = 12 - 18 Minutes to leave. 3 Lights on = 7 - 12 Minutes to leave. 2 Lights on = 3 - 7 Minutes to leave. 1 Light on = 1 - 3 Minutes to leave. 0 Lights on = 40 - 60 Seconds to leave.
   
 5. Police:
 - If the insanity level reaches 100%, the police will come for you in the next 5 - 25 minutes. There is no way of surviving the police if they come to your house.
